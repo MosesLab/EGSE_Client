@@ -3379,6 +3379,7 @@ public class MosesClientForm extends javax.swing.JFrame {
             if (mainSocket != null && mainSocket.isConnected())
             {
                 /* Write packet object's bytes to TCP/IP output buffer */
+                System.out.println(packet.getBytes());
                 mainSocket.getOutputStream().write(packet.getBytes());
                 
                 /* Write packet object's string from to 'Sent Packets' text area */
