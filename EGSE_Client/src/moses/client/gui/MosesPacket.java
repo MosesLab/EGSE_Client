@@ -1,7 +1,7 @@
 package moses.client.gui;
 
+import static java.nio.charset.StandardCharsets.ISO_8859_1;
 import java.util.Date;
-import javax.swing.JOptionPane;
 
 /**
  * Packet Class for Moses EGSE Software
@@ -208,7 +208,7 @@ class MosesPacket {
         
         
         /* Convert packet to string format */
-        packetString = "";
+        packetString = new String(null, ISO_8859_1);
         for( byte b : packetBytes)
         {
             packetString += decode((char)b);

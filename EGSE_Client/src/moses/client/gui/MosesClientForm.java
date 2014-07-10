@@ -4,17 +4,14 @@
  */
 package moses.client.gui;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
 import java.net.*;
 import java.io.*;
 import java.lang.Thread.*;
+import static java.nio.charset.StandardCharsets.ISO_8859_1;
 import java.util.Date;
 import javax.swing.JComponent;
-import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
@@ -3264,7 +3261,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         
         try {
             BufferedReader in = new BufferedReader(
-                    new InputStreamReader(mainSocket.getInputStream()));
+                    new InputStreamReader(mainSocket.getInputStream(), ISO_8859_1));
             
             String buffer = "";
             char newChar;
