@@ -208,7 +208,7 @@ class MosesPacket {
         
         
         /* Convert packet to string format */
-        packetString = new String(null, ISO_8859_1);
+        packetString = "";
         for( byte b : packetBytes)
         {
             packetString += decode((char)b);
