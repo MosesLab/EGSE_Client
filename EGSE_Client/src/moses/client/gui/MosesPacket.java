@@ -355,17 +355,18 @@ class MosesPacket {
         int i;
         char calculatedChecksum = encode(decode((char)packetBytes[0]));
         
-        for(i = 1; i < packetBytes.length - 2; i++)
+//        for(i = 1; i < packetBytes.length - 2; i++)
+        for(i = 1; i < 7; i++)
         {
             calculatedChecksum ^= packetBytes[i];
         }    
         
-//   	calculatedChecksum ^= packetType;
-//    
-//   	for(i = 8; i < packetBytes.length - 2; i++)
-//        {
-//            calculatedChecksum ^= packetBytes[i];
-//        }
+   	calculatedChecksum ^= packetType;
+    
+   	for(i = 8; i < packetBytes.length - 2; i++)
+        {
+            calculatedChecksum ^= packetBytes[i];
+        }
         
         return (byte)calculatedChecksum;
     }
