@@ -25,8 +25,11 @@ public class MosesClientForm extends javax.swing.JFrame {
     private Socket mainSocket = null;
     private Thread listenerThread = null;
     private Boolean listen = false;
-    
+
+    private Thread shellListenerThread = null;
     static Process xterm_p;
+    public static BufferedWriter xterm_writer;
+    public static BufferedReader xterm_reader;
 
     /**
      * Creates new form MainForm
@@ -2277,6 +2280,7 @@ public class MosesClientForm extends javax.swing.JFrame {
 
             listen = true;
             listenerThread = startListenerThread();
+            shellListenerThread = startShellListenerThread();
 
 //            mainSocket.getOutputStream().write(String.format("Connected to %s:%s",
 //                    serverStr,
@@ -2356,9 +2360,9 @@ public class MosesClientForm extends javax.swing.JFrame {
 
     private void menu_File_ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_File_ExitActionPerformed
         menu_File_DisconnectActionPerformed(null);
-        
-        
-        
+
+        xterm_p.destroy();
+
         this.dispose();
     }//GEN-LAST:event_menu_File_ExitActionPerformed
 
@@ -3279,6 +3283,82 @@ public class MosesClientForm extends javax.swing.JFrame {
         }
     }
 
+    private Thread startShellListenerThread() {
+        Thread thread = new Thread(new Runnable() {
+            public void run() {
+                xtermListener();
+            }
+        });
+        thread.start();
+
+        return thread;
+    }
+
+    /**
+     * listens for output from xterm
+     */
+    private void xtermListener() {
+
+        while (mainSocket.isConnected()) {
+            try {
+                while (!xterm_reader.ready()) {
+                    try {
+                        Thread.currentThread().sleep(100);
+                    } catch (InterruptedException ex) {
+                    }
+                }
+
+                /* get text from xterm */
+                String data = xterm_reader.readLine();
+                int numPackets = data.length() / 255;
+
+                /* Check for delimiters in data field */
+                if (data.indexOf(MosesPacket.StartDelimiter) != -1) {
+                    JOptionPane.showMessageDialog(null,
+                            "Reserved character '%' can't be used in data field!",
+                            "Error!",
+                            JOptionPane.ERROR_MESSAGE);
+                    return;
+                } else if (data.indexOf(MosesPacket.StopDelimiter) != -1) {
+                    JOptionPane.showMessageDialog(null,
+                            "Reserved character '^' can't be used in data field!",
+                            "Error!",
+                            JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+
+                /* write all but the last packet */
+                int i = 0;
+                while (i < numPackets) {
+                    MosesPacket tempPacket = new MosesPacket(
+                            MosesPacket.TYPE_MAIN_SHELL,
+                            "INP",
+                            data.substring(i * 255, (i + 1) * 255).getBytes());
+                    write(tempPacket);
+
+                    //System.out.println("\n" + data.substring(i * 255, (i + 1) * 255));
+                    i++;
+                }
+
+                /* write the last packet */
+                MosesPacket tempPacket = new MosesPacket(
+                        MosesPacket.TYPE_MAIN_SHELL,
+                        "INP",
+                        data.substring(i * 255).getBytes());
+                write(tempPacket);
+
+                textAreaShellTx.setText("");
+                textAreaShellTx.setCaretPosition(0);
+
+//            Don't need to do this since SACK will echo back nad be placed in RX area
+//            textAreaShellRX.append(data + "\n");
+//            textAreaShellRX.setCaretPosition(textAreaShellRX.getText().length());
+            } catch (IOException e) {
+                System.out.println("xterm does not exist");
+            }
+        }
+    }
+
     /**
      * Sends packet to output buffer of TCP/IP output stream.
      *
@@ -3345,16 +3425,36 @@ public class MosesClientForm extends javax.swing.JFrame {
 
         try {
             String xterm_cmd = "/home/byrdie/NetBeansProjects/EGSE_launch_xterm/EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
-            Runtime xterm_rt = Runtime.getRuntime();
-            xterm_p = xterm_rt.exec(xterm_cmd);
+//            Runtime xterm_rt = Runtime.getRuntime();
+//            xterm_p = xterm_rt.exec(xterm_cmd);
+            ProcessBuilder xterm_pb = new ProcessBuilder(xterm_cmd);
+            xterm_p = xterm_pb.start();
+
+//            try{
+//            Thread.sleep(3000);
+//            }
+//            catch(InterruptedException e){
+//                System.out.println("Interrupted!");
+//            }
+            OutputStream xterm_stdin = xterm_p.getOutputStream();
+            xterm_writer = new BufferedWriter(new OutputStreamWriter(xterm_stdin));
+//            String xterm_test = "This is a test of xterm input";
+////            byte[] xterm_test_bytes = xterm_test.getBytes();
+//            xterm_writer.write(xterm_test);
+//            xterm_writer.newLine();
+//            xterm_writer.flush();
+
+            InputStream xterm_stdout = xterm_p.getInputStream();
+            xterm_reader = new BufferedReader(new InputStreamReader(xterm_stdout));
+//            String out_test = xterm_reader.readLine();
+//            System.out.println(out_test);
+//            out_test = xterm_reader.readLine();
+//            System.out.println(out_test);
+
         } catch (IOException e) {
             System.out.println("Failed to execute virtual shell");
         }
 
-//            xterm_out = xterm_p.getOutputStream();
-//            String xterm_test = "This is a test of xterm input";
-//            byte[] xterm_test_bytes = xterm_test.getBytes();
-//            xterm_out.write(xterm_test_bytes);
         try {
             String laf = UIManager.getSystemLookAndFeelClassName();
             UIManager.setLookAndFeel(laf);
