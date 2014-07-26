@@ -25,6 +25,8 @@ public class MosesClientForm extends javax.swing.JFrame {
     private Socket mainSocket = null;
     private Thread listenerThread = null;
     private Boolean listen = false;
+    
+    static Process xterm_p;
 
     /**
      * Creates new form MainForm
@@ -2355,7 +2357,6 @@ public class MosesClientForm extends javax.swing.JFrame {
     private void menu_File_ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_File_ExitActionPerformed
         menu_File_DisconnectActionPerformed(null);
         xterm_p.destroy();
-        socat_p.destroy();
         this.dispose();
     }//GEN-LAST:event_menu_File_ExitActionPerformed
 
@@ -3342,15 +3343,17 @@ public class MosesClientForm extends javax.swing.JFrame {
         try {
             String xterm_cmd = "/home/byrdie/NetBeamsProject";
             Runtime xterm_rt = Runtime.getRuntime();
-            Process xterm_p = xterm_rt.exec(xterm_cmd);
+            xterm_p = xterm_rt.exec(xterm_cmd);
+            
+            //            xterm_out = xterm_p.getOutputStream();
+//            String xterm_test = "This is a test of xterm input";
+//            byte[] xterm_test_bytes = xterm_test.getBytes();
+//            xterm_out.write(xterm_test_bytes);
         } catch (IOException e) {
             System.out.println("Failed to execute virtual shell");
         }
 
-//            xterm_out = xterm_p.getOutputStream();
-//            String xterm_test = "This is a test of xterm input";
-//            byte[] xterm_test_bytes = xterm_test.getBytes();
-//            xterm_out.write(xterm_test_bytes);
+
         try {
             String laf = UIManager.getSystemLookAndFeelClassName();
             UIManager.setLookAndFeel(laf);
