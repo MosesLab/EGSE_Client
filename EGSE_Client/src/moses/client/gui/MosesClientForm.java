@@ -25,6 +25,8 @@ public class MosesClientForm extends javax.swing.JFrame {
     private Socket mainSocket = null;
     private Thread listenerThread = null;
     private Boolean listen = false;
+    
+    static Process xterm_p;
 
     /**
      * Creates new form MainForm
@@ -2354,6 +2356,9 @@ public class MosesClientForm extends javax.swing.JFrame {
 
     private void menu_File_ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_File_ExitActionPerformed
         menu_File_DisconnectActionPerformed(null);
+        
+        
+        
         this.dispose();
     }//GEN-LAST:event_menu_File_ExitActionPerformed
 
@@ -3339,9 +3344,9 @@ public class MosesClientForm extends javax.swing.JFrame {
         System.out.println("*****************************\n\n");
 
         try {
-            String xterm_cmd = "/home/byrdie/NetBeamsProject";
+            String xterm_cmd = "/home/byrdie/NetBeansProjects/EGSE_launch_xterm/EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
             Runtime xterm_rt = Runtime.getRuntime();
-            Process xterm_p = xterm_rt.exec(xterm_cmd);
+            xterm_p = xterm_rt.exec(xterm_cmd);
         } catch (IOException e) {
             System.out.println("Failed to execute virtual shell");
         }
