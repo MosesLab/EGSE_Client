@@ -26,11 +26,6 @@ public class MosesClientForm extends javax.swing.JFrame {
     private Thread listenerThread = null;
     private Boolean listen = false;
 
-    static Process socat_p = null;
-    
-    static Process xterm_p = null;
-
-
     /**
      * Creates new form MainForm
      */
@@ -3345,23 +3340,17 @@ public class MosesClientForm extends javax.swing.JFrame {
         System.out.println("*****************************\n\n");
 
         try {
-//            String socat_cmd = "gksudo socat -d -d pty,raw,echo=0 pty,raw,echo=0";
-//            Runtime socat_rt = Runtime.getRuntime();
-//            socat_p = socat_rt.exec(socat_cmd);
-
-//            String xterm_cmd = "xterm";xter
-            String xterm_cmd = "xterm -S /home/vshell1";
+            String xterm_cmd = "/home/byrdie/NetBeamsProject";
             Runtime xterm_rt = Runtime.getRuntime();
-            xterm_p = xterm_rt.exec(xterm_cmd);
+            Process xterm_p = xterm_rt.exec(xterm_cmd);
+        } catch (IOException e) {
+            System.out.println("Failed to execute virtual shell");
+        }
 
 //            xterm_out = xterm_p.getOutputStream();
 //            String xterm_test = "This is a test of xterm input";
 //            byte[] xterm_test_bytes = xterm_test.getBytes();
 //            xterm_out.write(xterm_test_bytes);
-        } catch (IOException e) {
-
-        }
-
         try {
             String laf = UIManager.getSystemLookAndFeelClassName();
             UIManager.setLookAndFeel(laf);
@@ -3805,6 +3794,7 @@ public class MosesClientForm extends javax.swing.JFrame {
     public JTextField getFieldQGTM() {
         return fieldQGTM;
     }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonCustomSend;
