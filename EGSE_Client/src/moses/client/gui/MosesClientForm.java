@@ -25,7 +25,7 @@ public class MosesClientForm extends javax.swing.JFrame {
     private Socket mainSocket = null;
     private Thread listenerThread = null;
     private Boolean listen = false;
-    
+
     /**
      * Creates new form MainForm
      */
@@ -2250,124 +2250,110 @@ public class MosesClientForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void menu_File_ConnectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_File_ConnectActionPerformed
-        
+
         /* Get user input for server address and port */
         JTextField server = new JTextField();
         JTextField port = new JTextField();
         final JComponent[] inputs;
-        inputs = new JComponent[] {
+        inputs = new JComponent[]{
             new JLabel("Server"),
             server,
             new JLabel("Port"),
             port
         };
-        
+
         JOptionPane.showMessageDialog(null, inputs, "Connect To Server", JOptionPane.PLAIN_MESSAGE);
-        
+
         String serverStr = server.getText(),
-               portStr = port.getText();
-        
-        
+                portStr = port.getText();
+
         /* Make a socket connection to the server */
-        try 
-        {	
-            mainSocket = new Socket(server.getText(), 
-				    Integer.parseInt(port.getText()));
+        try {
+            mainSocket = new Socket(server.getText(),
+                    Integer.parseInt(port.getText()));
             System.out.println("\nConencted to Server.\n" + mainSocket.toString());
-            
+
             listen = true;
             listenerThread = startListenerThread();
-            
+
 //            mainSocket.getOutputStream().write(String.format("Connected to %s:%s",
 //                    serverStr,
 //                    portStr).getBytes());
-					
-            
             /* Change the form to reflect 'connected' state */
             this.menu_File_Disconnect.setEnabled(true);
             this.menu_File_Connect.setEnabled(false);
             this.jLabel1.setEnabled(true);
             this.jLabel2.setEnabled(true);
-            this.textAreaSent.setEnabled(true);  
+            this.textAreaSent.setEnabled(true);
             this.textAreaRecieved.setEnabled(true);
-            
-            JOptionPane.showMessageDialog(this, "Connected to " +
-                    serverStr + ":" + portStr);            
-            			
-	} 
-        catch (UnknownHostException e) 
-        {
-            JOptionPane.showMessageDialog(this,
-            "Don't know about host: " + serverStr + ":" + portStr,
-            "Connection Error",
-            JOptionPane.ERROR_MESSAGE);
-            
-            System.err.println("\nDon't know about host: " + 
-                    serverStr + ":" + portStr);
 
-        } 
-        catch (IOException e) 
-        {
+            JOptionPane.showMessageDialog(this, "Connected to "
+                    + serverStr + ":" + portStr);
+
+        } catch (UnknownHostException e) {
             JOptionPane.showMessageDialog(this,
-            "Couldn't get I/O for " + "the connection to: " + 
-                    serverStr + ":" + portStr,
-            "Connection Error",
-            JOptionPane.ERROR_MESSAGE);
-            
+                    "Don't know about host: " + serverStr + ":" + portStr,
+                    "Connection Error",
+                    JOptionPane.ERROR_MESSAGE);
+
+            System.err.println("\nDon't know about host: "
+                    + serverStr + ":" + portStr);
+
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(this,
+                    "Couldn't get I/O for " + "the connection to: "
+                    + serverStr + ":" + portStr,
+                    "Connection Error",
+                    JOptionPane.ERROR_MESSAGE);
+
             System.err.println("\nCouldn't get I/O for "
-                    + "the connection to: " + 
-                    serverStr + ":" + portStr);
-                    
-        } 
-        catch(Exception ex) 
-        {
+                    + "the connection to: "
+                    + serverStr + ":" + portStr);
+
+        } catch (Exception ex) {
             JOptionPane.showMessageDialog(this,
-            ex.toString(),
-            "Connection Error",
-            JOptionPane.ERROR_MESSAGE);
-            
+                    ex.toString(),
+                    "Connection Error",
+                    JOptionPane.ERROR_MESSAGE);
+
             System.err.println("Exception in: \"menu_File_ConnectActionPerformed\"");
             System.err.println("\n" + ex.toString());
         }
-        
+
     }//GEN-LAST:event_menu_File_ConnectActionPerformed
 
     private void menu_File_DisconnectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_File_DisconnectActionPerformed
-        
-        try 
-        {
+
+        try {
             /* Send close meaasge over TCP/IP if still activve */
-            if(mainSocket != null && mainSocket.isConnected())
-            {
+            if (mainSocket != null && mainSocket.isConnected()) {
                 mainSocket.getOutputStream().write("%^".getBytes());
-                
+
                 /* Close the socket */
                 listen = false;
                 mainSocket.close();
             }
-            
-		
-		
-        } catch(IOException ex) {
+
+        } catch (IOException ex) {
             System.out.println("\n" + ex.toString());
-        }    
-        
+        }
+
         mainSocket = null;
-        
+
         /* Change the form to reflect 'disconnected' state */
         this.menu_File_Disconnect.setEnabled(false);
-        this.menu_File_Connect.setEnabled(true); 
+        this.menu_File_Connect.setEnabled(true);
         this.jLabel1.setEnabled(false);
         this.jLabel2.setEnabled(false);
-        this.textAreaSent.setEnabled(false); 
-        this.textAreaRecieved.setEnabled(false); 
-        
+        this.textAreaSent.setEnabled(false);
+        this.textAreaRecieved.setEnabled(false);
+
         System.out.println("\nTCP Connection terminated.");
-        
+
     }//GEN-LAST:event_menu_File_DisconnectActionPerformed
 
     private void menu_File_ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_File_ExitActionPerformed
-        menu_File_DisconnectActionPerformed(null);   
+        menu_File_DisconnectActionPerformed(null);
         this.dispose();
     }//GEN-LAST:event_menu_File_ExitActionPerformed
 
@@ -2376,375 +2362,342 @@ public class MosesClientForm extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowClosing
 
     private void buttonMGFLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGFLActionPerformed
-        MosesPacket packet = new MosesPacket('M', "GFL", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "GFL", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMGFLActionPerformed
 
     private void buttonMGSNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGSNActionPerformed
-        try
-        {
+        try {
             /* Get users input */
             String inputStr = JOptionPane.showInputDialog("Enter the Signal Number");
             int inputInt = Integer.parseInt(inputStr);
-            
+
             /* Check for invalid input */
-            if (inputInt > 255 || inputInt < 0)
-            {
+            if (inputInt > 255 || inputInt < 0) {
                 throw new Exception("Invalid Input");
             }
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "GSN", 
+            MosesPacket packet = new MosesPacket('M', "GSN",
                     String.format("%02X", inputInt & 0xFF).getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMGSNActionPerformed
 
     private void buttonMGSIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGSIActionPerformed
-        try
-        {
+        try {
             /* Get users input */
             String inputStr = JOptionPane.showInputDialog("Enter the Signal Number");
             int inputInt = Integer.parseInt(inputStr);
-            
+
             /* Check for invalid input */
-            if (inputInt > 255 || inputInt < 0)
-            {
+            if (inputInt > 255 || inputInt < 0) {
                 throw new Error("Invalid Input");
             }
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "GSI", 
+            MosesPacket packet = new MosesPacket('M', "GSI",
                     String.format("%02X", inputInt & 0xFF).getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMGSIActionPerformed
 
     private void buttonMGCSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGCSActionPerformed
-        MosesPacket packet = new MosesPacket('M', "GCS", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "GCS", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMGCSActionPerformed
 
     private void buttonMGFIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGFIActionPerformed
-        MosesPacket packet = new MosesPacket('M', "GFI", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "GFI", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMGFIActionPerformed
 
     private void buttonMGOFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGOFActionPerformed
-        MosesPacket packet = new MosesPacket('M', "GOF", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "GOF", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMGOFActionPerformed
 
     private void buttonMGSTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGSTActionPerformed
-        MosesPacket packet = new MosesPacket('M', "GST", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "GST", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMGSTActionPerformed
 
     private void buttonMGSMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGSMActionPerformed
-        MosesPacket packet = new MosesPacket('M', "GSM", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "GSM", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMGSMActionPerformed
 
     private void buttonMGTMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGTMActionPerformed
-        MosesPacket packet = new MosesPacket('M', "GTM", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "GTM", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMGTMActionPerformed
 
     private void buttonMGC0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGC0ActionPerformed
-        MosesPacket packet = new MosesPacket('M', "GC0", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "GC0", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMGC0ActionPerformed
 
     private void buttonMGPOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMGPOActionPerformed
-        MosesPacket packet = new MosesPacket('M', "GPO", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "GPO", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMGPOActionPerformed
 
     private void buttonMFNJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMFNJActionPerformed
-        try
-        {
+        try {
             /* Get users input */
             String inputStr = JOptionPane.showInputDialog("Enter the Frame Number");
             float inputFlt = Float.parseFloat(inputStr);
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "FNJ", 
+            MosesPacket packet = new MosesPacket('M', "FNJ",
                     String.format("%f", inputFlt).getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMFNJActionPerformed
 
     private void buttonMJMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMJMPActionPerformed
-        try
-        {
+        try {
             /* Get users input */
             String inputStr = JOptionPane.showInputDialog("Enter the Index Number");
             float inputFlt = Float.parseFloat(inputStr);
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "JMP", 
+            MosesPacket packet = new MosesPacket('M', "JMP",
                     String.format("%f", inputFlt).getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMJMPActionPerformed
 
     private void buttonMFNRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMFNRActionPerformed
-        try
-        {
+        try {
             /* Get users input */
             String inputStr1 = JOptionPane.showInputDialog("Enter the exposure length to find.");
             float inputFlt1 = Float.parseFloat(inputStr1);
-            
+
             String inputStr2 = JOptionPane.showInputDialog("Enter new exposure length.");
             float inputFlt2 = Float.parseFloat(inputStr2);
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "FNR", 
+            MosesPacket packet = new MosesPacket('M', "FNR",
                     String.format("%f,%f", inputFlt1, inputFlt2).getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMFNRActionPerformed
 
     private void buttonMSAVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMSAVActionPerformed
-        try
-        {
+        try {
             /* Get users input */
             String inputStr = JOptionPane.showInputDialog("Enter the filename to save the current sequence as.");
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "SAV", 
+            MosesPacket packet = new MosesPacket('M', "SAV",
                     inputStr.getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMSAVActionPerformed
 
     private void buttonMBSQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMBSQActionPerformed
-        MosesPacket packet = new MosesPacket('M', "BSQ", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "BSQ", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMBSQActionPerformed
 
     private void buttonMESQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMESQActionPerformed
-        MosesPacket packet = new MosesPacket('M', "ESQ", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "ESQ", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMESQActionPerformed
 
     private void buttonMXITActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMXITActionPerformed
-        MosesPacket packet = new MosesPacket('M', "XIT", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "XIT", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMXITActionPerformed
 
     private void buttonMRRRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMRRRActionPerformed
-        MosesPacket packet = new MosesPacket('M', "RRR", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "RRR", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMRRRActionPerformed
 
     private void buttonMXDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMXDFActionPerformed
-        MosesPacket packet = new MosesPacket('M', "XDF", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "XDF", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMXDFActionPerformed
 
     private void buttonMSLFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMSLFActionPerformed
-        MosesPacket packet = new MosesPacket('M', "SLF", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "SLF", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMSLFActionPerformed
 
     private void buttonMRSTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMRSTActionPerformed
-        MosesPacket packet = new MosesPacket('M', "RST", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "RST", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMRSTActionPerformed
 
     private void buttonMSSQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMSSQActionPerformed
-        try
-        {
+        try {
             /* Get users input */
             String inputStr1 = JOptionPane.showInputDialog("Enter the Signal Number");
             int inputInt1 = Integer.parseInt(inputStr1);
-            
+
             String inputStr2 = JOptionPane.showInputDialog("Enter the Sequence Name");
-            
+
             /* Check for invalid input */
-            if (inputInt1 > 255 || inputInt1 < 0)
-            {
+            if (inputInt1 > 255 || inputInt1 < 0) {
                 throw new Exception("Invalid Input");
             }
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "SSQ", 
+            MosesPacket packet = new MosesPacket('M', "SSQ",
                     String.format("%02X%s", inputInt1 & 0xFF, inputStr2).getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMSSQActionPerformed
 
     private void buttonMTRNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMTRNActionPerformed
-        try
-        {
+        try {
             /* Get users input */
-            String inputStr = JOptionPane.showInputDialog("Enter the number to add to " + 
-                    "each frame in the current sequence.");
+            String inputStr = JOptionPane.showInputDialog("Enter the number to add to "
+                    + "each frame in the current sequence.");
             float inputFlt = Float.parseFloat(inputStr);
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "TRN", 
+            MosesPacket packet = new MosesPacket('M', "TRN",
                     String.format("%f", inputFlt).getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMTRNActionPerformed
 
     private void buttonMSOFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMSOFActionPerformed
-        try
-        {
+        try {
             /* Get users input */
             String inputStr = JOptionPane.showInputDialog("Enter the Output Filename.");
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "JMP", 
+            MosesPacket packet = new MosesPacket('M', "JMP",
                     String.format("%s", inputStr).getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMSOFActionPerformed
 
     private void buttonMSCLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMSCLActionPerformed
-        try
-        {
+        try {
             /* Get users input */
-            String inputStr = JOptionPane.showInputDialog("Enter the number to multiply " + 
-                    "each frame in the current by.");
+            String inputStr = JOptionPane.showInputDialog("Enter the number to multiply "
+                    + "each frame in the current by.");
             float inputFlt = Float.parseFloat(inputStr);
-            
+
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "SCL", 
+            MosesPacket packet = new MosesPacket('M', "SCL",
                     String.format("%f", inputFlt).getBytes());
-            
+
             /* Send packet */
             write(packet);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                    "Could not send message:\n" + ex.getMessage(), 
-                    "Error", 
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Could not send message:\n" + ex.getMessage(),
+                    "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonMSCLActionPerformed
 
     private void buttonMTMNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMTMNActionPerformed
-        MosesPacket packet = new MosesPacket('M', "TMN", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "TMN", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMTMNActionPerformed
 
     private void buttonMC0NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMC0NActionPerformed
-        MosesPacket packet = new MosesPacket('M', "C0N", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "C0N", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMC0NActionPerformed
 
     private void buttonMPONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMPONActionPerformed
-        MosesPacket packet = new MosesPacket('M', "PON", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "PON", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMPONActionPerformed
 
     private void buttonMSTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMSTNActionPerformed
-        MosesPacket packet = new MosesPacket('M', "STN", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "STN", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMSTNActionPerformed
 
     private void buttonMTMFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMTMFActionPerformed
-        MosesPacket packet = new MosesPacket('M', "TMF", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "TMF", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMTMFActionPerformed
 
     private void buttonMC0FActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMC0FActionPerformed
-        MosesPacket packet = new MosesPacket('M', "C0F", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "C0F", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMC0FActionPerformed
 
     private void buttonMPOFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMPOFActionPerformed
-        MosesPacket packet = new MosesPacket('M', "POF", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "POF", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMPOFActionPerformed
 
     private void buttonMSTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMSTFActionPerformed
-        MosesPacket packet = new MosesPacket('M', "STF", new byte[] {});
+        MosesPacket packet = new MosesPacket('M', "STF", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonMSTFActionPerformed
 
@@ -2809,7 +2762,7 @@ public class MosesClientForm extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonHTMP_LActionPerformed
 
     private void buttonH20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH20ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "2.0", new byte[] {});
+        MosesPacket packet = new MosesPacket('H', "2.0", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonH20ActionPerformed
 
@@ -2854,22 +2807,22 @@ public class MosesClientForm extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonH36V_IBActionPerformed
 
     private void buttonHAVOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHAVOActionPerformed
-        MosesPacket packet = new MosesPacket('H', "AVO", new byte[] {});
+        MosesPacket packet = new MosesPacket('H', "AVO", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonHAVOActionPerformed
 
     private void buttonHAVRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHAVRActionPerformed
-        MosesPacket packet = new MosesPacket('H', "AVR", new byte[] {});
+        MosesPacket packet = new MosesPacket('H', "AVR", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonHAVRActionPerformed
 
     private void buttonHAVSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHAVSActionPerformed
-        MosesPacket packet = new MosesPacket('H', "AVS", new byte[] {});
+        MosesPacket packet = new MosesPacket('H', "AVS", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonHAVSActionPerformed
 
     private void buttonH33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH33ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "3.3", new byte[] {});
+        MosesPacket packet = new MosesPacket('H', "3.3", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonH33ActionPerformed
 
@@ -2914,62 +2867,62 @@ public class MosesClientForm extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonH12V_IBActionPerformed
 
     private void buttonHBVOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHBVOActionPerformed
-        MosesPacket packet = new MosesPacket('H', "BVO", new byte[] {});
+        MosesPacket packet = new MosesPacket('H', "BVO", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonHBVOActionPerformed
 
     private void buttonHBVRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHBVRActionPerformed
-        MosesPacket packet = new MosesPacket('H', "BVR", new byte[] {});
+        MosesPacket packet = new MosesPacket('H', "BVR", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonHBVRActionPerformed
 
     private void buttonHBVSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHBVSActionPerformed
-        MosesPacket packet = new MosesPacket('H', "BVS", new byte[] {});
+        MosesPacket packet = new MosesPacket('H', "BVS", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonHBVSActionPerformed
 
     private void buttonUDK1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUDK1ActionPerformed
-        MosesPacket packet = new MosesPacket('U', "DK1", new byte[] {});
+        MosesPacket packet = new MosesPacket('U', "DK1", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUDK1ActionPerformed
 
     private void buttonUDK2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUDK2ActionPerformed
-        MosesPacket packet = new MosesPacket('U', "DK2", new byte[] {});
+        MosesPacket packet = new MosesPacket('U', "DK2", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUDK2ActionPerformed
 
     private void buttonUDK3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUDK3ActionPerformed
-        MosesPacket packet = new MosesPacket('U', "DK3", new byte[] {});
+        MosesPacket packet = new MosesPacket('U', "DK3", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUDK3ActionPerformed
 
     private void buttonUSLPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUSLPActionPerformed
-        MosesPacket packet = new MosesPacket('U', "SLP", new byte[] {});
+        MosesPacket packet = new MosesPacket('U', "SLP", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUSLPActionPerformed
 
     private void buttonUDK4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUDK4ActionPerformed
-        MosesPacket packet = new MosesPacket('U', "DK4", new byte[] {});
+        MosesPacket packet = new MosesPacket('U', "DK4", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUDK4ActionPerformed
 
     private void buttonUWAKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUWAKActionPerformed
-        MosesPacket packet = new MosesPacket('U', "WAK", new byte[] {});
+        MosesPacket packet = new MosesPacket('U', "WAK", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUWAKActionPerformed
 
     private void buttonUDSTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUDSTActionPerformed
-        MosesPacket packet = new MosesPacket('U', "DST", new byte[] {});
+        MosesPacket packet = new MosesPacket('U', "DST", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUDSTActionPerformed
 
     private void buttonUDSPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUDSPActionPerformed
-        MosesPacket packet = new MosesPacket('U', "DSP", new byte[] {});
+        MosesPacket packet = new MosesPacket('U', "DSP", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUDSPActionPerformed
 
     private void buttonUTSTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUTSTActionPerformed
-        MosesPacket packet = new MosesPacket('U', "TST", new byte[] {});
+        MosesPacket packet = new MosesPacket('U', "TST", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUTSTActionPerformed
 
@@ -3124,226 +3077,187 @@ public class MosesClientForm extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonPTOF_10ActionPerformed
 
     private void shellSendKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_shellSendKeyPressed
-        
+
         /* Enter Key Pressed */
-        if (evt.getKeyChar() == '\n')
-        {            
+        if (evt.getKeyChar() == '\n') {
             /* get text from text area */
             String data = textAreaShellTx.getText() + "\r\n";
             int numPackets = data.length() / 255;
-            
+
             /* Check for delimiters in data field */
-            if (data.indexOf(MosesPacket.StartDelimiter) != -1)
-            {
+            if (data.indexOf(MosesPacket.StartDelimiter) != -1) {
                 JOptionPane.showMessageDialog(null,
-                    "Reserved character '%' can't be used in data field!",
-                    "Error!",
-                    JOptionPane.ERROR_MESSAGE);
+                        "Reserved character '%' can't be used in data field!",
+                        "Error!",
+                        JOptionPane.ERROR_MESSAGE);
 
                 evt.consume();
                 return;
-            }
-            else if (data.indexOf(MosesPacket.StopDelimiter) != -1)
-            {
+            } else if (data.indexOf(MosesPacket.StopDelimiter) != -1) {
                 JOptionPane.showMessageDialog(null,
-                    "Reserved character '^' can't be used in data field!",
-                    "Error!",
-                    JOptionPane.ERROR_MESSAGE);
-            
+                        "Reserved character '^' can't be used in data field!",
+                        "Error!",
+                        JOptionPane.ERROR_MESSAGE);
+
                 evt.consume();
                 return;
             }
 
             /* write all but the last packet */
             int i = 0;
-            while( i < numPackets)
-            {
+            while (i < numPackets) {
                 MosesPacket tempPacket = new MosesPacket(
-                        MosesPacket.TYPE_MAIN_SHELL, 
+                        MosesPacket.TYPE_MAIN_SHELL,
                         "INP",
                         data.substring(i * 255, (i + 1) * 255).getBytes());
                 write(tempPacket);
 
                 //System.out.println("\n" + data.substring(i * 255, (i + 1) * 255));
-
                 i++;
             }
 
             /* write the last packet */
             MosesPacket tempPacket = new MosesPacket(
-                MosesPacket.TYPE_MAIN_SHELL, 
-                "INP",
-                data.substring(i * 255).getBytes());
+                    MosesPacket.TYPE_MAIN_SHELL,
+                    "INP",
+                    data.substring(i * 255).getBytes());
             write(tempPacket);
 
             textAreaShellTx.setText("");
             textAreaShellTx.setCaretPosition(0);
-            
+
 //            Don't need to do this since SACK will echo back nad be placed in RX area
 //            textAreaShellRX.append(data + "\n");
 //            textAreaShellRX.setCaretPosition(textAreaShellRX.getText().length());
-
             evt.consume();
-            
+
         }
     }//GEN-LAST:event_shellSendKeyPressed
 
     private void buttonCustomSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCustomSendActionPerformed
-        
+
         /* check for invlid data */
-        if(fieldCustomType.getText().length() != 1)
-        {
+        if (fieldCustomType.getText().length() != 1) {
             JOptionPane.showMessageDialog(this,
-                "Invalid length of 'Type' field, must be 1 character!",
-                "Custom Packet Error",
-                JOptionPane.ERROR_MESSAGE);
+                    "Invalid length of 'Type' field, must be 1 character!",
+                    "Custom Packet Error",
+                    JOptionPane.ERROR_MESSAGE);
             return;
         }
-        if(fieldCustomSubType.getText().length() != 3)
-        {
+        if (fieldCustomSubType.getText().length() != 3) {
             JOptionPane.showMessageDialog(this,
-                "Invalid length of 'Sub Type' field, must be 3 characters!",
-                "Custom Packet Error",
-                JOptionPane.ERROR_MESSAGE);
+                    "Invalid length of 'Sub Type' field, must be 3 characters!",
+                    "Custom Packet Error",
+                    JOptionPane.ERROR_MESSAGE);
             return;
         }
-        if(fieldCustomData.getText().length() > 255)
-        {
+        if (fieldCustomData.getText().length() > 255) {
             JOptionPane.showMessageDialog(this,
-                "Invalid length of 'Data' field, must be less than 255 characters!",
-                "Custom Packet Error",
-                JOptionPane.ERROR_MESSAGE);
+                    "Invalid length of 'Data' field, must be less than 255 characters!",
+                    "Custom Packet Error",
+                    JOptionPane.ERROR_MESSAGE);
             return;
         }
-        if(mainSocket == null || mainSocket.isClosed())
-        {
+        if (mainSocket == null || mainSocket.isClosed()) {
             JOptionPane.showMessageDialog(this,
-                "Can't send packet, no active TCP connection!",
-                "Custom Packet Error",
-                JOptionPane.ERROR_MESSAGE);
+                    "Can't send packet, no active TCP connection!",
+                    "Custom Packet Error",
+                    JOptionPane.ERROR_MESSAGE);
             return;
         }
-        
+
         /* build packet */
-        MosesPacket packet = new MosesPacket((fieldCustomType.getText()).charAt(0), 
-                fieldCustomSubType.getText(), 
+        MosesPacket packet = new MosesPacket((fieldCustomType.getText()).charAt(0),
+                fieldCustomSubType.getText(),
                 fieldCustomData.getText().getBytes());
-        
+
         /* send packet */
-        try
-        {
+        try {
             mainSocket.getOutputStream().write(packet.getBytes());
-        }
-        catch(IOException ex)
-        {
+        } catch (IOException ex) {
             System.err.println("\nException in: \"buttonCustomSendActionPerformed\"");
             System.err.println("IO Exception on Send!");
         }
-        
-        
+
+
     }//GEN-LAST:event_buttonCustomSendActionPerformed
-    
-    private Thread startListenerThread()
-    {
-        Thread thread = new Thread(new Runnable()
-        {
-            public void run()
-            {
+
+    private Thread startListenerThread() {
+        Thread thread = new Thread(new Runnable() {
+            public void run() {
                 listener();
             }
         });
         thread.start();
-        
-        return thread;        
+
+        return thread;
     }
-    
+
     private void listener() {
-        
+
         try {
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(mainSocket.getInputStream(), ISO_8859_1));
-            
+
             String buffer = "";
             char newChar;
             Boolean inPacket = false;
 
-            while (listen && mainSocket.isConnected())
-            {   
-                while(!in.ready())
-                {
-                    try 
-                    {
+            while (listen && mainSocket.isConnected()) {
+                while (!in.ready()) {
+                    try {
                         Thread.currentThread().sleep(100);
-                    } 
-                    catch (InterruptedException ex) { }
+                    } catch (InterruptedException ex) {
+                    }
                 }
-                                
-                newChar = (char)in.read();
-                
+
+                newChar = (char) in.read();
+
                 /* if not in a packet, but the new char is the start delimiter */
-                if (!inPacket & ((char)(0x7F & newChar) == MosesPacket.StartDelimiter))
-                {
+                if (!inPacket & ((char) (0x7F & newChar) == MosesPacket.StartDelimiter)) {
                     inPacket = true;
                     buffer = Character.toString(newChar);
-                }/* if in packet and new char is not stop delimiter */
-                else if (inPacket & ((char)(0x7F & newChar) != MosesPacket.StopDelimiter))
-                {
+                }/* if in packet and new char is not stop delimiter */ else if (inPacket & ((char) (0x7F & newChar) != MosesPacket.StopDelimiter)) {
                     buffer += newChar;
-                }
-                
-                /* if in packet and new char is the stop delimiter */
-                else if (inPacket & ((char)(0x7F & newChar) == MosesPacket.StopDelimiter))
-                {
+                } /* if in packet and new char is the stop delimiter */ else if (inPacket & ((char) (0x7F & newChar) == MosesPacket.StopDelimiter)) {
                     inPacket = false;
                     buffer += newChar;
-                    
+
                     /* if packet was sent to F/C by another client */
-                    if(buffer.substring(0, 2).equals("%%"))
-                    {
+                    if (buffer.substring(0, 2).equals("%%")) {
                         /* create the packet, removing the extra '%' from the front */
                         MosesPacket packet = new MosesPacket(buffer.substring(1).getBytes());
-                        
+
                         /* put it in the 'sent packets' area */
-                        textAreaSent.append((new Date()).toLocaleString() + ":\n" +
-                        "Another Client Sent:\n" +
-                        packet.toString() + "\n");
+                        textAreaSent.append((new Date()).toLocaleString() + ":\n"
+                                + "Another Client Sent:\n"
+                                + packet.toString() + "\n");
                         textAreaSent.setCaretPosition(textAreaSent.getDocument().getLength());
-                        
+
                         /* clear buffer */
                         buffer = "";
-                        
-                    }
-                    
-                    else if(buffer.equals("%^"))
-                    {
-                        JOptionPane.showMessageDialog(this, 
+
+                    } else if (buffer.equals("%^")) {
+                        JOptionPane.showMessageDialog(this,
                                 "Server terminated TCP socket.");
                         menu_File_DisconnectActionPerformed(null);
                         buffer = "";
-                    }
-                    else
-                    {
+                    } else {
                         MosesPacket packet = new MosesPacket(buffer.getBytes());
-                        
-                        if(!packet.hasGoodCheckSum())
-                        {
-                            textAreaRecieved.append((new Date()).toLocaleString() + ":\n" +
-                                    "Bad CheckSum: " + 
-                                    packet.toString() + "\n");
+
+                        if (!packet.hasGoodCheckSum()) {
+                            textAreaRecieved.append((new Date()).toLocaleString() + ":\n"
+                                    + "Bad CheckSum: "
+                                    + packet.toString() + "\n");
                             textAreaRecieved.setCaretPosition(textAreaRecieved.getDocument().getLength());
-                        }
-                        else 
-                        if (PacketHandler.HandlePacket(this, packet))
-                        {
-                            textAreaRecieved.append((new Date()).toLocaleString() + ":\n" +
-                                    packet.toString() + "\n");
+                        } else if (PacketHandler.HandlePacket(this, packet)) {
+                            textAreaRecieved.append((new Date()).toLocaleString() + ":\n"
+                                    + packet.toString() + "\n");
                             textAreaRecieved.setCaretPosition(textAreaRecieved.getDocument().getLength());
-                        }
-                        else
-                        {
-                            textAreaRecieved.append((new Date()).toLocaleString() + ":\n" +
-                                    "Unknown Packet: " + 
-                                    packet.toString() + "\n");
+                        } else {
+                            textAreaRecieved.append((new Date()).toLocaleString() + ":\n"
+                                    + "Unknown Packet: "
+                                    + packet.toString() + "\n");
                             textAreaRecieved.setCaretPosition(textAreaRecieved.getDocument().getLength());
                         }
 
@@ -3351,58 +3265,46 @@ public class MosesClientForm extends javax.swing.JFrame {
                     }
                 }
             }
-        } 
-        catch (SocketException ex)
-        {
+        } catch (SocketException ex) {
             System.err.println("\nSocketException in: \"listener\"");
             System.err.println(ex.toString());
-        }
-        catch (IOException ex)
-        {
+        } catch (IOException ex) {
             System.err.println("\nIOException in: \"listener\"");
-            System.err.println("Couldn't Recieve Data");   
+            System.err.println("Couldn't Recieve Data");
         }
     }
-        
+
     /**
      * Sends packet to output buffer of TCP/IP output stream.
-     * 
+     *
      * @param packet MosesPacket to be sent to the output stream.
      */
-    private void write(MosesPacket packet)
-    {
-        try
-        {
-            if (mainSocket != null && mainSocket.isConnected())
-            {
+    private void write(MosesPacket packet) {
+        try {
+            if (mainSocket != null && mainSocket.isConnected()) {
                 /* Write packet object's bytes to TCP/IP output buffer */
                 //System.out.println("" + packet.getBytes());
                 System.out.println(Integer.toHexString(packet.getBytes()[0]));
                 mainSocket.getOutputStream().write(packet.getBytes());
-                
-                
+
                 /* Write packet object's string from to 'Sent Packets' text area */
-                textAreaSent.append((new Date()).toLocaleString() + ":\n" +
-                        packet.toString() + "\n");
+                textAreaSent.append((new Date()).toLocaleString() + ":\n"
+                        + packet.toString() + "\n");
                 textAreaSent.setCaretPosition(textAreaSent.getDocument().getLength());
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(this, 
+            } else {
+                JOptionPane.showMessageDialog(this,
                         "Can't send packet, no active connection!",
                         "Packet Write Error",
                         JOptionPane.ERROR_MESSAGE);
             }
-        }
-        catch(IOException ex)
-        {
-            JOptionPane.showMessageDialog(this, 
-                        "Can't send packet, IO Exception!",
-                        "Packet Write Error",
-                        JOptionPane.ERROR_MESSAGE);
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Can't send packet, IO Exception!",
+                    "Packet Write Error",
+                    JOptionPane.ERROR_MESSAGE);
         }
     }
-    
+
     /**
      * @param args the command line arguments
      */
@@ -3435,17 +3337,26 @@ public class MosesClientForm extends javax.swing.JFrame {
         System.out.println("* Matthew Handley, SSEL     *");
         System.out.println("* Febuarary 2013            *");
         System.out.println("*****************************\n\n");
-        
-        try
-        {
+
+        try {
+            String xterm_cmd = "/home/byrdie/NetBeamsProject";
+            Runtime xterm_rt = Runtime.getRuntime();
+            Process xterm_p = xterm_rt.exec(xterm_cmd);
+        } catch (IOException e) {
+            System.out.println("Failed to execute virtual shell");
+        }
+
+//            xterm_out = xterm_p.getOutputStream();
+//            String xterm_test = "This is a test of xterm input";
+//            byte[] xterm_test_bytes = xterm_test.getBytes();
+//            xterm_out.write(xterm_test_bytes);
+        try {
             String laf = UIManager.getSystemLookAndFeelClassName();
             UIManager.setLookAndFeel(laf);
-        }
-        catch(Exception ex)
-        {
+        } catch (Exception ex) {
             System.out.println("\n" + ex.toString());
         }
-        
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -3453,8 +3364,6 @@ public class MosesClientForm extends javax.swing.JFrame {
             }
         });
     }
-    
-    
 
     public JTextField getFeildPS_1() {
         return fieldPS_1;
@@ -3883,10 +3792,8 @@ public class MosesClientForm extends javax.swing.JFrame {
     public JTextField getFieldQGTM() {
         return fieldQGTM;
     }
-    
-    
-    
-    
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonCustomSend;
     private javax.swing.JButton buttonH12V_IA;
