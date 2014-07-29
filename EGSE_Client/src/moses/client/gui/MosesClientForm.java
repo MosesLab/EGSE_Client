@@ -3309,7 +3309,8 @@ public class MosesClientForm extends javax.swing.JFrame {
                 }
 
                 /* get text from xterm */
-                String data = xterm_reader.readLine();
+  
+                String data = xterm_reader.readLine() + "\r";
                 int numPackets = data.length() / 255;
 
                 /* Check for delimiters in data field */
@@ -3334,6 +3335,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                             MosesPacket.TYPE_MAIN_SHELL,
                             "INP",
                             data.substring(i * 255, (i + 1) * 255).getBytes());
+
                     write(tempPacket);
 
                     //System.out.println("\n" + data.substring(i * 255, (i + 1) * 255));
@@ -3437,7 +3439,7 @@ public class MosesClientForm extends javax.swing.JFrame {
 //                System.out.println("Interrupted!");
 //            }
             OutputStream xterm_stdin = xterm_p.getOutputStream();
-            xterm_writer = new BufferedWriter(new OutputStreamWriter(xterm_stdin));
+            xterm_writer = new BufferedWriter(new OutputStreamWriter(xterm_stdin, ISO_8859_1));
 //            String xterm_test = "This is a test of xterm input";
 ////            byte[] xterm_test_bytes = xterm_test.getBytes();
 //            xterm_writer.write(xterm_test);
@@ -3445,7 +3447,7 @@ public class MosesClientForm extends javax.swing.JFrame {
 //            xterm_writer.flush();
 
             InputStream xterm_stdout = xterm_p.getInputStream();
-            xterm_reader = new BufferedReader(new InputStreamReader(xterm_stdout));
+            xterm_reader = new BufferedReader(new InputStreamReader(xterm_stdout, ISO_8859_1));
 //            String out_test = xterm_reader.readLine();
 //            System.out.println(out_test);
 //            out_test = xterm_reader.readLine();

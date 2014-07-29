@@ -242,12 +242,13 @@ public class PacketHandler {
                 System.out.println("No xterm process");
             }
             return true;
-        } else if (subType.equals("ACK")) {
-            parent.getTextAreaShellRX().append(dataStr + "\n");
-            parent.getTextAreaShellRX().setCaretPosition(
-                    parent.getTextAreaShellRX().getText().length());
-            return true;
-        }
+        } 
+//            else if (subType.equals("ACK")) {
+//            parent.getTextAreaShellRX().append(dataStr + "\n");
+//            parent.getTextAreaShellRX().setCaretPosition(
+//                    parent.getTextAreaShellRX().getText().length());
+//            return true;
+//        }
         return false;
     }
 
