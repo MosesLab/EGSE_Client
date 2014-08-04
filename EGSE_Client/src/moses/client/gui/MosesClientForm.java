@@ -71,10 +71,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         fieldTimerLastAck = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         shellPanel = new javax.swing.JPanel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        textAreaShellRX = new javax.swing.JTextArea();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        textAreaShellTx = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         powerPanel = new javax.swing.JPanel();
         buttonPQRY_1 = new javax.swing.JButton();
@@ -205,6 +202,17 @@ public class MosesClientForm extends javax.swing.JFrame {
         fieldkKBVO = new javax.swing.JTextField();
         fieldHKLastAck = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        buttonHP_FC_P2_5V_V = new javax.swing.JButton();
+        fieldkKP_FC_P2_5V_V = new javax.swing.JTextField();
+        fieldkKP_ROE_P2_5VD_V = new javax.swing.JTextField();
+        buttonHP_ROE_P2_5VD_V = new javax.swing.JButton();
+        buttonHP_ROE_P2_5VD_I = new javax.swing.JButton();
+        fieldkKP_ROE_P2_5VD_I = new javax.swing.JTextField();
+        buttonHP_ROE_P5VAA_V = new javax.swing.JButton();
+        fieldkKP_ROE_P5VAA_V = new javax.swing.JTextField();
+        buttonHP_ROE_P5VAA_V1 = new javax.swing.JButton();
+        fieldkKP_ROE_P5VAA_V1 = new javax.swing.JTextField();
         mdaqPanel = new javax.swing.JPanel();
         buttonMGSN = new javax.swing.JButton();
         buttonMSSQ = new javax.swing.JButton();
@@ -307,9 +315,9 @@ public class MosesClientForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(txRxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2)
                     .addComponent(jLabel1)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         txRxPanelLayout.setVerticalGroup(
@@ -400,7 +408,7 @@ public class MosesClientForm extends javax.swing.JFrame {
             timerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(timerPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 477, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(timerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(timerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -441,7 +449,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addComponent(buttonUDSP)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonUTST)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 124, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fieldTimerLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -450,21 +458,7 @@ public class MosesClientForm extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Timer", timerPanel);
 
-        textAreaShellRX.setEditable(false);
-        textAreaShellRX.setColumns(20);
-        textAreaShellRX.setLineWrap(true);
-        textAreaShellRX.setRows(5);
-        jScrollPane4.setViewportView(textAreaShellRX);
-
-        textAreaShellTx.setColumns(20);
-        textAreaShellTx.setLineWrap(true);
-        textAreaShellTx.setRows(5);
-        textAreaShellTx.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                shellSendKeyPressed(evt);
-            }
-        });
-        jScrollPane6.setViewportView(textAreaShellTx);
+        jButton1.setText("Interrupt Shell");
 
         javax.swing.GroupLayout shellPanelLayout = new javax.swing.GroupLayout(shellPanel);
         shellPanel.setLayout(shellPanelLayout);
@@ -472,19 +466,15 @@ public class MosesClientForm extends javax.swing.JFrame {
             shellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(shellPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(shellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 639, Short.MAX_VALUE)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 639, Short.MAX_VALUE))
-                .addContainerGap())
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(501, Short.MAX_VALUE))
         );
         shellPanelLayout.setVerticalGroup(
             shellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(shellPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(23, 23, 23)
+                .addComponent(jButton1)
+                .addContainerGap(385, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Shell", shellPanel);
@@ -501,7 +491,7 @@ public class MosesClientForm extends javax.swing.JFrame {
 
         fieldPS_1.setEditable(false);
 
-        jLabel4.setText("SubSys 1");
+        jLabel4.setText("Shutter");
 
         buttonPQRY_2.setText("Query");
         buttonPQRY_2.addActionListener(new java.awt.event.ActionListener() {
@@ -586,11 +576,11 @@ public class MosesClientForm extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setText("SubSys 2");
+        jLabel8.setText("ROE");
 
-        jLabel9.setText("SubSys 3");
+        jLabel9.setText("PMF");
 
-        jLabel10.setText("SubSys 4");
+        jLabel10.setText("TCS - 1");
 
         buttonPQRY_5.setText("Query");
         buttonPQRY_5.addActionListener(new java.awt.event.ActionListener() {
@@ -730,17 +720,17 @@ public class MosesClientForm extends javax.swing.JFrame {
 
         fieldPS_10.setEditable(false);
 
-        jLabel11.setText("SubSys 5");
+        jLabel11.setText("TCS - 3");
 
-        jLabel12.setText("SubSys 6");
+        jLabel12.setText("TCS - 2");
 
-        jLabel13.setText("SubSys 7");
+        jLabel13.setText("TCS");
 
-        jLabel14.setText("SubSys 8");
+        jLabel14.setText("5V Reg.");
 
-        jLabel15.setText("SubSys 9");
+        jLabel15.setText("12V Reg.");
 
-        jLabel16.setText("SubSys 10");
+        jLabel16.setText("H-Alpha");
 
         fieldPowerLastAck.setEditable(false);
 
@@ -756,10 +746,10 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addGroup(powerPanelLayout.createSequentialGroup()
                         .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(powerPanelLayout.createSequentialGroup()
-                                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fieldPS_10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel16)
+                                .addGap(18, 18, 18)
+                                .addComponent(fieldPS_10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(buttonPQRY_10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(buttonPTON_10, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -768,40 +758,42 @@ public class MosesClientForm extends javax.swing.JFrame {
                             .addGroup(powerPanelLayout.createSequentialGroup()
                                 .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(powerPanelLayout.createSequentialGroup()
-                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(fieldPS_2))
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(powerPanelLayout.createSequentialGroup()
-                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(fieldPS_4))
-                                    .addGroup(powerPanelLayout.createSequentialGroup()
-                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(2, 2, 2)
                                         .addComponent(fieldPS_3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(powerPanelLayout.createSequentialGroup()
-                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(fieldPS_1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, powerPanelLayout.createSequentialGroup()
-                                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(fieldPS_6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                                            .addComponent(fieldPS_5, javax.swing.GroupLayout.Alignment.TRAILING)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, powerPanelLayout.createSequentialGroup()
-                                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGap(10, 10, 10)
                                         .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(fieldPS_9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
                                             .addComponent(fieldPS_8, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(fieldPS_7, javax.swing.GroupLayout.Alignment.TRAILING))))
+                                            .addComponent(fieldPS_7, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                    .addGroup(powerPanelLayout.createSequentialGroup()
+                                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(10, 10, 10)
+                                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(fieldPS_1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(fieldPS_2)))
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, powerPanelLayout.createSequentialGroup()
+                                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(powerPanelLayout.createSequentialGroup()
+                                                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                .addGap(10, 10, 10))
+                                            .addGroup(powerPanelLayout.createSequentialGroup()
+                                                .addComponent(jLabel10)
+                                                .addGap(24, 24, 24)))
+                                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(fieldPS_4)
+                                            .addComponent(fieldPS_6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                                            .addComponent(fieldPS_5, javax.swing.GroupLayout.Alignment.TRAILING))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(powerPanelLayout.createSequentialGroup()
@@ -959,7 +951,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(buttonPTON_10)
                         .addComponent(buttonPTOF_10)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(fieldPowerLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1319,176 +1311,176 @@ public class MosesClientForm extends javax.swing.JFrame {
             hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hkPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hkPanelLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(buttonHTMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, hkPanelLayout.createSequentialGroup()
+                        .addComponent(buttonH20, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldkKTMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(459, 459, 459))
+                        .addComponent(fieldkK20, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(buttonH33, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fieldkK33, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fieldHKLastAck))
                     .addGroup(hkPanelLayout.createSequentialGroup()
-                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, hkPanelLayout.createSequentialGroup()
-                                .addComponent(buttonH20, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fieldkK20, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(buttonH33, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fieldkK33, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fieldHKLastAck))
-                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hkPanelLayout.createSequentialGroup()
+                                    .addComponent(buttonHTMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKTMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(hkPanelLayout.createSequentialGroup()
+                                    .addGap(6, 6, 6)
+                                    .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addGroup(hkPanelLayout.createSequentialGroup()
-                                            .addComponent(buttonHP5V_IC, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(buttonHTMP_3, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(fieldkKP5V_ID, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonHP5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(fieldkKP5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonHP5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(fieldkKP5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonHP5V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(fieldkKP5V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonHP5V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(fieldkKP5V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonHP5V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(fieldkKP5V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonHP5V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkKP5V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addComponent(buttonHTMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(fieldkKTMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, hkPanelLayout.createSequentialGroup()
-                                        .addComponent(buttonHTMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(fieldkKTMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, hkPanelLayout.createSequentialGroup()
-                                        .addComponent(buttonHTMP_3, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(fieldkKTMP_3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, hkPanelLayout.createSequentialGroup()
-                                        .addComponent(buttonHTMP_U, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(fieldkKTMP_U, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
+                                            .addComponent(fieldkKTMP_3))
+                                        .addGroup(hkPanelLayout.createSequentialGroup()
+                                            .addComponent(buttonHTMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKTMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonHP5V_IC, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkKP5V_ID))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonHP5V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkKP5V_VB))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonHP5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkKP5V_IB))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonHP5V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkKP5V_VC))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonHP5V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkKP5V_VD))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonHP5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkKP5V_IA)))
+                                .addGroup(hkPanelLayout.createSequentialGroup()
+                                    .addComponent(buttonHP5V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKP5V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(hkPanelLayout.createSequentialGroup()
+                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonHM5V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkKM5V_VB))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
                                         .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonH36V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkK36V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(buttonHM5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(buttonH36V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(fieldkKM5V_IA)
+                                            .addComponent(fieldkKM5V_IB)
+                                            .addComponent(fieldkK36V_VA)))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH36V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK36V_VB))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH36V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK36V_IB))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH36V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK36V_IA))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(hkPanelLayout.createSequentialGroup()
                                                 .addComponent(buttonHM5V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkKM5V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonHM5V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkKM5V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonHM5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkKM5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonHM5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkKM5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonH36V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkK36V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonH36V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkK36V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonH36V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkK36V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonH12V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(fieldkK12V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonH12V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(fieldkK12V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonH12V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(fieldkK12V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonH12V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(fieldkK12V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(hkPanelLayout.createSequentialGroup()
-                                                    .addComponent(buttonH12V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(fieldkK12V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonH25V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkK25V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonH25V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkK25V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonH25V_ID, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkK25V_ID, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addComponent(fieldkKM5V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(buttonHM5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonHAVO, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkKAVO, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(buttonHAVR, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(buttonHAVS, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(fieldkKAVR, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(fieldkKAVS, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addComponent(buttonHBVO, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(fieldkKBVO, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(buttonHBVR, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(buttonHBVS, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(fieldkKBVR, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(fieldkKBVS, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                        .addComponent(buttonH12V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK12V_VC))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH12V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK12V_VB))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH12V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK12V_VA))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH25V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK25V_VD))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH25V_ID, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK25V_ID))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH12V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK12V_IA))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH12V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK12V_IB))
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonH25V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkK25V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(22, 22, 22))
+                            .addGroup(hkPanelLayout.createSequentialGroup()
+                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(hkPanelLayout.createSequentialGroup()
+                                        .addComponent(buttonHTMP_U, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkKTMP_U, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(buttonHTMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(fieldkKTMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(hkPanelLayout.createSequentialGroup()
+                                            .addComponent(buttonHAVO, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKAVO, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(buttonHBVO, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKBVO, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(hkPanelLayout.createSequentialGroup()
+                                            .addComponent(buttonHAVR, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKAVR, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(buttonHBVR, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKBVR, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(hkPanelLayout.createSequentialGroup()
+                                            .addComponent(buttonHAVS, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKAVS, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(buttonHBVS, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKBVS, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         hkPanelLayout.setVerticalGroup(
             hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1499,47 +1491,18 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addGap(1, 1, 1)
                         .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(hkPanelLayout.createSequentialGroup()
-                                .addGap(58, 58, 58)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonHM5V_IA)
-                                    .addComponent(fieldkKM5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonHM5V_IB)
-                                    .addComponent(fieldkKM5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addGap(1, 1, 1)
-                                        .addComponent(fieldkKM5V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(buttonHM5V_VA))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonHM5V_VB)
-                                    .addComponent(fieldkKM5V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(hkPanelLayout.createSequentialGroup()
                                 .addGap(1, 1, 1)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addGap(1, 1, 1)
-                                        .addComponent(fieldkK25V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(buttonH25V_VC))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addGap(1, 1, 1)
-                                        .addComponent(fieldkK25V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(buttonH25V_VD))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addGap(1, 1, 1)
-                                        .addComponent(fieldkK25V_ID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(buttonH25V_ID))))
+                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(fieldkKM5V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonH25V_VC)
+                                    .addComponent(fieldkK25V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(buttonHM5V_VA))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(buttonH12V_VA)
-                            .addComponent(fieldkK12V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(buttonHM5V_VB)
+                            .addComponent(fieldkKM5V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonH25V_VD)
+                            .addComponent(fieldkK25V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(hkPanelLayout.createSequentialGroup()
                         .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(hkPanelLayout.createSequentialGroup()
@@ -1553,107 +1516,84 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(buttonHP5V_VC)
-                            .addComponent(fieldkKP5V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(fieldkKP5V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonHM5V_IA)
+                            .addComponent(fieldkKM5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonH25V_ID)
+                            .addComponent(fieldkK25V_ID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(buttonHP5V_VD)
-                            .addComponent(fieldkKP5V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(fieldkKP5V_VD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonHM5V_IB)
+                            .addComponent(fieldkKM5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonH12V_VA)
+                            .addComponent(fieldkK12V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(7, 7, 7)
                         .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(buttonHP5V_IA)
-                            .addComponent(fieldkKP5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(fieldkKP5V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonH36V_VA)
+                            .addComponent(fieldkK36V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonH12V_VB)
+                            .addComponent(fieldkK12V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonHP5V_IB)
+                            .addComponent(fieldkKP5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonH36V_VB)
+                            .addComponent(fieldkK36V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonH12V_VC)
+                            .addComponent(fieldkK12V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonHP5V_IC)
+                            .addComponent(fieldkKP5V_ID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonH36V_IA)
+                            .addComponent(fieldkK36V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonH12V_IA)
+                            .addComponent(fieldkK12V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(buttonH36V_IB)
+                                .addComponent(fieldkK36V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(buttonH12V_IB)
+                                .addComponent(fieldkK12V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(hkPanelLayout.createSequentialGroup()
                                 .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(hkPanelLayout.createSequentialGroup()
                                         .addGap(1, 1, 1)
-                                        .addComponent(fieldkK36V_VA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(buttonH36V_VA))
+                                        .addComponent(fieldkKTMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(buttonHTMP_1))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonH36V_VB)
-                                    .addComponent(fieldkK36V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addGap(57, 57, 57)
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(buttonH36V_IA)
-                                            .addComponent(fieldkK36V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(buttonHP5V_IB)
-                                            .addComponent(fieldkKP5V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(buttonHP5V_IC)
-                                            .addComponent(fieldkKP5V_ID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                                        .addGap(1, 1, 1)
-                                                        .addComponent(fieldkKTMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addComponent(buttonHTMP_1))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(buttonHTMP_2)
-                                                    .addComponent(fieldkKTMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(buttonHTMP_3)
-                                                    .addComponent(fieldkKTMP_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(buttonHAVO)
-                                                    .addComponent(fieldkKAVO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                .addComponent(buttonH36V_IB)
-                                                .addComponent(fieldkK36V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(buttonHTMP_U)
-                                            .addComponent(fieldkKTMP_U, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(buttonHAVR)
-                                            .addComponent(fieldkKAVR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(7, 7, 7)
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(buttonHTMP_L)
-                                            .addComponent(fieldkKTMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(buttonHAVS)
-                                            .addComponent(fieldkKAVS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(hkPanelLayout.createSequentialGroup()
-                                        .addGap(58, 58, 58)
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(buttonHBVO)
-                                            .addComponent(fieldkKBVO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(buttonHBVR)
-                                            .addComponent(fieldkKBVR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(7, 7, 7)
-                                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(buttonHBVS)
-                                            .addComponent(fieldkKBVS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                            .addGroup(hkPanelLayout.createSequentialGroup()
-                                .addGap(1, 1, 1)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonH12V_VB)
-                                    .addComponent(fieldkK12V_VB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(buttonHTMP_2)
+                                    .addComponent(fieldkKTMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHAVO)
+                                    .addComponent(buttonHBVO)
+                                    .addComponent(fieldkKBVO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldkKAVO))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonH12V_VC)
-                                    .addComponent(fieldkK12V_VC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonH12V_IA)
-                                    .addComponent(fieldkK12V_IA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonH12V_IB)
-                                    .addComponent(fieldkK12V_IB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(buttonHTMP_3)
+                                    .addComponent(fieldkKTMP_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHAVR)
+                                    .addComponent(fieldkKAVR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHBVR)
+                                    .addComponent(fieldkKBVR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonHAVS)
+                            .addComponent(fieldkKAVS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonHBVS)
+                            .addComponent(fieldkKBVS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(7, 7, 7)
+                        .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonHTMP_L)
+                            .addComponent(fieldkKTMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fieldkKTMP_U, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonHTMP_U))))
                 .addGap(18, 18, 18)
                 .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonH20)
@@ -1662,10 +1602,122 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addComponent(fieldkK33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7)
                     .addComponent(fieldHKLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 16, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
 
         jTabbedPane1.addTab("House Keeping", hkPanel);
+
+        buttonHP_FC_P2_5V_V.setText("Get +2.5V_V FC");
+        buttonHP_FC_P2_5V_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_FC_P2_5V_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_FC_P2_5V_V.setEditable(false);
+
+        fieldkKP_ROE_P2_5VD_V.setEditable(false);
+
+        buttonHP_ROE_P2_5VD_V.setText("Get +2.5V_V ROE");
+        buttonHP_ROE_P2_5VD_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P2_5VD_VActionPerformed(evt);
+            }
+        });
+
+        buttonHP_ROE_P2_5VD_I.setText("Get +2.5V_I ROE");
+        buttonHP_ROE_P2_5VD_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P2_5VD_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P2_5VD_I.setEditable(false);
+
+        buttonHP_ROE_P5VAA_V.setText("Get +5VAA_V ROE");
+        buttonHP_ROE_P5VAA_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P5VAA_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P5VAA_V.setEditable(false);
+
+        buttonHP_ROE_P5VAA_V1.setText("Get +5VAA_V ROE");
+        buttonHP_ROE_P5VAA_V1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P5VAA_V1ActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P5VAA_V1.setEditable(false);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(buttonHP_FC_P2_5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fieldkKP_FC_P2_5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(buttonHP_ROE_P2_5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fieldkKP_ROE_P2_5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(buttonHP_ROE_P2_5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fieldkKP_ROE_P2_5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(buttonHP_ROE_P5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fieldkKP_ROE_P5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(buttonHP_ROE_P5VAA_V1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fieldkKP_ROE_P5VAA_V1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(fieldkKP_FC_P2_5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonHP_FC_P2_5V_V))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(fieldkKP_ROE_P2_5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonHP_ROE_P2_5VD_V))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(fieldkKP_ROE_P2_5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonHP_ROE_P2_5VD_I))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(fieldkKP_ROE_P5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonHP_ROE_P5VAA_V))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(fieldkKP_ROE_P5VAA_V1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonHP_ROE_P5VAA_V1))
+                .addContainerGap(256, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("HouseKeeping 2", jPanel4);
 
         buttonMGSN.setText("Get Sequence Name");
         buttonMGSN.addActionListener(new java.awt.event.ActionListener() {
@@ -2015,10 +2067,10 @@ public class MosesClientForm extends javax.swing.JFrame {
                                     .addComponent(buttonMC0F, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(buttonMTMF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(buttonMSTF))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE))
                             .addGroup(mdaqPanelLayout.createSequentialGroup()
                                 .addGap(16, 16, 16)
-                                .addComponent(jScrollPane5)))))
+                                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE)))))
                 .addGap(17, 17, 17))
         );
         mdaqPanelLayout.setVerticalGroup(
@@ -2104,7 +2156,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                                 .addComponent(buttonMSOF)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(buttonMSCL)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(mdaqPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(fieldMDAQLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel17)))
@@ -2157,7 +2209,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                             .addComponent(fieldCustomData, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(fieldCustomSubType, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(fieldCustomType, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(405, Short.MAX_VALUE))
+                .addContainerGap(382, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2176,7 +2228,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addComponent(jLabel20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(buttonCustomSend)
-                .addContainerGap(329, Short.MAX_VALUE))
+                .addContainerGap(303, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Custom Uplink", jPanel3);
@@ -2192,8 +2244,8 @@ public class MosesClientForm extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jTabbedPane1.getAccessibleContext().setAccessibleName("tlmTabbedPane");
@@ -2710,186 +2762,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         write(packet);
     }//GEN-LAST:event_buttonMSTFActionPerformed
 
-    private void buttonHP5V_VAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_VAActionPerformed
-        MosesPacket packet = new MosesPacket('H', "+5V", "VA".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP5V_VAActionPerformed
-
-    private void buttonHP5V_VBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_VBActionPerformed
-        MosesPacket packet = new MosesPacket('H', "+5V", "VB".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP5V_VBActionPerformed
-
-    private void buttonHP5V_VCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_VCActionPerformed
-        MosesPacket packet = new MosesPacket('H', "+5V", "VC".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP5V_VCActionPerformed
-
-    private void buttonHP5V_VDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_VDActionPerformed
-        MosesPacket packet = new MosesPacket('H', "+5V", "VD".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP5V_VDActionPerformed
-
-    private void buttonHP5V_IAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_IAActionPerformed
-        MosesPacket packet = new MosesPacket('H', "+5V", "IA".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP5V_IAActionPerformed
-
-    private void buttonHP5V_IBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_IBActionPerformed
-        MosesPacket packet = new MosesPacket('H', "+5V", "IB".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP5V_IBActionPerformed
-
-    private void buttonHP5V_ICActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_ICActionPerformed
-        MosesPacket packet = new MosesPacket('H', "+5V", "IC".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP5V_ICActionPerformed
-
-    private void buttonHTMP_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_1ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "TMP", "1".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHTMP_1ActionPerformed
-
-    private void buttonHTMP_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_2ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "TMP", "2".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHTMP_2ActionPerformed
-
-    private void buttonHTMP_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_3ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "TMP", "3".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHTMP_3ActionPerformed
-
-    private void buttonHTMP_UActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_UActionPerformed
-        MosesPacket packet = new MosesPacket('H', "TMP", "U".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHTMP_UActionPerformed
-
-    private void buttonHTMP_LActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_LActionPerformed
-        MosesPacket packet = new MosesPacket('H', "TMP", "L".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHTMP_LActionPerformed
-
-    private void buttonH20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH20ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "2.0", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonH20ActionPerformed
-
-    private void buttonHM5V_VAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHM5V_VAActionPerformed
-        MosesPacket packet = new MosesPacket('H', "-5V", "VA".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHM5V_VAActionPerformed
-
-    private void buttonHM5V_VBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHM5V_VBActionPerformed
-        MosesPacket packet = new MosesPacket('H', "-5V", "VB".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHM5V_VBActionPerformed
-
-    private void buttonHM5V_IAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHM5V_IAActionPerformed
-        MosesPacket packet = new MosesPacket('H', "-5V", "IA".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHM5V_IAActionPerformed
-
-    private void buttonHM5V_IBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHM5V_IBActionPerformed
-        MosesPacket packet = new MosesPacket('H', "-5V", "IB".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHM5V_IBActionPerformed
-
-    private void buttonH36V_VAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH36V_VAActionPerformed
-        MosesPacket packet = new MosesPacket('H', "36V", "VA".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH36V_VAActionPerformed
-
-    private void buttonH36V_VBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH36V_VBActionPerformed
-        MosesPacket packet = new MosesPacket('H', "36V", "VB".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH36V_VBActionPerformed
-
-    private void buttonH36V_IAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH36V_IAActionPerformed
-        MosesPacket packet = new MosesPacket('H', "36V", "IA".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH36V_IAActionPerformed
-
-    private void buttonH36V_IBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH36V_IBActionPerformed
-        MosesPacket packet = new MosesPacket('H', "36V", "IB".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH36V_IBActionPerformed
-
-    private void buttonHAVOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHAVOActionPerformed
-        MosesPacket packet = new MosesPacket('H', "AVO", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonHAVOActionPerformed
-
-    private void buttonHAVRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHAVRActionPerformed
-        MosesPacket packet = new MosesPacket('H', "AVR", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonHAVRActionPerformed
-
-    private void buttonHAVSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHAVSActionPerformed
-        MosesPacket packet = new MosesPacket('H', "AVS", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonHAVSActionPerformed
-
-    private void buttonH33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH33ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "3.3", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonH33ActionPerformed
-
-    private void buttonH25V_VCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH25V_VCActionPerformed
-        MosesPacket packet = new MosesPacket('H', "2.5", "VC".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH25V_VCActionPerformed
-
-    private void buttonH25V_VDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH25V_VDActionPerformed
-        MosesPacket packet = new MosesPacket('H', "2.5", "VD".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH25V_VDActionPerformed
-
-    private void buttonH25V_IDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH25V_IDActionPerformed
-        MosesPacket packet = new MosesPacket('H', "2.5", "ID".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH25V_IDActionPerformed
-
-    private void buttonH12V_VAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_VAActionPerformed
-        MosesPacket packet = new MosesPacket('H', "12V", "VA".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH12V_VAActionPerformed
-
-    private void buttonH12V_VBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_VBActionPerformed
-        MosesPacket packet = new MosesPacket('H', "12V", "VB".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH12V_VBActionPerformed
-
-    private void buttonH12V_VCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_VCActionPerformed
-        MosesPacket packet = new MosesPacket('H', "12V", "VC".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH12V_VCActionPerformed
-
-    private void buttonH12V_IAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_IAActionPerformed
-        MosesPacket packet = new MosesPacket('H', "12V", "IA".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH12V_IAActionPerformed
-
-    private void buttonH12V_IBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_IBActionPerformed
-        MosesPacket packet = new MosesPacket('H', "12V", "IB".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonH12V_IBActionPerformed
-
-    private void buttonHBVOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHBVOActionPerformed
-        MosesPacket packet = new MosesPacket('H', "BVO", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonHBVOActionPerformed
-
-    private void buttonHBVRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHBVRActionPerformed
-        MosesPacket packet = new MosesPacket('H', "BVR", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonHBVRActionPerformed
-
-    private void buttonHBVSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHBVSActionPerformed
-        MosesPacket packet = new MosesPacket('H', "BVS", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonHBVSActionPerformed
-
     private void buttonUDK1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUDK1ActionPerformed
         MosesPacket packet = new MosesPacket('U', "DK1", new byte[]{});
         write(packet);
@@ -3085,64 +2957,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         write(packet);
     }//GEN-LAST:event_buttonPTOF_10ActionPerformed
 
-    private void shellSendKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_shellSendKeyPressed
-
-        /* Enter Key Pressed */
-        if (evt.getKeyChar() == '\n') {
-            /* get text from text area */
-            String data = textAreaShellTx.getText() + "\r\n";
-            int numPackets = data.length() / 255;
-
-            /* Check for delimiters in data field */
-            if (data.indexOf(MosesPacket.StartDelimiter) != -1) {
-                JOptionPane.showMessageDialog(null,
-                        "Reserved character '%' can't be used in data field!",
-                        "Error!",
-                        JOptionPane.ERROR_MESSAGE);
-
-                evt.consume();
-                return;
-            } else if (data.indexOf(MosesPacket.StopDelimiter) != -1) {
-                JOptionPane.showMessageDialog(null,
-                        "Reserved character '^' can't be used in data field!",
-                        "Error!",
-                        JOptionPane.ERROR_MESSAGE);
-
-                evt.consume();
-                return;
-            }
-
-            /* write all but the last packet */
-            int i = 0;
-            while (i < numPackets) {
-                MosesPacket tempPacket = new MosesPacket(
-                        MosesPacket.TYPE_MAIN_SHELL,
-                        "INP",
-                        data.substring(i * 255, (i + 1) * 255).getBytes());
-                write(tempPacket);
-
-                //System.out.println("\n" + data.substring(i * 255, (i + 1) * 255));
-                i++;
-            }
-
-            /* write the last packet */
-            MosesPacket tempPacket = new MosesPacket(
-                    MosesPacket.TYPE_MAIN_SHELL,
-                    "INP",
-                    data.substring(i * 255).getBytes());
-            write(tempPacket);
-
-            textAreaShellTx.setText("");
-            textAreaShellTx.setCaretPosition(0);
-
-//            Don't need to do this since SACK will echo back nad be placed in RX area
-//            textAreaShellRX.append(data + "\n");
-//            textAreaShellRX.setCaretPosition(textAreaShellRX.getText().length());
-            evt.consume();
-
-        }
-    }//GEN-LAST:event_shellSendKeyPressed
-
     private void buttonCustomSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCustomSendActionPerformed
 
         /* check for invlid data */
@@ -3190,6 +3004,206 @@ public class MosesClientForm extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_buttonCustomSendActionPerformed
+
+    private void buttonHBVOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHBVOActionPerformed
+        MosesPacket packet = new MosesPacket('H', "BVO", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonHBVOActionPerformed
+
+    private void buttonHBVRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHBVRActionPerformed
+        MosesPacket packet = new MosesPacket('H', "BVR", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonHBVRActionPerformed
+
+    private void buttonHBVSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHBVSActionPerformed
+        MosesPacket packet = new MosesPacket('H', "BVS", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonHBVSActionPerformed
+
+    private void buttonHAVSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHAVSActionPerformed
+        MosesPacket packet = new MosesPacket('H', "AVS", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonHAVSActionPerformed
+
+    private void buttonHAVRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHAVRActionPerformed
+        MosesPacket packet = new MosesPacket('H', "AVR", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonHAVRActionPerformed
+
+    private void buttonHAVOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHAVOActionPerformed
+        MosesPacket packet = new MosesPacket('H', "AVO", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonHAVOActionPerformed
+
+    private void buttonH33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH33ActionPerformed
+        MosesPacket packet = new MosesPacket('H', "3.3", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonH33ActionPerformed
+
+    private void buttonH20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH20ActionPerformed
+        MosesPacket packet = new MosesPacket('H', "2.0", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonH20ActionPerformed
+
+    private void buttonHTMP_LActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_LActionPerformed
+        MosesPacket packet = new MosesPacket('H', "TMP", "L".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHTMP_LActionPerformed
+
+    private void buttonHTMP_UActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_UActionPerformed
+        MosesPacket packet = new MosesPacket('H', "TMP", "U".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHTMP_UActionPerformed
+
+    private void buttonHTMP_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_3ActionPerformed
+        MosesPacket packet = new MosesPacket('H', "TMP", "3".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHTMP_3ActionPerformed
+
+    private void buttonHTMP_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_2ActionPerformed
+        MosesPacket packet = new MosesPacket('H', "TMP", "2".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHTMP_2ActionPerformed
+
+    private void buttonHTMP_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHTMP_1ActionPerformed
+        MosesPacket packet = new MosesPacket('H', "TMP", "1".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHTMP_1ActionPerformed
+
+    private void buttonH36V_IBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH36V_IBActionPerformed
+        MosesPacket packet = new MosesPacket('H', "36V", "IB".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH36V_IBActionPerformed
+
+    private void buttonH36V_IAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH36V_IAActionPerformed
+        MosesPacket packet = new MosesPacket('H', "36V", "IA".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH36V_IAActionPerformed
+
+    private void buttonH36V_VBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH36V_VBActionPerformed
+        MosesPacket packet = new MosesPacket('H', "36V", "VB".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH36V_VBActionPerformed
+
+    private void buttonH36V_VAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH36V_VAActionPerformed
+        MosesPacket packet = new MosesPacket('H', "36V", "VA".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH36V_VAActionPerformed
+
+    private void buttonH12V_IBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_IBActionPerformed
+        MosesPacket packet = new MosesPacket('H', "12V", "IB".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH12V_IBActionPerformed
+
+    private void buttonH12V_IAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_IAActionPerformed
+        MosesPacket packet = new MosesPacket('H', "12V", "IA".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH12V_IAActionPerformed
+
+    private void buttonH12V_VCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_VCActionPerformed
+        MosesPacket packet = new MosesPacket('H', "12V", "VC".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH12V_VCActionPerformed
+
+    private void buttonH12V_VBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_VBActionPerformed
+        MosesPacket packet = new MosesPacket('H', "12V", "VB".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH12V_VBActionPerformed
+
+    private void buttonH12V_VAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH12V_VAActionPerformed
+        MosesPacket packet = new MosesPacket('H', "12V", "VA".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH12V_VAActionPerformed
+
+    private void buttonHM5V_IBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHM5V_IBActionPerformed
+        MosesPacket packet = new MosesPacket('H', "-5V", "IB".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHM5V_IBActionPerformed
+
+    private void buttonHM5V_IAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHM5V_IAActionPerformed
+        MosesPacket packet = new MosesPacket('H', "-5V", "IA".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHM5V_IAActionPerformed
+
+    private void buttonHM5V_VBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHM5V_VBActionPerformed
+        MosesPacket packet = new MosesPacket('H', "-5V", "VB".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHM5V_VBActionPerformed
+
+    private void buttonHM5V_VAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHM5V_VAActionPerformed
+        MosesPacket packet = new MosesPacket('H', "-5V", "VA".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHM5V_VAActionPerformed
+
+    private void buttonHP5V_ICActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_ICActionPerformed
+        MosesPacket packet = new MosesPacket('H', "+5V", "IC".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP5V_ICActionPerformed
+
+    private void buttonHP5V_IBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_IBActionPerformed
+        MosesPacket packet = new MosesPacket('H', "+5V", "IB".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP5V_IBActionPerformed
+
+    private void buttonHP5V_IAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_IAActionPerformed
+        MosesPacket packet = new MosesPacket('H', "+5V", "IA".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP5V_IAActionPerformed
+
+    private void buttonHP5V_VDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_VDActionPerformed
+        MosesPacket packet = new MosesPacket('H', "+5V", "VD".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP5V_VDActionPerformed
+
+    private void buttonHP5V_VAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_VAActionPerformed
+        MosesPacket packet = new MosesPacket('H', "+5V", "VA".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP5V_VAActionPerformed
+
+    private void buttonHP5V_VBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_VBActionPerformed
+        MosesPacket packet = new MosesPacket('H', "+5V", "VB".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP5V_VBActionPerformed
+
+    private void buttonHP5V_VCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP5V_VCActionPerformed
+        MosesPacket packet = new MosesPacket('H', "+5V", "VC".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP5V_VCActionPerformed
+
+    private void buttonH25V_IDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH25V_IDActionPerformed
+        MosesPacket packet = new MosesPacket('H', "2.5", "ID".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH25V_IDActionPerformed
+
+    private void buttonH25V_VDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH25V_VDActionPerformed
+        MosesPacket packet = new MosesPacket('H', "2.5", "VD".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH25V_VDActionPerformed
+
+    private void buttonH25V_VCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonH25V_VCActionPerformed
+        MosesPacket packet = new MosesPacket('H', "2.5", "VC".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonH25V_VCActionPerformed
+
+    private void buttonHP_FC_P2_5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P2_5V_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_FC_P2_5V_VActionPerformed
+
+    private void buttonHP_ROE_P2_5VD_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P2_5VD_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P2_5VD_VActionPerformed
+
+    private void buttonHP_ROE_P2_5VD_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P2_5VD_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P2_5VD_IActionPerformed
+
+    private void buttonHP_ROE_P5VAA_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P5VAA_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P5VAA_VActionPerformed
+
+    private void buttonHP_ROE_P5VAA_V1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P5VAA_V1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P5VAA_V1ActionPerformed
 
     private Thread startListenerThread() {
         Thread thread = new Thread(new Runnable() {
@@ -3349,8 +3363,8 @@ public class MosesClientForm extends javax.swing.JFrame {
                         data.substring(i * 255).getBytes());
                 write(tempPacket);
 
-                textAreaShellTx.setText("");
-                textAreaShellTx.setCaretPosition(0);
+//                textAreaShellTx.setText("");
+//                textAreaShellTx.setCaretPosition(0);
 
 //            Don't need to do this since SACK will echo back nad be placed in RX area
 //            textAreaShellRX.append(data + "\n");
@@ -3839,22 +3853,22 @@ public class MosesClientForm extends javax.swing.JFrame {
     public void setFieldkKTMP_U(JTextField fieldkKTMP_U) {
         this.fieldkKTMP_U = fieldkKTMP_U;
     }
-
-    public JTextArea getTextAreaShellRX() {
-        return textAreaShellRX;
-    }
-
-    public void setTextAreaShellRX(JTextArea textAreaShellRX) {
-        this.textAreaShellRX = textAreaShellRX;
-    }
-
-    public JTextArea getTextAreaShellTx() {
-        return textAreaShellTx;
-    }
-
-    public void setTextAreaShellTx(JTextArea textAreaShellTx) {
-        this.textAreaShellTx = textAreaShellTx;
-    }
+//
+//    public JTextArea getTextAreaShellRX() {
+//        return textAreaShellRX;
+//    }
+//
+//    public void setTextAreaShellRX(JTextArea textAreaShellRX) {
+//        this.textAreaShellRX = textAreaShellRX;
+//    }
+//
+//    public JTextArea getTextAreaShellTx() {
+//        return textAreaShellTx;
+//    }
+//
+//    public void setTextAreaShellTx(JTextArea textAreaShellTx) {
+//        this.textAreaShellTx = textAreaShellTx;
+//    }
 
     public JTextArea getTextAreaTimer() {
         return textAreaTimer;
@@ -3934,6 +3948,11 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JButton buttonHP5V_VB;
     private javax.swing.JButton buttonHP5V_VC;
     private javax.swing.JButton buttonHP5V_VD;
+    private javax.swing.JButton buttonHP_FC_P2_5V_V;
+    private javax.swing.JButton buttonHP_ROE_P2_5VD_I;
+    private javax.swing.JButton buttonHP_ROE_P2_5VD_V;
+    private javax.swing.JButton buttonHP_ROE_P5VAA_V;
+    private javax.swing.JButton buttonHP_ROE_P5VAA_V1;
     private javax.swing.JButton buttonHTMP_1;
     private javax.swing.JButton buttonHTMP_2;
     private javax.swing.JButton buttonHTMP_3;
@@ -4064,12 +4083,18 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JTextField fieldkKP5V_VB;
     private javax.swing.JTextField fieldkKP5V_VC;
     private javax.swing.JTextField fieldkKP5V_VD;
+    private javax.swing.JTextField fieldkKP_FC_P2_5V_V;
+    private javax.swing.JTextField fieldkKP_ROE_P2_5VD_I;
+    private javax.swing.JTextField fieldkKP_ROE_P2_5VD_V;
+    private javax.swing.JTextField fieldkKP_ROE_P5VAA_V;
+    private javax.swing.JTextField fieldkKP_ROE_P5VAA_V1;
     private javax.swing.JTextField fieldkKTMP_1;
     private javax.swing.JTextField fieldkKTMP_2;
     private javax.swing.JTextField fieldkKTMP_3;
     private javax.swing.JTextField fieldkKTMP_L;
     private javax.swing.JTextField fieldkKTMP_U;
     private javax.swing.JPanel hkPanel;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -4099,12 +4124,11 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JPanel mdaqPanel;
     private javax.swing.JMenuItem menu_File_Connect;
@@ -4115,8 +4139,6 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JTextArea textAreaMDAQ;
     private javax.swing.JTextArea textAreaRecieved;
     private javax.swing.JTextArea textAreaSent;
-    private javax.swing.JTextArea textAreaShellRX;
-    private javax.swing.JTextArea textAreaShellTx;
     private javax.swing.JTextArea textAreaTimer;
     private javax.swing.JPanel timerPanel;
     private javax.swing.JPanel txRxPanel;
