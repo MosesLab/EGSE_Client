@@ -47,6 +47,7 @@ public class MosesClientForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
         txRxPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -211,8 +212,72 @@ public class MosesClientForm extends javax.swing.JFrame {
         fieldkKP_ROE_P2_5VD_I = new javax.swing.JTextField();
         buttonHP_ROE_P5VAA_V = new javax.swing.JButton();
         fieldkKP_ROE_P5VAA_V = new javax.swing.JTextField();
-        buttonHP_ROE_P5VAA_V1 = new javax.swing.JButton();
-        fieldkKP_ROE_P5VAA_V1 = new javax.swing.JTextField();
+        buttonHP_ROE_P5VAB_V = new javax.swing.JButton();
+        fieldkKP_ROE_P5VAB_V = new javax.swing.JTextField();
+        buttonHP_ROE_P5VD_V = new javax.swing.JButton();
+        fieldkKP_ROE_P5VD_V = new javax.swing.JTextField();
+        fieldkKP_ROE_P12VA_V = new javax.swing.JTextField();
+        buttonHP_ROE_P12VA_V = new javax.swing.JButton();
+        buttonHP_ROE_P12VB_V = new javax.swing.JButton();
+        fieldkKP_ROE_P12VB_V = new javax.swing.JTextField();
+        buttonHP_ROE_P36VA_V = new javax.swing.JButton();
+        fieldkKP_ROE_P36VA_V = new javax.swing.JTextField();
+        buttonHP_ROE_P36VB_V = new javax.swing.JButton();
+        fieldkKP_ROE_P36VB_V = new javax.swing.JTextField();
+        fieldkKP_ROE_TEMP_U = new javax.swing.JTextField();
+        buttonHP_ROE_TEMP_U = new javax.swing.JButton();
+        fieldkKP_ROE_TEMP_L = new javax.swing.JTextField();
+        buttonHP_ROE_TEMP_L = new javax.swing.JButton();
+        buttonHP_FC_P5V_V = new javax.swing.JButton();
+        fieldkKP_FC_P5V_V = new javax.swing.JTextField();
+        buttonHP_FC_P12V_V = new javax.swing.JButton();
+        fieldkKP_FC_P12V_V = new javax.swing.JTextField();
+        buttonHP_FC_TEMP_1 = new javax.swing.JButton();
+        fieldkKP_FC_TEMP_1 = new javax.swing.JTextField();
+        buttonHP_FC_TEMP_2 = new javax.swing.JButton();
+        fieldkKP_FC_TEMP_2 = new javax.swing.JTextField();
+        buttonHP_FC_TEMP_3 = new javax.swing.JButton();
+        fieldkKP_FC_TEMP_3 = new javax.swing.JTextField();
+        buttonHP_ROE_P5VAA_I = new javax.swing.JButton();
+        fieldkKP_ROE_P5VAA_I = new javax.swing.JTextField();
+        buttonHP_ROE_P5VAB_I = new javax.swing.JButton();
+        fieldkKP_ROE_P5VAB_I = new javax.swing.JTextField();
+        buttonHP_ROE_P5VD_I = new javax.swing.JButton();
+        fieldkKP_ROE_P5VD_I = new javax.swing.JTextField();
+        buttonHP_ROE_P12VA_I = new javax.swing.JButton();
+        fieldkKP_ROE_P12VA_I = new javax.swing.JTextField();
+        fieldkKP_ROE_P12VB_I = new javax.swing.JTextField();
+        buttonHP_ROE_P12VB_I = new javax.swing.JButton();
+        buttonHP_ROE_P36VA_I = new javax.swing.JButton();
+        fieldkKP_ROE_P36VA_I = new javax.swing.JTextField();
+        fieldkKP_ROE_P36VB_I = new javax.swing.JTextField();
+        buttonHP_ROE_P36VB_I = new javax.swing.JButton();
+        jLabel25 = new javax.swing.JLabel();
+        fieldHK2LastAck = new javax.swing.JTextField();
+        buttonHP_FC_P2V_V = new javax.swing.JButton();
+        fieldkKP_FC_P2V_V = new javax.swing.JTextField();
+        buttonHP_FC_P3_3V_V = new javax.swing.JButton();
+        fieldkKP_FC_P3_3V_V = new javax.swing.JTextField();
+        buttonHP_ROE_N5VAA_V = new javax.swing.JButton();
+        fieldkKP_ROE_N5VAA_V = new javax.swing.JTextField();
+        buttonHP_ROE_N5VAB_V = new javax.swing.JButton();
+        fieldkKP_ROE_N5VAB_V = new javax.swing.JTextField();
+        buttonHP_ROE_N5VAA_I = new javax.swing.JButton();
+        fieldkKP_ROE_N5VAA_I = new javax.swing.JTextField();
+        buttonHP_ROE_N5VAB_I = new javax.swing.JButton();
+        fieldkKP_ROE_N5VAB_I = new javax.swing.JTextField();
+        buttonHP_CCDA_VOD_I = new javax.swing.JButton();
+        buttonHP_CCDA_VRD_I = new javax.swing.JButton();
+        buttonHP_CCDA_VSS_I = new javax.swing.JButton();
+        fieldkKP_CCDA_VSS_I = new javax.swing.JTextField();
+        fieldkKP_CCDA_VRD_I = new javax.swing.JTextField();
+        fieldkKP_CCDA_VOD_I = new javax.swing.JTextField();
+        buttonHP_CCDB_VOD_I = new javax.swing.JButton();
+        buttonHP_CCDB_VRD_I = new javax.swing.JButton();
+        buttonHP_CCDB_VSS_I = new javax.swing.JButton();
+        fieldkKP_CCDB_VSS_I = new javax.swing.JTextField();
+        fieldkKP_CCDB_VRD_I = new javax.swing.JTextField();
+        fieldkKP_CCDB_VOD_I = new javax.swing.JTextField();
         mdaqPanel = new javax.swing.JPanel();
         buttonMGSN = new javax.swing.JButton();
         buttonMSSQ = new javax.swing.JButton();
@@ -274,6 +339,8 @@ public class MosesClientForm extends javax.swing.JFrame {
         menu_File_Disconnect = new javax.swing.JMenuItem();
         menu_File_Exit = new javax.swing.JMenuItem();
 
+        jTextField1.setText("jTextField1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Moses Client");
         setResizable(false);
@@ -329,8 +396,8 @@ public class MosesClientForm extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         buttonUDK1.setText("Dark Seq 1");
@@ -449,7 +516,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addComponent(buttonUDSP)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonUTST)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fieldTimerLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -474,7 +541,7 @@ public class MosesClientForm extends javax.swing.JFrame {
             .addGroup(shellPanelLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(jButton1)
-                .addContainerGap(385, Short.MAX_VALUE))
+                .addContainerGap(424, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Shell", shellPanel);
@@ -778,7 +845,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                                         .addGap(10, 10, 10)
                                         .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(fieldPS_1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(fieldPS_2)))
+                                            .addComponent(fieldPS_2, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)))
                                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, powerPanelLayout.createSequentialGroup()
                                         .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1567,13 +1634,14 @@ public class MosesClientForm extends javax.swing.JFrame {
                                         .addComponent(fieldkKTMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(buttonHTMP_1))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonHTMP_2)
-                                    .addComponent(fieldkKTMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(buttonHAVO)
-                                    .addComponent(buttonHBVO)
-                                    .addComponent(fieldkKBVO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(fieldkKAVO))
+                                .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(fieldkKAVO)
+                                    .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(buttonHTMP_2)
+                                        .addComponent(fieldkKTMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(buttonHAVO)
+                                        .addComponent(buttonHBVO)
+                                        .addComponent(fieldkKBVO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(hkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(buttonHTMP_3)
@@ -1615,6 +1683,11 @@ public class MosesClientForm extends javax.swing.JFrame {
         });
 
         fieldkKP_FC_P2_5V_V.setEditable(false);
+        fieldkKP_FC_P2_5V_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fieldkKP_FC_P2_5V_VActionPerformed(evt);
+            }
+        });
 
         fieldkKP_ROE_P2_5VD_V.setEditable(false);
 
@@ -1643,14 +1716,297 @@ public class MosesClientForm extends javax.swing.JFrame {
 
         fieldkKP_ROE_P5VAA_V.setEditable(false);
 
-        buttonHP_ROE_P5VAA_V1.setText("Get +5VAA_V ROE");
-        buttonHP_ROE_P5VAA_V1.addActionListener(new java.awt.event.ActionListener() {
+        buttonHP_ROE_P5VAB_V.setText("Get +5VAB_V ROE");
+        buttonHP_ROE_P5VAB_V.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonHP_ROE_P5VAA_V1ActionPerformed(evt);
+                buttonHP_ROE_P5VAB_VActionPerformed(evt);
             }
         });
 
-        fieldkKP_ROE_P5VAA_V1.setEditable(false);
+        fieldkKP_ROE_P5VAB_V.setEditable(false);
+
+        buttonHP_ROE_P5VD_V.setText("Get +5VD_V ROE");
+        buttonHP_ROE_P5VD_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P5VD_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P5VD_V.setEditable(false);
+
+        fieldkKP_ROE_P12VA_V.setEditable(false);
+
+        buttonHP_ROE_P12VA_V.setText("Get +12VA_V ROE");
+        buttonHP_ROE_P12VA_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P12VA_VActionPerformed(evt);
+            }
+        });
+
+        buttonHP_ROE_P12VB_V.setText("Get +12VB_V ROE");
+        buttonHP_ROE_P12VB_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P12VB_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P12VB_V.setEditable(false);
+
+        buttonHP_ROE_P36VA_V.setText("Get +36VA_V ROE");
+        buttonHP_ROE_P36VA_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P36VA_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P36VA_V.setEditable(false);
+
+        buttonHP_ROE_P36VB_V.setText("Get +36VB_V ROE");
+        buttonHP_ROE_P36VB_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P36VB_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P36VB_V.setEditable(false);
+
+        fieldkKP_ROE_TEMP_U.setEditable(false);
+
+        buttonHP_ROE_TEMP_U.setText("Get Temp Upper ROE");
+        buttonHP_ROE_TEMP_U.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_TEMP_UActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_TEMP_L.setEditable(false);
+
+        buttonHP_ROE_TEMP_L.setText("Get Temp Lower ROE");
+        buttonHP_ROE_TEMP_L.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_TEMP_LActionPerformed(evt);
+            }
+        });
+
+        buttonHP_FC_P5V_V.setText("Get +5V_V FC");
+        buttonHP_FC_P5V_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_FC_P5V_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_FC_P5V_V.setEditable(false);
+
+        buttonHP_FC_P12V_V.setText("Get +12V_V FC");
+        buttonHP_FC_P12V_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_FC_P12V_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_FC_P12V_V.setEditable(false);
+
+        buttonHP_FC_TEMP_1.setText("Get Temp 1 FC");
+        buttonHP_FC_TEMP_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_FC_TEMP_1ActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_FC_TEMP_1.setEditable(false);
+
+        buttonHP_FC_TEMP_2.setText("Get Temp 2 FC");
+        buttonHP_FC_TEMP_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_FC_TEMP_2ActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_FC_TEMP_2.setEditable(false);
+
+        buttonHP_FC_TEMP_3.setText("Get Temp 3 FC");
+        buttonHP_FC_TEMP_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_FC_TEMP_3ActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_FC_TEMP_3.setEditable(false);
+
+        buttonHP_ROE_P5VAA_I.setText("Get +5VAA_I ROE");
+        buttonHP_ROE_P5VAA_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P5VAA_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P5VAA_I.setEditable(false);
+
+        buttonHP_ROE_P5VAB_I.setText("Get +5VAB_I ROE");
+        buttonHP_ROE_P5VAB_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P5VAB_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P5VAB_I.setEditable(false);
+
+        buttonHP_ROE_P5VD_I.setText("Get +5VD_I ROE");
+        buttonHP_ROE_P5VD_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P5VD_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P5VD_I.setEditable(false);
+
+        buttonHP_ROE_P12VA_I.setText("Get +12VA_I ROE");
+        buttonHP_ROE_P12VA_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P12VA_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P12VA_I.setEditable(false);
+
+        fieldkKP_ROE_P12VB_I.setEditable(false);
+
+        buttonHP_ROE_P12VB_I.setText("Get +12VB_I ROE");
+        buttonHP_ROE_P12VB_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P12VB_IActionPerformed(evt);
+            }
+        });
+
+        buttonHP_ROE_P36VA_I.setText("Get +36VA_I ROE");
+        buttonHP_ROE_P36VA_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P36VA_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_P36VA_I.setEditable(false);
+
+        fieldkKP_ROE_P36VB_I.setEditable(false);
+
+        buttonHP_ROE_P36VB_I.setText("Get +36VB_I ROE");
+        buttonHP_ROE_P36VB_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_P36VB_IActionPerformed(evt);
+            }
+        });
+
+        jLabel25.setText("Time of last ACK:");
+
+        fieldHK2LastAck.setEditable(false);
+
+        buttonHP_FC_P2V_V.setText("Get +2.0V_V FC");
+        buttonHP_FC_P2V_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_FC_P2V_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_FC_P2V_V.setEditable(false);
+
+        buttonHP_FC_P3_3V_V.setText("Get +3.3V_V FC");
+        buttonHP_FC_P3_3V_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_FC_P3_3V_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_FC_P3_3V_V.setEditable(false);
+
+        buttonHP_ROE_N5VAA_V.setText("Get -5VAA_V ROE");
+        buttonHP_ROE_N5VAA_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_N5VAA_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_N5VAA_V.setEditable(false);
+
+        buttonHP_ROE_N5VAB_V.setText("Get -5VAB_V ROE");
+        buttonHP_ROE_N5VAB_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_N5VAB_VActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_N5VAB_V.setEditable(false);
+
+        buttonHP_ROE_N5VAA_I.setText("Get -5VAA_I ROE");
+        buttonHP_ROE_N5VAA_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_N5VAA_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_N5VAA_I.setEditable(false);
+
+        buttonHP_ROE_N5VAB_I.setText("Get -5VAB_I ROE");
+        buttonHP_ROE_N5VAB_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_ROE_N5VAB_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_ROE_N5VAB_I.setEditable(false);
+
+        buttonHP_CCDA_VOD_I.setText("Get CCDA_VOD_I");
+        buttonHP_CCDA_VOD_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_CCDA_VOD_IActionPerformed(evt);
+            }
+        });
+
+        buttonHP_CCDA_VRD_I.setText("Get CCDA_VRD_I");
+        buttonHP_CCDA_VRD_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_CCDA_VRD_IActionPerformed(evt);
+            }
+        });
+
+        buttonHP_CCDA_VSS_I.setText("Get CCDA_VSS_I");
+        buttonHP_CCDA_VSS_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_CCDA_VSS_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_CCDA_VSS_I.setEditable(false);
+
+        fieldkKP_CCDA_VRD_I.setEditable(false);
+
+        fieldkKP_CCDA_VOD_I.setEditable(false);
+
+        buttonHP_CCDB_VOD_I.setText("Get CCDB_VOD_I");
+        buttonHP_CCDB_VOD_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_CCDB_VOD_IActionPerformed(evt);
+            }
+        });
+
+        buttonHP_CCDB_VRD_I.setText("Get CCDB_VRD_I");
+        buttonHP_CCDB_VRD_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_CCDB_VRD_IActionPerformed(evt);
+            }
+        });
+
+        buttonHP_CCDB_VSS_I.setText("Get CCDB_VSS_I");
+        buttonHP_CCDB_VSS_I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHP_CCDB_VSS_IActionPerformed(evt);
+            }
+        });
+
+        fieldkKP_CCDB_VSS_I.setEditable(false);
+
+        fieldkKP_CCDB_VRD_I.setEditable(false);
+
+        fieldkKP_CCDB_VOD_I.setEditable(false);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -1660,61 +2016,332 @@ public class MosesClientForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(buttonHP_FC_P2_5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldkKP_FC_P2_5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(buttonHP_ROE_N5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldkKP_ROE_N5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(buttonHP_ROE_N5VAB_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldkKP_ROE_N5VAB_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(buttonHP_ROE_N5VAA_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldkKP_ROE_N5VAA_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(buttonHP_ROE_N5VAB_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldkKP_ROE_N5VAB_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buttonHP_ROE_TEMP_L)
+                            .addComponent(buttonHP_ROE_TEMP_U)))
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(buttonHP_ROE_P5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P5VAB_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(buttonHP_ROE_P5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel4Layout.createSequentialGroup()
+                                            .addComponent(fieldkKP_ROE_P5VAB_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(buttonHP_ROE_P5VAB_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKP_ROE_P5VAB_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(jPanel4Layout.createSequentialGroup()
+                                            .addComponent(fieldkKP_ROE_P5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(buttonHP_ROE_P5VAA_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKP_ROE_P5VAA_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel4Layout.createSequentialGroup()
+                                            .addGap(12, 12, 12)
+                                            .addComponent(buttonHP_FC_P2_5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKP_FC_P2_5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(jPanel4Layout.createSequentialGroup()
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(buttonHP_FC_P3_3V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(fieldkKP_FC_P3_3V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addComponent(fieldkKP_ROE_P5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(buttonHP_ROE_P5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKP_ROE_P5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(buttonHP_FC_P5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKP_FC_P5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(buttonHP_ROE_P2_5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(fieldkKP_ROE_P2_5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(buttonHP_ROE_P2_5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(fieldkKP_ROE_P2_5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(buttonHP_FC_P2V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(fieldkKP_FC_P2V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addComponent(buttonHP_CCDA_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKP_CCDA_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addComponent(buttonHP_CCDA_VRD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKP_CCDA_VRD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addComponent(buttonHP_CCDA_VSS_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKP_CCDA_VSS_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addComponent(buttonHP_CCDB_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKP_CCDB_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addComponent(buttonHP_CCDB_VRD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKP_CCDB_VRD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addComponent(buttonHP_CCDB_VSS_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(fieldkKP_CCDB_VSS_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel25)
+                                .addComponent(fieldHK2LastAck, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(buttonHP_ROE_P2_5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldkKP_ROE_P2_5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(buttonHP_ROE_P2_5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldkKP_ROE_P2_5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(buttonHP_ROE_P5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldkKP_ROE_P5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(buttonHP_ROE_P5VAA_V1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldkKP_ROE_P5VAA_V1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(buttonHP_ROE_P36VA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P36VB_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(fieldkKP_ROE_P36VA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldkKP_ROE_P36VB_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(buttonHP_ROE_P12VA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P12VB_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(fieldkKP_ROE_P12VA_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldkKP_ROE_P12VB_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(buttonHP_ROE_P36VA_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P36VB_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(fieldkKP_ROE_P36VA_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldkKP_ROE_P36VB_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(buttonHP_ROE_P12VA_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P12VB_I, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(fieldkKP_ROE_P12VA_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldkKP_ROE_P12VB_I, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(buttonHP_FC_P12V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldkKP_FC_P12V_V, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(buttonHP_FC_TEMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldkKP_FC_TEMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(buttonHP_FC_TEMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldkKP_FC_TEMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(buttonHP_FC_TEMP_3, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(fieldkKP_ROE_TEMP_U, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldkKP_FC_TEMP_3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldkKP_ROE_TEMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(fieldkKP_FC_P2_5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(buttonHP_FC_P2_5V_V))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(13, 13, 13)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(buttonHP_ROE_P2_5VD_V)
+                                    .addComponent(fieldkKP_ROE_P2_5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P2_5VD_I)
+                                    .addComponent(fieldkKP_ROE_P2_5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldkKP_FC_P2V_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_FC_P2V_V))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(buttonHP_ROE_P5VAA_V)
+                                    .addComponent(fieldkKP_ROE_P5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(fieldkKP_ROE_P5VAB_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P5VAB_V))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(fieldkKP_ROE_P5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P5VD_V)
+                                    .addComponent(fieldkKP_ROE_P5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P5VD_I)
+                                    .addComponent(fieldkKP_FC_P5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_FC_P5V_V))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(fieldkKP_ROE_P12VA_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(buttonHP_ROE_P12VA_V))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(fieldkKP_ROE_P12VB_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(buttonHP_ROE_P12VB_V))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(fieldkKP_ROE_P36VA_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(buttonHP_ROE_P36VA_V))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(fieldkKP_ROE_P36VB_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(buttonHP_ROE_P36VB_V)))
+                                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(fieldkKP_ROE_P36VA_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(buttonHP_ROE_P36VA_I))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(fieldkKP_ROE_P36VB_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(buttonHP_ROE_P36VB_I)))))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(fieldkKP_ROE_P12VA_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(buttonHP_ROE_P12VA_I)
+                                            .addComponent(fieldkKP_FC_P12V_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(buttonHP_FC_P12V_V))
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(fieldkKP_ROE_P12VB_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(buttonHP_ROE_P12VB_I)))
+                                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                                .addGap(17, 17, 17)
+                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(buttonHP_FC_TEMP_1)
+                                                    .addComponent(fieldkKP_FC_TEMP_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(buttonHP_FC_TEMP_2)
+                                                    .addComponent(fieldkKP_FC_TEMP_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(buttonHP_FC_TEMP_3)
+                                                    .addComponent(fieldkKP_FC_TEMP_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(34, 34, 34)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(buttonHP_ROE_P5VAA_I)
+                                    .addComponent(fieldkKP_ROE_P5VAA_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldkKP_FC_P2_5V_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_FC_P2_5V_V))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(fieldkKP_ROE_P5VAB_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_P5VAB_I)
+                                    .addComponent(fieldkKP_FC_P3_3V_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_FC_P3_3V_V))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonHP_ROE_TEMP_U)
+                            .addComponent(fieldkKP_ROE_TEMP_U, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonHP_ROE_TEMP_L)
+                            .addComponent(fieldkKP_ROE_TEMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(fieldkKP_ROE_P2_5VD_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(buttonHP_ROE_P2_5VD_V))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(fieldkKP_ROE_N5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_N5VAA_V))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(fieldkKP_ROE_N5VAB_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_N5VAB_V)))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(fieldkKP_ROE_N5VAA_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_N5VAA_I))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(fieldkKP_ROE_N5VAB_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonHP_ROE_N5VAB_I))))))
+                .addGap(8, 8, 8)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel25)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(fieldHK2LastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(buttonHP_CCDA_VOD_I)
+                                .addComponent(fieldkKP_CCDA_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(buttonHP_CCDA_VRD_I)
+                                .addComponent(fieldkKP_CCDA_VRD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(buttonHP_CCDA_VSS_I)
+                                .addComponent(fieldkKP_CCDA_VSS_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(fieldkKP_ROE_P2_5VD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(buttonHP_ROE_P2_5VD_I))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(fieldkKP_ROE_P5VAA_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(buttonHP_ROE_P5VAA_V))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(fieldkKP_ROE_P5VAA_V1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(buttonHP_ROE_P5VAA_V1))
-                .addContainerGap(256, Short.MAX_VALUE))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonHP_CCDB_VOD_I)
+                            .addComponent(fieldkKP_CCDB_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonHP_CCDB_VRD_I)
+                            .addComponent(fieldkKP_CCDB_VRD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonHP_CCDB_VSS_I)
+                            .addComponent(fieldkKP_CCDB_VSS_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("HouseKeeping 2", jPanel4);
@@ -2070,7 +2697,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE))
                             .addGroup(mdaqPanelLayout.createSequentialGroup()
                                 .addGap(16, 16, 16)
-                                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE)))))
+                                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)))))
                 .addGap(17, 17, 17))
         );
         mdaqPanelLayout.setVerticalGroup(
@@ -2209,7 +2836,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                             .addComponent(fieldCustomData, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(fieldCustomSubType, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(fieldCustomType, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(382, Short.MAX_VALUE))
+                .addContainerGap(389, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2228,7 +2855,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addComponent(jLabel20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(buttonCustomSend)
-                .addContainerGap(303, Short.MAX_VALUE))
+                .addContainerGap(339, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Custom Uplink", jPanel3);
@@ -2244,7 +2871,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -2297,10 +2924,14 @@ public class MosesClientForm extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txRxPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txRxPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(2, 2, 2))))
         );
 
         pack();
@@ -3185,25 +3816,153 @@ public class MosesClientForm extends javax.swing.JFrame {
         write(packet);
     }//GEN-LAST:event_buttonH25V_VCActionPerformed
 
-    private void buttonHP_FC_P2_5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P2_5V_VActionPerformed
+    private void buttonHP_ROE_P36VB_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P36VB_IActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_buttonHP_FC_P2_5V_VActionPerformed
+    }//GEN-LAST:event_buttonHP_ROE_P36VB_IActionPerformed
 
-    private void buttonHP_ROE_P2_5VD_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P2_5VD_VActionPerformed
+    private void buttonHP_ROE_P36VA_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P36VA_IActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_buttonHP_ROE_P2_5VD_VActionPerformed
+    }//GEN-LAST:event_buttonHP_ROE_P36VA_IActionPerformed
 
-    private void buttonHP_ROE_P2_5VD_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P2_5VD_IActionPerformed
+    private void buttonHP_ROE_P12VB_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P12VB_IActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_buttonHP_ROE_P2_5VD_IActionPerformed
+    }//GEN-LAST:event_buttonHP_ROE_P12VB_IActionPerformed
+
+    private void buttonHP_ROE_P12VA_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P12VA_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P12VA_IActionPerformed
+
+    private void buttonHP_ROE_P5VD_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P5VD_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P5VD_IActionPerformed
+
+    private void buttonHP_ROE_P5VAB_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P5VAB_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P5VAB_IActionPerformed
+
+    private void buttonHP_ROE_P5VAA_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P5VAA_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P5VAA_IActionPerformed
+
+    private void buttonHP_FC_TEMP_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_TEMP_3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_FC_TEMP_3ActionPerformed
+
+    private void buttonHP_FC_TEMP_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_TEMP_2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_FC_TEMP_2ActionPerformed
+
+    private void buttonHP_FC_TEMP_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_TEMP_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_FC_TEMP_1ActionPerformed
+
+    private void buttonHP_FC_P12V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P12V_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_FC_P12V_VActionPerformed
+
+    private void buttonHP_FC_P5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P5V_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_FC_P5V_VActionPerformed
+
+    private void buttonHP_ROE_TEMP_LActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_TEMP_LActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_TEMP_LActionPerformed
+
+    private void buttonHP_ROE_TEMP_UActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_TEMP_UActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_TEMP_UActionPerformed
+
+    private void buttonHP_ROE_P36VB_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P36VB_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P36VB_VActionPerformed
+
+    private void buttonHP_ROE_P36VA_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P36VA_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P36VA_VActionPerformed
+
+    private void buttonHP_ROE_P12VB_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P12VB_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P12VB_VActionPerformed
+
+    private void buttonHP_ROE_P12VA_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P12VA_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P12VA_VActionPerformed
+
+    private void buttonHP_ROE_P5VD_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P5VD_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P5VD_VActionPerformed
+
+    private void buttonHP_ROE_P5VAB_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P5VAB_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P5VAB_VActionPerformed
 
     private void buttonHP_ROE_P5VAA_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P5VAA_VActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonHP_ROE_P5VAA_VActionPerformed
 
-    private void buttonHP_ROE_P5VAA_V1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P5VAA_V1ActionPerformed
+    private void buttonHP_ROE_P2_5VD_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P2_5VD_IActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_buttonHP_ROE_P5VAA_V1ActionPerformed
+    }//GEN-LAST:event_buttonHP_ROE_P2_5VD_IActionPerformed
+
+    private void buttonHP_ROE_P2_5VD_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P2_5VD_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_P2_5VD_VActionPerformed
+
+    private void fieldkKP_FC_P2_5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldkKP_FC_P2_5V_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fieldkKP_FC_P2_5V_VActionPerformed
+
+    private void buttonHP_FC_P2_5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P2_5V_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_FC_P2_5V_VActionPerformed
+
+    private void buttonHP_FC_P2V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P2V_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_FC_P2V_VActionPerformed
+
+    private void buttonHP_FC_P3_3V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P3_3V_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_FC_P3_3V_VActionPerformed
+
+    private void buttonHP_ROE_N5VAA_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_N5VAA_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_N5VAA_VActionPerformed
+
+    private void buttonHP_ROE_N5VAB_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_N5VAB_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_N5VAB_VActionPerformed
+
+    private void buttonHP_ROE_N5VAA_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_N5VAA_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_N5VAA_IActionPerformed
+
+    private void buttonHP_ROE_N5VAB_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_N5VAB_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_ROE_N5VAB_IActionPerformed
+
+    private void buttonHP_CCDA_VOD_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_CCDA_VOD_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_CCDA_VOD_IActionPerformed
+
+    private void buttonHP_CCDA_VRD_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_CCDA_VRD_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_CCDA_VRD_IActionPerformed
+
+    private void buttonHP_CCDA_VSS_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_CCDA_VSS_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_CCDA_VSS_IActionPerformed
+
+    private void buttonHP_CCDB_VOD_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_CCDB_VOD_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_CCDB_VOD_IActionPerformed
+
+    private void buttonHP_CCDB_VRD_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_CCDB_VRD_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_CCDB_VRD_IActionPerformed
+
+    private void buttonHP_CCDB_VSS_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_CCDB_VSS_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHP_CCDB_VSS_IActionPerformed
 
     private Thread startListenerThread() {
         Thread thread = new Thread(new Runnable() {
@@ -3440,7 +4199,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         System.out.println("*****************************\n\n");
 
         try {
-            String xterm_cmd = "/home/byrdie/NetBeansProjects/EGSE_launch_xterm/EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
+            String xterm_cmd = "/home/moses/jacksonremington/EGSE_launch_xterm/EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
 //            Runtime xterm_rt = Runtime.getRuntime();
 //            xterm_p = xterm_rt.exec(xterm_cmd);
             ProcessBuilder xterm_pb = new ProcessBuilder(xterm_cmd);
@@ -3948,11 +4707,42 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JButton buttonHP5V_VB;
     private javax.swing.JButton buttonHP5V_VC;
     private javax.swing.JButton buttonHP5V_VD;
+    private javax.swing.JButton buttonHP_CCDA_VOD_I;
+    private javax.swing.JButton buttonHP_CCDA_VRD_I;
+    private javax.swing.JButton buttonHP_CCDA_VSS_I;
+    private javax.swing.JButton buttonHP_CCDB_VOD_I;
+    private javax.swing.JButton buttonHP_CCDB_VRD_I;
+    private javax.swing.JButton buttonHP_CCDB_VSS_I;
+    private javax.swing.JButton buttonHP_FC_P12V_V;
+    private javax.swing.JButton buttonHP_FC_P2V_V;
     private javax.swing.JButton buttonHP_FC_P2_5V_V;
+    private javax.swing.JButton buttonHP_FC_P3_3V_V;
+    private javax.swing.JButton buttonHP_FC_P5V_V;
+    private javax.swing.JButton buttonHP_FC_TEMP_1;
+    private javax.swing.JButton buttonHP_FC_TEMP_2;
+    private javax.swing.JButton buttonHP_FC_TEMP_3;
+    private javax.swing.JButton buttonHP_ROE_N5VAA_I;
+    private javax.swing.JButton buttonHP_ROE_N5VAA_V;
+    private javax.swing.JButton buttonHP_ROE_N5VAB_I;
+    private javax.swing.JButton buttonHP_ROE_N5VAB_V;
+    private javax.swing.JButton buttonHP_ROE_P12VA_I;
+    private javax.swing.JButton buttonHP_ROE_P12VA_V;
+    private javax.swing.JButton buttonHP_ROE_P12VB_I;
+    private javax.swing.JButton buttonHP_ROE_P12VB_V;
     private javax.swing.JButton buttonHP_ROE_P2_5VD_I;
     private javax.swing.JButton buttonHP_ROE_P2_5VD_V;
+    private javax.swing.JButton buttonHP_ROE_P36VA_I;
+    private javax.swing.JButton buttonHP_ROE_P36VA_V;
+    private javax.swing.JButton buttonHP_ROE_P36VB_I;
+    private javax.swing.JButton buttonHP_ROE_P36VB_V;
+    private javax.swing.JButton buttonHP_ROE_P5VAA_I;
     private javax.swing.JButton buttonHP_ROE_P5VAA_V;
-    private javax.swing.JButton buttonHP_ROE_P5VAA_V1;
+    private javax.swing.JButton buttonHP_ROE_P5VAB_I;
+    private javax.swing.JButton buttonHP_ROE_P5VAB_V;
+    private javax.swing.JButton buttonHP_ROE_P5VD_I;
+    private javax.swing.JButton buttonHP_ROE_P5VD_V;
+    private javax.swing.JButton buttonHP_ROE_TEMP_L;
+    private javax.swing.JButton buttonHP_ROE_TEMP_U;
     private javax.swing.JButton buttonHTMP_1;
     private javax.swing.JButton buttonHTMP_2;
     private javax.swing.JButton buttonHTMP_3;
@@ -4034,6 +4824,7 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JTextField fieldCustomData;
     private javax.swing.JTextField fieldCustomSubType;
     private javax.swing.JTextField fieldCustomType;
+    private javax.swing.JTextField fieldHK2LastAck;
     private javax.swing.JTextField fieldHKLastAck;
     private javax.swing.JTextField fieldMDAQLastAck;
     private javax.swing.JTextField fieldPS_1;
@@ -4083,11 +4874,42 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JTextField fieldkKP5V_VB;
     private javax.swing.JTextField fieldkKP5V_VC;
     private javax.swing.JTextField fieldkKP5V_VD;
+    private javax.swing.JTextField fieldkKP_CCDA_VOD_I;
+    private javax.swing.JTextField fieldkKP_CCDA_VRD_I;
+    private javax.swing.JTextField fieldkKP_CCDA_VSS_I;
+    private javax.swing.JTextField fieldkKP_CCDB_VOD_I;
+    private javax.swing.JTextField fieldkKP_CCDB_VRD_I;
+    private javax.swing.JTextField fieldkKP_CCDB_VSS_I;
+    private javax.swing.JTextField fieldkKP_FC_P12V_V;
+    private javax.swing.JTextField fieldkKP_FC_P2V_V;
     private javax.swing.JTextField fieldkKP_FC_P2_5V_V;
+    private javax.swing.JTextField fieldkKP_FC_P3_3V_V;
+    private javax.swing.JTextField fieldkKP_FC_P5V_V;
+    private javax.swing.JTextField fieldkKP_FC_TEMP_1;
+    private javax.swing.JTextField fieldkKP_FC_TEMP_2;
+    private javax.swing.JTextField fieldkKP_FC_TEMP_3;
+    private javax.swing.JTextField fieldkKP_ROE_N5VAA_I;
+    private javax.swing.JTextField fieldkKP_ROE_N5VAA_V;
+    private javax.swing.JTextField fieldkKP_ROE_N5VAB_I;
+    private javax.swing.JTextField fieldkKP_ROE_N5VAB_V;
+    private javax.swing.JTextField fieldkKP_ROE_P12VA_I;
+    private javax.swing.JTextField fieldkKP_ROE_P12VA_V;
+    private javax.swing.JTextField fieldkKP_ROE_P12VB_I;
+    private javax.swing.JTextField fieldkKP_ROE_P12VB_V;
     private javax.swing.JTextField fieldkKP_ROE_P2_5VD_I;
     private javax.swing.JTextField fieldkKP_ROE_P2_5VD_V;
+    private javax.swing.JTextField fieldkKP_ROE_P36VA_I;
+    private javax.swing.JTextField fieldkKP_ROE_P36VA_V;
+    private javax.swing.JTextField fieldkKP_ROE_P36VB_I;
+    private javax.swing.JTextField fieldkKP_ROE_P36VB_V;
+    private javax.swing.JTextField fieldkKP_ROE_P5VAA_I;
     private javax.swing.JTextField fieldkKP_ROE_P5VAA_V;
-    private javax.swing.JTextField fieldkKP_ROE_P5VAA_V1;
+    private javax.swing.JTextField fieldkKP_ROE_P5VAB_I;
+    private javax.swing.JTextField fieldkKP_ROE_P5VAB_V;
+    private javax.swing.JTextField fieldkKP_ROE_P5VD_I;
+    private javax.swing.JTextField fieldkKP_ROE_P5VD_V;
+    private javax.swing.JTextField fieldkKP_ROE_TEMP_L;
+    private javax.swing.JTextField fieldkKP_ROE_TEMP_U;
     private javax.swing.JTextField fieldkKTMP_1;
     private javax.swing.JTextField fieldkKTMP_2;
     private javax.swing.JTextField fieldkKTMP_3;
@@ -4112,6 +4934,7 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -4130,6 +4953,7 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JPanel mdaqPanel;
     private javax.swing.JMenuItem menu_File_Connect;
     private javax.swing.JMenuItem menu_File_Disconnect;
