@@ -66,6 +66,7 @@ public class PacketHandler {
                 return HandleHKDownlink(parent, packet);
 
             default:
+               
                 return false;
         }
     }
@@ -125,7 +126,58 @@ public class PacketHandler {
                             packet.getTimeStampStr()));
             tta.setCaretPosition(tta.getDocument().getLength());
             return true;
-        } else {
+          
+        }  else if (subType.equals("DK1")) {
+            tta.append(
+                    String.format("%s Dark Sequence 1\n\n",
+                            packet.getTimeStampStr()));
+            tta.setCaretPosition(tta.getDocument().getLength());
+            return true;
+          
+        } else if (subType.equals("DK2")) {
+            tta.append(
+                    String.format("%s Dark Sequence 2\n\n",
+                            packet.getTimeStampStr()));
+            tta.setCaretPosition(tta.getDocument().getLength());
+            return true;
+          
+        } else if (subType.equals("DK3")) {
+            tta.append(
+                    String.format("%s Dark Sequence 3\n\n",
+                            packet.getTimeStampStr()));
+            tta.setCaretPosition(tta.getDocument().getLength());
+            return true;
+          
+        } else if (subType.equals("DK4")) {
+            tta.append(
+                    String.format("%s Dark Sequence 4\n\n",
+                            packet.getTimeStampStr()));
+            tta.setCaretPosition(tta.getDocument().getLength());
+            return true;
+          
+        } else if (subType.equals("SLP")) {
+            tta.append(
+                    String.format("%s Sleep\n\n",
+                            packet.getTimeStampStr()));
+            tta.setCaretPosition(tta.getDocument().getLength());
+            return true;
+          
+        }else if (subType.equals("WAK")) {
+            tta.append(
+                    String.format("%s Wake\n\n",
+                            packet.getTimeStampStr()));
+            tta.setCaretPosition(tta.getDocument().getLength());
+            return true;
+          
+        }  else if (subType.equals("TST")) {
+            tta.append(
+                    String.format("%s Test Routine\n\n",
+                            packet.getTimeStampStr()));
+            tta.setCaretPosition(tta.getDocument().getLength());
+            return true;
+          
+        } 
+        else {
             return false;
         }
     }
@@ -348,7 +400,7 @@ public class PacketHandler {
         for (int i = 0; i < data.length; i++) {
             dataStr += (char) data[i];
         }
-
+        System.out.println("subtype:" + subType);
         if (subType.equals("GSN")) {
             String MDAQString = String.format("%s Get Sequence Name (GSN):\n%s\n\n",
                     packet.getTimeStampStr(),
@@ -431,14 +483,14 @@ public class PacketHandler {
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
         } else if (subType.equals("BSQ")) {
-            String MDAQString = String.format("%s Begin Sequenec Confimation (%s)\n\n",
+            String MDAQString = String.format("%s Begin Sequence Confirmation (%s)\n\n",
                     packet.getTimeStampStr(),
                     subType);
             mta.append(MDAQString);
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
         } else if (subType.equals("ESQ")) {
-            String MDAQString = String.format("%s End Sequenec Confimation (%s)\n\n",
+            String MDAQString = String.format("%s End Sequence Confirmation (%s)\n\n",
                     packet.getTimeStampStr(),
                     subType);
             mta.append(MDAQString);
@@ -482,6 +534,7 @@ public class PacketHandler {
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
         } else {
+            System.out.println("returning false");
             return false;
         }
     }
