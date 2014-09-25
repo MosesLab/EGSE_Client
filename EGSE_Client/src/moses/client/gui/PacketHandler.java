@@ -533,7 +533,24 @@ public class PacketHandler {
             mta.append(MDAQString);
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
-        } else {
+        }else if (subType.equals("EST")) {
+            String MDAQString = String.format("%s Exposure Starting\n",
+                    packet.getTimeStampStr(),
+                    subType,
+                    dataStr);
+            mta.append(MDAQString);
+            mta.setCaretPosition(mta.getDocument().getLength());
+            return true;
+        }else if (subType.equals("ESP")) {
+            String MDAQString = String.format("%s Exposure Ending\n",
+                    packet.getTimeStampStr(),
+                    subType,
+                    dataStr);
+            mta.append(MDAQString);
+            mta.setCaretPosition(mta.getDocument().getLength());
+            return true;
+        }
+        else {
             System.out.println("returning false");
             return false;
         }
