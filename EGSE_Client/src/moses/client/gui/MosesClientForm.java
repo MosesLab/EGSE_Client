@@ -2563,7 +2563,7 @@ public class MosesClientForm extends javax.swing.JFrame {
             }
         });
 
-        buttonMXDF.setText("Exit Defualt");
+        buttonMXDF.setText("Exit Default");
         buttonMXDF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonMXDFActionPerformed(evt);
@@ -3319,7 +3319,7 @@ public class MosesClientForm extends javax.swing.JFrame {
             String inputStr = JOptionPane.showInputDialog("Enter the Output Filename.");
 
             /* Create packet */
-            MosesPacket packet = new MosesPacket('M', "JMP",
+            MosesPacket packet = new MosesPacket('M', "SOF",
                     String.format("%s", inputStr).getBytes());
 
             /* Send packet */
@@ -4236,7 +4236,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         System.out.println("*****************************\n\n");
 
         try {
-            String xterm_cmd = "/home/moses/jacksonremington/EGSE_launch_xterm/EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
+            String xterm_cmd = "/etc/EGSE_launch_xterm/EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
 //            Runtime xterm_rt = Runtime.getRuntime();
 //            xterm_p = xterm_rt.exec(xterm_cmd);
             ProcessBuilder xterm_pb = new ProcessBuilder(xterm_cmd);

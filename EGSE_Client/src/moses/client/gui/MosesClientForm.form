@@ -3442,7 +3442,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="buttonMXDF">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Exit Defualt"/>
+                    <Property name="text" type="java.lang.String" value="Exit Default"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonMXDFActionPerformed"/>

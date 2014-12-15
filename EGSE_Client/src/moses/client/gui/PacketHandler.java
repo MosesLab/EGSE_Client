@@ -430,7 +430,7 @@ public class PacketHandler {
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
         } else if (subType.equals("GFI")) {
-            String MDAQString = String.format("%s Get Fram Index (GFI):\n%s\n\n",
+            String MDAQString = String.format("%s Get Frame Index (GFI):\n%s\n\n",
                     packet.getTimeStampStr(),
                     dataStr);
             mta.append(MDAQString);
@@ -549,6 +549,22 @@ public class PacketHandler {
             mta.append(MDAQString);
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
+        }else if (subType.equals("RCK")) {
+            String MDAQString = String.format("%s ROE Command Executed\n",
+                    packet.getTimeStampStr(),
+                    subType,
+                    dataStr);
+            mta.append(MDAQString);
+            mta.setCaretPosition(mta.getDocument().getLength());
+            return true;
+        }else if (subType.equals("BCK")) {
+            String MDAQString = String.format("%s ROE Command Not Executed\n",
+                    packet.getTimeStampStr(),
+                    subType,
+                    dataStr);
+            mta.append(MDAQString);
+            mta.setCaretPosition(mta.getDocument().getLength());
+            return true;
         }
         else {
             System.out.println("returning false");
@@ -585,6 +601,7 @@ public class PacketHandler {
         } else if (subType.equals("+5V")) {
             if (dataStr.contains("VA")) {
                 parent.getFieldkKP5V_VA().setText(dataStr.substring(2));
+                 //parent.getFieldkKP_ROE_P5VAA_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("VB")) {
                 parent.getFieldkKP5V_VB().setText(dataStr.substring(2));
