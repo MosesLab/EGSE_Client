@@ -588,12 +588,15 @@ public class PacketHandler {
         if (subType.equals("2.5")) {
             if (dataStr.contains("VC")) {
                 parent.getFieldkK25V_VC().setText(dataStr.substring(2));
+                parent.getFieldkKP_FC_P2_5V_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("VD")) {
                 parent.getFieldkK25V_VD().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P2_5VD_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("ID")) {
                 parent.getFieldkK25V_ID().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P2_5V_I().setText(dataStr.substring(2));
                 return true;
             } else {
                 return false;
@@ -601,25 +604,31 @@ public class PacketHandler {
         } else if (subType.equals("+5V")) {
             if (dataStr.contains("VA")) {
                 parent.getFieldkKP5V_VA().setText(dataStr.substring(2));
-                 //parent.getFieldkKP_ROE_P5VAA_V().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P5VAA_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("VB")) {
                 parent.getFieldkKP5V_VB().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P5VAB_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("VC")) {
                 parent.getFieldkKP5V_VC().setText(dataStr.substring(2));
+                parent.getFieldkKP_FC_P5V_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("VD")) {
                 parent.getFieldkKP5V_VD().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P5VD_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("IA")) {
                 parent.getFieldkKP5V_IA().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P5VAA_I().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("IB")) {
                 parent.getFieldkKP5V_IB().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P5VAB_I().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("ID")) {
                 parent.getFieldkKP5V_ID().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P5VD_I().setText(dataStr.substring(2));
                 return true;
             } else {
                 return false;
@@ -627,15 +636,19 @@ public class PacketHandler {
         } else if (subType.equals("-5V")) {
             if (dataStr.contains("VA")) {
                 parent.getFieldkKM5V_VA().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_N5VAA_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("VB")) {
                 parent.getFieldkKM5V_VB().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_N5VAB_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("IA")) {
                 parent.getFieldkKM5V_IA().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_N5VAA_I().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("IB")) {
                 parent.getFieldkKM5V_IB().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_N5VAB_I().setText(dataStr.substring(2));
                 return true;
             } else {
                 return false;
@@ -643,18 +656,23 @@ public class PacketHandler {
         } else if (subType.equals("12V")) {
             if (dataStr.contains("VA")) {
                 parent.getFieldkK12V_VA().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P12VA_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("VB")) {
                 parent.getFieldkK12V_VB().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P12VB_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("VC")) {
                 parent.getFieldkK12V_VC().setText(dataStr.substring(2));
+                parent.getFieldkKP_FC_P12V_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("IA")) {
                 parent.getFieldkK12V_IA().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P12VA_I().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("IB")) {
                 parent.getFieldkK12V_IB().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P12VB_I().setText(dataStr.substring(2));
                 return true;
             } else {
                 return false;
@@ -662,15 +680,19 @@ public class PacketHandler {
         } else if (subType.equals("36V")) {
             if (dataStr.contains("VA")) {
                 parent.getFieldkK36V_VA().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P36VA_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("VB")) {
                 parent.getFieldkK36V_VB().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P36VB_V().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("IA")) {
                 parent.getFieldkK36V_IA().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P36VA_I().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("IB")) {
                 parent.getFieldkK36V_IB().setText(dataStr.substring(2));
+                parent.getFieldkKP_ROE_P36VB_I().setText(dataStr.substring(2));
                 return true;
             } else {
                 return false;
@@ -678,51 +700,64 @@ public class PacketHandler {
         } else if (subType.equals("TMP")) {
             if (dataStr.contains("1")) {
                 parent.getFieldkKTMP_1().setText(dataStr.substring(1));
+                parent.getFieldkKP_FC_TEMP_1().setText(dataStr.substring(1));
                 return true;
             } else if (dataStr.contains("2")) {
                 parent.getFieldkKTMP_2().setText(dataStr.substring(1));
+                parent.getFieldkKP_FC_TEMP_2().setText(dataStr.substring(1));
                 return true;
             } else if (dataStr.contains("3")) {
                 parent.getFieldkKTMP_3().setText(dataStr.substring(1));
+                parent.getFieldkKP_FC_TEMP_3().setText(dataStr.substring(1));
                 return true;
             } else if (dataStr.contains("U")) {
                 parent.getFieldkKTMP_U().setText(dataStr.substring(1));
+                parent.getFieldkKP_ROE_TEMP_U().setText(dataStr.substring(1));
                 return true;
             } else if (dataStr.contains("L")) {
                 parent.getFieldkKTMP_L().setText(dataStr.substring(1));
+                parent.getFieldkKP_ROE_TEMP_L().setText(dataStr.substring(1));
                 return true;
             } else {
                 return false;
             }
         } else if (subType.equals("2.0")) {
             parent.getFieldkK20().setText(dataStr);
+            parent.getFieldkKP_FC_P2V_V().setText(dataStr);
             return true;
         } else if (subType.equals("3.3")) {
             parent.getFieldkK33().setText(dataStr);
+            parent.getFieldkKP_FC_P3_3V_V().setText(dataStr);
             return true;
         } else if (subType.equals("AVO")) {
             int dataInt = Integer.parseInt(dataStr, 16);
             parent.getFieldkKAVO().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDA_VOD_I().setText(String.format("%d", dataInt));
             return true;
         } else if (subType.equals("AVR")) {
             int dataInt = Integer.parseInt(dataStr, 16);
             parent.getFieldkKAVR().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDA_VRD_I().setText(String.format("%d", dataInt));
             return true;
         } else if (subType.equals("AVS")) {
             int dataInt = Integer.parseInt(dataStr, 16);
             parent.getFieldkKAVS().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDA_VSS_I().setText(String.format("%d", dataInt));
             return true;
         } else if (subType.equals("BVO")) {
             int dataInt = Integer.parseInt(dataStr, 16);
             parent.getFieldkKBVO().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDB_VOD_I().setText(String.format("%d", dataInt));
             return true;
         } else if (subType.equals("BVR")) {
             int dataInt = Integer.parseInt(dataStr, 16);
             parent.getFieldkKBVR().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDB_VRD_I().setText(String.format("%d", dataInt));
             return true;
         } else if (subType.equals("BVS")) {
             int dataInt = Integer.parseInt(dataStr, 16);
             parent.getFieldkKBVS().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDB_VSS_I().setText(String.format("%d", dataInt));
             return true;
         } else {
             return false;
