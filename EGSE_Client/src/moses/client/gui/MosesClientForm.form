@@ -474,36 +474,18 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="fieldPS_10" pref="29" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel9" min="-2" pref="68" max="-2" attributes="0"/>
-                                      <EmptySpace pref="26" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel13" min="-2" pref="84" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Component id="fieldPS_3" min="-2" pref="30" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="jLabel14" max="32767" attributes="0"/>
-                                          <Component id="jLabel13" max="32767" attributes="0"/>
-                                          <Component id="jLabel15" max="32767" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="fieldPS_9" alignment="1" pref="30" max="32767" attributes="0"/>
-                                          <Component id="fieldPS_8" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="fieldPS_7" alignment="1" max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel8" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="jLabel4" min="-2" pref="52" max="-2" attributes="0"/>
+                                          <Component id="jLabel14" min="-2" pref="84" max="-2" attributes="0"/>
+                                          <Component id="jLabel15" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -511,25 +493,43 @@
                                           <Component id="fieldPS_2" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel3" min="-2" pref="124" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                           <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jLabel11" max="32767" attributes="0"/>
-                                                  <Component id="jLabel12" max="32767" attributes="0"/>
+                                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel4" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                  <Component id="jLabel8" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                                  <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="fieldPS_10" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="fieldPS_9" alignment="1" pref="30" max="32767" attributes="0"/>
+                                                  <Component id="fieldPS_8" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="fieldPS_7" alignment="1" max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Group type="103" groupAlignment="1" attributes="0">
+                                                      <Component id="jLabel12" min="-2" pref="84" max="-2" attributes="0"/>
+                                                      <Component id="jLabel11" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="jLabel9" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="fieldPS_4" max="32767" attributes="0"/>
+                                                  <Component id="fieldPS_6" alignment="1" pref="30" max="32767" attributes="0"/>
+                                                  <Component id="fieldPS_5" alignment="1" max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                      </Group>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="fieldPS_4" max="32767" attributes="0"/>
-                                          <Component id="fieldPS_6" alignment="1" pref="30" max="32767" attributes="0"/>
-                                          <Component id="fieldPS_5" alignment="1" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -613,10 +613,7 @@
                                       <Component id="buttonPTOF_10" min="-2" pref="51" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="372" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="230" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="fieldPowerLastAck" min="-2" pref="139" max="-2" attributes="0"/>
@@ -631,11 +628,11 @@
                               <Component id="jLabel3" min="-2" pref="22" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="fieldPS_1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="buttonPQRY_1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="buttonPTON_1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="buttonPTOF_1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -643,24 +640,96 @@
                                   <Component id="buttonPQRY_2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="buttonPTON_2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="buttonPTOF_2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="fieldPS_3" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="buttonPQRY_3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="fieldPS_4" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="buttonPQRY_4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPQRY_5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="fieldPS_5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPTON_5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="buttonPTOF_5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPQRY_6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="fieldPS_6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPTON_6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="buttonPTOF_6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPQRY_7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="fieldPS_7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPTON_7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="buttonPTOF_7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPQRY_8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="fieldPS_8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPTON_8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="buttonPTOF_8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPQRY_9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="fieldPS_9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPTON_9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="buttonPTOF_9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPQRY_10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="fieldPS_10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="buttonPTON_10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="buttonPTOF_10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
-                                  <Group type="102" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="buttonPTON_3" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="buttonPTOF_3" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -672,79 +741,7 @@
                                       </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPQRY_5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldPS_5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPTON_5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonPTOF_5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPQRY_6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldPS_6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPTON_6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonPTOF_6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPQRY_7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldPS_7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPTON_7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonPTOF_7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPQRY_8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldPS_8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPTON_8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonPTOF_8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPQRY_9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldPS_9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPTON_9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonPTOF_9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPQRY_10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldPS_10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="buttonPTON_10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonPTOF_10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace pref="142" max="32767" attributes="0"/>
+                              <EmptySpace pref="233" max="32767" attributes="0"/>
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="fieldPowerLastAck" min="-2" max="-2" attributes="0"/>
