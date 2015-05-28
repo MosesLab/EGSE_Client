@@ -2133,7 +2133,6 @@ public class MosesClientForm extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(mdaqPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mdaqPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(mdaqPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mdaqPanelLayout.createSequentialGroup()
                                 .addComponent(jLabel23)
@@ -3479,7 +3478,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         System.out.println("*****************************\n\n");
 
         try {
-            String xterm_cmd = "../EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
+            String xterm_cmd = "/home/moses/NetBeansProjects/EGSE_Client/EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
 //            Runtime xterm_rt = Runtime.getRuntime();
 //            xterm_p = xterm_rt.exec(xterm_cmd);
             ProcessBuilder xterm_pb = new ProcessBuilder(xterm_cmd);
