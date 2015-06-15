@@ -550,7 +550,7 @@ public class PacketHandler {
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
         }else if (subType.equals("RCK")) {
-            String MDAQString = String.format("%s ROE Command Executed\n",
+            String MDAQString = String.format("%s ROE Command Not Executed\n",
                     packet.getTimeStampStr(),
                     subType,
                     dataStr);
@@ -558,7 +558,7 @@ public class PacketHandler {
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
         }else if (subType.equals("BCK")) {
-            String MDAQString = String.format("%s ROE Command Not Executed\n",
+            String MDAQString = String.format("%s ROE Command Executed\n",
                     packet.getTimeStampStr(),
                     subType,
                     dataStr);
