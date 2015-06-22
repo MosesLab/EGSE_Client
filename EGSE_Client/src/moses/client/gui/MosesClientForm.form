@@ -100,7 +100,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="txRxPanel" min="-2" pref="502" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="215" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="jPanel1" max="32767" attributes="0"/>
@@ -232,7 +232,7 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jTabbedPane1" max="32767" attributes="0"/>
+                  <Component id="jTabbedPane1" pref="0" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -311,7 +311,7 @@
                                   <Component id="buttonUDSP" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="buttonUTST" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="307" max="32767" attributes="0"/>
+                                  <EmptySpace pref="295" max="32767" attributes="0"/>
                                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="fieldTimerLastAck" min="-2" max="-2" attributes="0"/>
@@ -449,7 +449,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                           <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="628" max="32767" attributes="0"/>
+                          <EmptySpace pref="616" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -740,7 +740,7 @@
                                       <Component id="buttonPTOF_7" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="248" max="32767" attributes="0"/>
+                              <EmptySpace pref="236" max="32767" attributes="0"/>
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="fieldPowerLastAck" min="-2" max="-2" attributes="0"/>
@@ -1135,270 +1135,169 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="buttonHP_ROE_P12VB_V" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_ROE_P12VB_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="buttonHP_ROE_P36VA_V" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_ROE_P36VA_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="buttonHP_ROE_P36VB_V" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_ROE_P36VB_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="buttonHP_ROE_N5VAA_V" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_ROE_N5VAA_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="buttonHP_ROE_P12VA_V" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="fieldkKP_ROE_P5VD_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                              <Component id="fieldkKP_ROE_P12VA_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="buttonHP_ROE_N5VAB_V" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_ROE_N5VAB_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="buttonHP_CCDA_VOD_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_CCDA_VRD_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_CCDA_VSS_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="fieldkKP_CCDA_VOD_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_CCDA_VRD_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_CCDA_VSS_I" alignment="0" pref="73" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <Component id="buttonHP_ROE_P12VB_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="fieldkKP_ROE_P12VB_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="buttonHP_ROE_P12VA_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="fieldkKP_ROE_P12VA_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="buttonHP_FC_P12V_V" min="-2" pref="160" max="-2" attributes="0"/>
-                                              <Component id="buttonHP_FC_TEMP_1" min="-2" pref="160" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="fieldkKP_FC_P12V_V" alignment="1" min="-2" pref="57" max="-2" attributes="0"/>
-                                              <Component id="fieldkKP_FC_TEMP_1" alignment="1" min="-2" pref="57" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <Component id="buttonHP_ROE_P36VA_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="fieldkKP_ROE_P36VA_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="buttonHP_FC_TEMP_2" min="-2" pref="160" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="buttonHP_ROE_P36VB_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="fieldkKP_ROE_P36VB_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="buttonHP_FC_TEMP_3" min="-2" pref="160" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="fieldkKP_FC_TEMP_3" min="-2" pref="57" max="-2" attributes="0"/>
-                                              <Component id="fieldkKP_FC_TEMP_2" alignment="0" min="-2" pref="57" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="buttonHP_ROE_N5VAA_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                              <Component id="buttonHP_ROE_N5VAB_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="fieldkKP_ROE_N5VAB_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="32767" attributes="0"/>
-                                                  <Component id="buttonHP_ROE_TEMP_L" min="-2" pref="160" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="fieldkKP_ROE_TEMP_L" min="-2" pref="57" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="fieldkKP_ROE_N5VAA_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="buttonHP_ROE_TEMP_U" min="-2" pref="160" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="fieldkKP_ROE_TEMP_U" min="-2" pref="57" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="buttonHP_ROE_P2_5V_V" min="-2" pref="151" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_ROE_P2_5VD_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="buttonHP_ROE_P2_5V_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_ROE_P2_5V_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="32767" attributes="0"/>
-                                  <Component id="buttonHP_FC_P2V_V" min="-2" pref="160" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_FC_P2V_V" min="-2" pref="57" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="buttonHP_ROE_P5VD_V" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="buttonHP_ROE_P5VAA_V" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                              <Component id="buttonHP_ROE_P5VAB_V" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="fieldkKP_ROE_P5VAB_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                              <Component id="fieldkKP_ROE_P5VAA_V" min="-2" pref="57" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="buttonHP_ROE_P5VD_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_ROE_P5VD_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="buttonHP_FC_P5V_V" min="-2" pref="160" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="buttonHP_ROE_P5VAA_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_ROE_P5VAA_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="buttonHP_FC_P2_5V_V" min="-2" pref="160" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="buttonHP_ROE_P5VAB_I" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_ROE_P5VAB_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="buttonHP_FC_P3_3V_V" min="-2" pref="160" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="buttonHP_CCDB_VOD_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_CCDB_VRD_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_CCDB_VSS_I" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="fieldkKP_FC_P2_5V_V" alignment="1" min="-2" pref="57" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_FC_P3_3V_V" alignment="1" min="-2" pref="57" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_FC_P5V_V" alignment="1" min="-2" pref="57" max="-2" attributes="0"/>
+                                      <Component id="fieldkKP_CCDB_VOD_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_CCDB_VRD_I" alignment="0" pref="72" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_CCDB_VSS_I" alignment="0" max="32767" attributes="0"/>
                                   </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="buttonHP_CCDA_VSS_I" min="-2" pref="180" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="fieldkKP_CCDA_VSS_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="buttonHP_CCDB_VSS_I" min="-2" pref="180" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_CCDB_VSS_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                                          <Component id="buttonHP_CCDB_VRD_I" min="-2" pref="180" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_CCDB_VRD_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
                                       <Component id="fieldHK2LastAck" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="buttonHP_CCDA_VRD_I" min="-2" pref="180" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_CCDA_VRD_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="buttonHP_CCDA_VOD_I" min="-2" pref="180" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fieldkKP_CCDA_VOD_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="buttonHP_ROE_P2_5V_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P5VAA_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P5VAB_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P5VD_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P12VA_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P12VB_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P36VA_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P36VB_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_N5VAA_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_N5VAB_V" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="buttonHP_CCDB_VOD_I" min="-2" pref="180" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="fieldkKP_ROE_P2_5VD_V" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P5VAA_V" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P5VAB_V" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P5VD_V" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P12VA_V" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P12VB_V" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P36VA_V" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P36VB_V" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_N5VAA_V" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_N5VAB_V" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="buttonHP_ROE_P2_5V_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P5VAA_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P5VAB_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P5VD_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P12VA_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P12VB_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P36VA_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_P36VB_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_N5VAA_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_N5VAB_I" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_CCDB_VOD_I" min="-2" pref="57" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="fieldkKP_ROE_P5VAA_I" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P2_5V_I" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P5VAB_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P5VD_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P12VA_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P12VB_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P36VA_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P36VB_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_N5VAA_I" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_N5VAB_I" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="buttonHP_FC_P2V_V" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_FC_P2_5V_V" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_FC_P3_3V_V" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_FC_P5V_V" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_FC_P12V_V" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_FC_TEMP_1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_FC_TEMP_2" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_FC_TEMP_3" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_TEMP_U" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_ROE_TEMP_L" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="fieldkKP_ROE_TEMP_L" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_TEMP_U" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_FC_TEMP_3" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_FC_TEMP_2" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_FC_TEMP_1" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_FC_P12V_V" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_FC_P5V_V" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_FC_P3_3V_V" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_FC_P2_5V_V" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_FC_P2V_V" alignment="1" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="buttonHP_ROE_P2_5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_P2_5VD_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_P2_5V_I" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_FC_P2V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_ROE_P2_5V_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P2_5V_I" alignment="3" max="-2" attributes="0"/>
                               <Component id="fieldkKP_FC_P2V_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="buttonHP_FC_P2_5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_FC_P2_5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="buttonHP_ROE_P5VAA_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_ROE_P5VAA_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="buttonHP_ROE_P5VAA_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_ROE_P5VAA_I" alignment="3" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="fieldkKP_ROE_P5VAA_V" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="buttonHP_ROE_P5VAA_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_ROE_P5VAA_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="buttonHP_FC_P2_5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_FC_P2_5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="buttonHP_ROE_P5VAA_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_ROE_P5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="buttonHP_ROE_P5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="buttonHP_ROE_P5VAB_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_ROE_P5VAB_I" alignment="3" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="buttonHP_FC_P3_3V_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_FC_P3_3V_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="fieldkKP_ROE_P5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonHP_ROE_P5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonHP_ROE_P5VAB_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_ROE_P5VAB_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonHP_FC_P3_3V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_FC_P3_3V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="buttonHP_FC_P5V_V" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                      <Component id="buttonHP_ROE_P5VD_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_ROE_P5VD_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_ROE_P5VD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_ROE_P5VD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Component id="fieldkKP_FC_P5V_V" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonHP_ROE_P5VD_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P5VD_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonHP_ROE_P5VD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P5VD_I" alignment="3" max="-2" attributes="0"/>
+                              <Component id="buttonHP_FC_P5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_FC_P5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
@@ -1407,21 +1306,21 @@
                                       <Component id="buttonHP_ROE_P12VA_V" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="fieldkKP_ROE_P12VA_V" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="buttonHP_ROE_P12VA_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_ROE_P12VA_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P12VA_I" alignment="3" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="buttonHP_ROE_P12VB_V" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="fieldkKP_ROE_P12VB_V" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="buttonHP_ROE_P12VB_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_ROE_P12VB_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fieldkKP_ROE_P12VB_I" alignment="3" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="fieldkKP_FC_P12V_V" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_FC_P12V_V" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="buttonHP_FC_P12V_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fieldkKP_FC_P12V_V" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -1435,7 +1334,7 @@
                               <Component id="buttonHP_ROE_P36VA_V" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="buttonHP_ROE_P36VA_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_ROE_P36VA_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_ROE_P36VA_I" alignment="3" max="-2" attributes="0"/>
                                   <Component id="buttonHP_FC_TEMP_2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="fieldkKP_FC_TEMP_2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="fieldkKP_ROE_P36VA_V" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1446,7 +1345,7 @@
                               <Component id="buttonHP_ROE_P36VB_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_P36VB_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_P36VB_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_ROE_P36VB_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P36VB_I" alignment="3" max="-2" attributes="0"/>
                               <Component id="fieldkKP_FC_TEMP_3" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_FC_TEMP_3" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -1455,43 +1354,56 @@
                               <Component id="buttonHP_ROE_N5VAA_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_N5VAA_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_N5VAA_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_ROE_N5VAA_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_N5VAA_I" alignment="3" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_TEMP_U" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_TEMP_U" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="fieldkKP_ROE_N5VAB_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_N5VAB_I" alignment="3" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_N5VAB_I" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_N5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_N5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_TEMP_L" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_TEMP_L" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="95" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="fieldkKP_CCDA_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonHP_CCDA_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonHP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="buttonHP_CCDA_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonHP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fieldkKP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_CCDA_VOD_I" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="buttonHP_CCDA_VRD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_CCDA_VRD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonHP_CCDB_VRD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_CCDB_VRD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel25" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                  <Component id="buttonHP_CCDB_VRD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_CCDB_VRD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                  <Component id="buttonHP_CCDA_VRD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_CCDA_VRD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="buttonHP_CCDA_VSS_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_CCDA_VSS_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonHP_CCDB_VSS_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_CCDB_VSS_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldHK2LastAck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="buttonHP_CCDA_VSS_I" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                  <Component id="buttonHP_CCDB_VSS_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_CCDA_VSS_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_CCDB_VSS_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldHK2LastAck" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1503,13 +1415,13 @@
                     <Property name="toolTipText" type="java.lang.String" value="Get +2.5V_V FC"/>
                     <Property name="horizontalTextPosition" type="int" value="2"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1533,11 +1445,14 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Get +2.5V_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +2.5V_V ROE"/>
+                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[120, 38]"/>
+                    </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1549,13 +1464,13 @@
                     <Property name="text" type="java.lang.String" value="Get +2.5V_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +2.5V_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1572,13 +1487,13 @@
                     <Property name="text" type="java.lang.String" value="Get +5VAA_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +5VAA_V ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1595,13 +1510,13 @@
                     <Property name="text" type="java.lang.String" value="Get +5VAB_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +5VAB_V ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1618,13 +1533,13 @@
                     <Property name="text" type="java.lang.String" value="Get +5VD_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +5VD_V ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1646,13 +1561,13 @@
                     <Property name="text" type="java.lang.String" value="Get +12VA_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +12VA_V ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1664,13 +1579,13 @@
                     <Property name="text" type="java.lang.String" value="Get +12VB_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +12VB_V ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1687,13 +1602,13 @@
                     <Property name="text" type="java.lang.String" value="Get +36VA_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +36VA_V ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1710,13 +1625,13 @@
                     <Property name="text" type="java.lang.String" value="Get +36VB_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +36VB_V ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1735,16 +1650,16 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="buttonHP_ROE_TEMP_U">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Get Temp ROE (Up.)"/>
+                    <Property name="text" type="java.lang.String" value="Get Temp ROE Up"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get Temp ROE (Up.)"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[160, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[160, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1761,16 +1676,16 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="buttonHP_ROE_TEMP_L">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Get Temp ROE (Lo.)"/>
+                    <Property name="text" type="java.lang.String" value="Get Temp ROE Lo"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get Temp ROE (Lo.)"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[160, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[160, 28]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[160, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1783,13 +1698,13 @@
                     <Property name="toolTipText" type="java.lang.String" value="Get +5V_V FC"/>
                     <Property name="horizontalTextPosition" type="int" value="2"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1807,13 +1722,13 @@
                     <Property name="toolTipText" type="java.lang.String" value="Get +12V_V FC"/>
                     <Property name="horizontalTextPosition" type="int" value="2"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1831,13 +1746,13 @@
                     <Property name="toolTipText" type="java.lang.String" value="Get Temp 1 FC"/>
                     <Property name="horizontalTextPosition" type="int" value="2"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1855,13 +1770,13 @@
                     <Property name="toolTipText" type="java.lang.String" value="Get Temp 2 FC"/>
                     <Property name="horizontalTextPosition" type="int" value="2"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1879,13 +1794,13 @@
                     <Property name="toolTipText" type="java.lang.String" value="Get Temp 3 FC"/>
                     <Property name="horizontalTextPosition" type="int" value="2"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1902,13 +1817,13 @@
                     <Property name="text" type="java.lang.String" value="Get +5VAA_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +5VAA_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1925,13 +1840,13 @@
                     <Property name="text" type="java.lang.String" value="Get +5VAB_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +5VAB_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1948,13 +1863,13 @@
                     <Property name="text" type="java.lang.String" value="Get +12VA_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +12VA_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1976,13 +1891,13 @@
                     <Property name="text" type="java.lang.String" value="Get +12VB_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +12VB_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1994,13 +1909,13 @@
                     <Property name="text" type="java.lang.String" value="Get +36VA_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +36VA_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2022,13 +1937,13 @@
                     <Property name="text" type="java.lang.String" value="Get +36VB_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +36VB_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2054,13 +1969,13 @@
                     <Property name="toolTipText" type="java.lang.String" value="Get +2.0V_V FC"/>
                     <Property name="horizontalTextPosition" type="int" value="2"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2078,13 +1993,13 @@
                     <Property name="toolTipText" type="java.lang.String" value="Get +3.3V_V FC"/>
                     <Property name="horizontalTextPosition" type="int" value="2"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[170, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2101,13 +2016,13 @@
                     <Property name="text" type="java.lang.String" value="Get -5VAA_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get -5VAA_V ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2124,13 +2039,13 @@
                     <Property name="text" type="java.lang.String" value="Get -5VAB_V ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get -5VAB_V ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2147,13 +2062,13 @@
                     <Property name="text" type="java.lang.String" value="Get -5VAA_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get -5VAA_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2170,13 +2085,13 @@
                     <Property name="text" type="java.lang.String" value="Get -5VAB_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get -5VAB_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2193,13 +2108,13 @@
                     <Property name="text" type="java.lang.String" value="Get CCDA_VOD_I"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get CCDA_VOD_I"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2211,13 +2126,13 @@
                     <Property name="text" type="java.lang.String" value="Get CCDA_VRD_I"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get CCDA_VRD_I"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2229,13 +2144,13 @@
                     <Property name="text" type="java.lang.String" value="Get CCDA_VSS_I"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get CCDA_VSS_I"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2262,13 +2177,13 @@
                     <Property name="text" type="java.lang.String" value="Get CCDB_VOD_I"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get CCDB_VOD_I"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2280,13 +2195,13 @@
                     <Property name="text" type="java.lang.String" value="Get CCDB_VRD_I"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get CCDB_VRD_I"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2298,13 +2213,13 @@
                     <Property name="text" type="java.lang.String" value="Get CCDB_VSS_I"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get CCDB_VSS_I"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[180, 38]"/>
+                      <Dimension value="[150, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2331,13 +2246,13 @@
                     <Property name="text" type="java.lang.String" value="Get +5VD_I ROE"/>
                     <Property name="toolTipText" type="java.lang.String" value="Get +5VD_I ROE"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[174, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[139, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[151, 38]"/>
+                      <Dimension value="[120, 38]"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2407,7 +2322,7 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="buttonCustomSend" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="543" max="32767" attributes="0"/>
+                          <EmptySpace pref="531" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2668,7 +2583,7 @@
                                           <Component id="buttonMSCL" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="239" max="32767" attributes="0"/>
+                                  <EmptySpace pref="227" max="32767" attributes="0"/>
                                   <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="fieldMDAQLastAck" min="-2" max="-2" attributes="0"/>
