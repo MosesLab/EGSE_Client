@@ -327,9 +327,10 @@ public class MosesClientForm extends javax.swing.JFrame {
         );
 
         jPanel1.setMinimumSize(new java.awt.Dimension(715, 725));
+        jPanel1.setPreferredSize(new java.awt.Dimension(715, 715));
 
         jTabbedPane1.setMinimumSize(new java.awt.Dimension(703, 713));
-        jTabbedPane1.setPreferredSize(new java.awt.Dimension(703, 713));
+        jTabbedPane1.setPreferredSize(new java.awt.Dimension(703, 715));
 
         buttonUDK1.setText("Dark Seq 1");
         buttonUDK1.addActionListener(new java.awt.event.ActionListener() {
@@ -2300,7 +2301,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 713, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -2358,7 +2359,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addComponent(txRxPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 725, Short.MAX_VALUE)
                         .addGap(2, 2, 2))))
         );
 
