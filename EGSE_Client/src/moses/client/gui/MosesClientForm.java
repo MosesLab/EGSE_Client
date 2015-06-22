@@ -1204,6 +1204,11 @@ public class MosesClientForm extends javax.swing.JFrame {
         });
 
         fieldkKP_FC_TEMP_3.setEditable(false);
+        fieldkKP_FC_TEMP_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fieldkKP_FC_TEMP_3ActionPerformed(evt);
+            }
+        });
 
         buttonHP_ROE_P5VAA_I.setText("Get +5VAA_I ROE");
         buttonHP_ROE_P5VAA_I.setToolTipText("Get +5VAA_I ROE");
@@ -3186,6 +3191,10 @@ public class MosesClientForm extends javax.swing.JFrame {
         MosesPacket packet = new MosesPacket('U', "DK1", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUDK1ActionPerformed
+
+    private void fieldkKP_FC_TEMP_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldkKP_FC_TEMP_3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fieldkKP_FC_TEMP_3ActionPerformed
 
     private Thread startListenerThread() {
         Thread thread = new Thread(new Runnable() {

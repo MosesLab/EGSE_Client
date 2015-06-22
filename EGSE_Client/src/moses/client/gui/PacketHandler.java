@@ -200,27 +200,27 @@ public class PacketHandler {
         switch (dataStr.charAt(0)) {
             case 'P':
                 parent.getFieldPowerLastAck().setText(textStr);
-                parent.getFieldPowerLastAck().setForeground(Color.green);
+                parent.getFieldPowerLastAck().setForeground(Color.blue);
                 return true;
 
             case 'H':
                 parent.getFieldHK2LastAck().setText(textStr);
-                parent.getFieldHK2LastAck().setForeground(Color.green);
+                parent.getFieldHK2LastAck().setForeground(Color.blue);
                 return true;
 
             case 'M':
                 parent.getFieldMDAQLastAck().setText(textStr);
-                parent.getFieldPowerLastAck().setForeground(Color.green);
+                parent.getFieldPowerLastAck().setForeground(Color.blue);
                 return true;
 
             case 'T':
                 parent.getFieldTimerLastAck().setText(textStr);
-                parent.getFieldTimerLastAck().setForeground(Color.green);
+                parent.getFieldTimerLastAck().setForeground(Color.blue);
                 return true;
 
             case 'U':
                 parent.getFieldTimerLastAck().setText(textStr);
-                parent.getFieldTimerLastAck().setForeground(Color.green);
+                parent.getFieldTimerLastAck().setForeground(Color.blue);
                 return true;
 
             default:
@@ -549,7 +549,7 @@ public class PacketHandler {
             mta.append(MDAQString);
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
-        }else if (subType.equals("RCK")) {
+        }else if (subType.equals("BCK")) {
             String MDAQString = String.format("%s ROE Command Not Executed\n",
                     packet.getTimeStampStr(),
                     subType,
@@ -557,7 +557,7 @@ public class PacketHandler {
             mta.append(MDAQString);
             mta.setCaretPosition(mta.getDocument().getLength());
             return true;
-        }else if (subType.equals("BCK")) {
+        }else if (subType.equals("RCK")) {
             String MDAQString = String.format("%s ROE Command Executed\n",
                     packet.getTimeStampStr(),
                     subType,
