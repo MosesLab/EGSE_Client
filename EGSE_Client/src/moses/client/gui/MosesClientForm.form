@@ -311,7 +311,7 @@
                                   <Component id="buttonUDSP" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="buttonUTST" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="295" max="32767" attributes="0"/>
+                                  <EmptySpace pref="307" max="32767" attributes="0"/>
                                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="fieldTimerLastAck" min="-2" max="-2" attributes="0"/>
@@ -449,7 +449,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                           <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="616" max="32767" attributes="0"/>
+                          <EmptySpace pref="618" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -630,7 +630,7 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace pref="330" max="32767" attributes="0"/>
+                                      <EmptySpace pref="334" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -740,7 +740,7 @@
                                       <Component id="buttonPTOF_7" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="236" max="32767" attributes="0"/>
+                              <EmptySpace pref="249" max="32767" attributes="0"/>
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="fieldPowerLastAck" min="-2" max="-2" attributes="0"/>
@@ -1367,14 +1367,12 @@
                               <Component id="buttonHP_ROE_TEMP_L" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_TEMP_L" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace pref="90" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="buttonHP_CCDA_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="buttonHP_CCDA_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="buttonHP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fieldkKP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
@@ -1403,7 +1401,7 @@
                                   <Component id="fieldHK2LastAck" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2301,7 +2299,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="428" max="32767" attributes="0"/>
+                          <EmptySpace pref="434" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2325,7 +2323,7 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="buttonCustomSend" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="531" max="32767" attributes="0"/>
+                          <EmptySpace pref="536" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2586,7 +2584,7 @@
                                           <Component id="buttonMSCL" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="227" max="32767" attributes="0"/>
+                                  <EmptySpace pref="241" max="32767" attributes="0"/>
                                   <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="fieldMDAQLastAck" min="-2" max="-2" attributes="0"/>

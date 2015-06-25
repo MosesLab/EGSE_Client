@@ -450,7 +450,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addComponent(buttonUDSP)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonUTST)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 295, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 307, Short.MAX_VALUE)
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fieldTimerLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -475,7 +475,7 @@ public class MosesClientForm extends javax.swing.JFrame {
             .addGroup(shellPanelLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(jButton1)
-                .addContainerGap(616, Short.MAX_VALUE))
+                .addContainerGap(618, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Shell", shellPanel);
@@ -857,7 +857,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                                         .addComponent(buttonPTON_10, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(buttonPTOF_10, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addContainerGap(330, Short.MAX_VALUE))))
+                        .addContainerGap(334, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, powerPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -945,7 +945,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addComponent(buttonPQRY_7)
                         .addComponent(buttonPTON_7)
                         .addComponent(buttonPTOF_7)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 236, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 249, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(fieldPowerLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1665,13 +1665,12 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addComponent(buttonHP_ROE_N5VAB_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonHP_ROE_TEMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(fieldkKP_ROE_TEMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(101, 101, 101)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(buttonHP_CCDA_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(buttonHP_CCDB_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fieldkKP_CCDB_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(buttonHP_CCDA_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(buttonHP_CCDB_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(fieldkKP_CCDB_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fieldkKP_CCDA_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -1692,7 +1691,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addComponent(fieldkKP_CCDA_VSS_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(fieldkKP_CCDB_VSS_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(fieldHK2LastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(45, 45, 45))
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("HouseKeeping", jPanel4);
@@ -1729,7 +1728,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(fieldCustomType, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(fieldCustomSubType, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)))))
-                .addContainerGap(428, Short.MAX_VALUE))
+                .addContainerGap(434, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1748,7 +1747,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addComponent(jLabel20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(buttonCustomSend)
-                .addContainerGap(531, Short.MAX_VALUE))
+                .addContainerGap(536, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Custom Uplink", jPanel3);
@@ -2208,7 +2207,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                                 .addComponent(buttonMSOF)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(buttonMSCL)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 227, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 241, Short.MAX_VALUE)
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fieldMDAQLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -2445,41 +2444,57 @@ public class MosesClientForm extends javax.swing.JFrame {
     private void buttonMSTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMSTFActionPerformed
         MosesPacket packet = new MosesPacket('M', "STF", new byte[]{});
         write(packet);
+        MosesPacket packet2 = new MosesPacket('M', "GSM", new byte[]{});
+        write(packet2); 
     }//GEN-LAST:event_buttonMSTFActionPerformed
 
     private void buttonMSTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMSTNActionPerformed
         MosesPacket packet = new MosesPacket('M', "STN", new byte[]{});
         write(packet);
+        MosesPacket packet2 = new MosesPacket('M', "GSM", new byte[]{});
+        write(packet2);        
     }//GEN-LAST:event_buttonMSTNActionPerformed
 
     private void buttonMPOFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMPOFActionPerformed
         MosesPacket packet = new MosesPacket('M', "POF", new byte[]{});
         write(packet);
+        MosesPacket packet2 = new MosesPacket('M', "GPO", new byte[]{});
+        write(packet2);
     }//GEN-LAST:event_buttonMPOFActionPerformed
 
     private void buttonMPONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMPONActionPerformed
         MosesPacket packet = new MosesPacket('M', "PON", new byte[]{});
         write(packet);
+        MosesPacket packet2 = new MosesPacket('M', "GPO", new byte[]{});
+        write(packet2);
     }//GEN-LAST:event_buttonMPONActionPerformed
 
     private void buttonMC0NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMC0NActionPerformed
         MosesPacket packet = new MosesPacket('M', "C0N", new byte[]{});
         write(packet);
+        MosesPacket packet2 = new MosesPacket('M', "GC0", new byte[]{});
+        write(packet2);
     }//GEN-LAST:event_buttonMC0NActionPerformed
 
     private void buttonMC0FActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMC0FActionPerformed
         MosesPacket packet = new MosesPacket('M', "C0F", new byte[]{});
         write(packet);
+        MosesPacket packet2 = new MosesPacket('M', "GC0", new byte[]{});
+        write(packet2);
     }//GEN-LAST:event_buttonMC0FActionPerformed
 
     private void buttonMTMFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMTMFActionPerformed
         MosesPacket packet = new MosesPacket('M', "TMF", new byte[]{});
         write(packet);
+        MosesPacket packet2 = new MosesPacket('M', "GTM", new byte[]{});
+        write(packet2);
     }//GEN-LAST:event_buttonMTMFActionPerformed
 
     private void buttonMTMNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMTMNActionPerformed
         MosesPacket packet = new MosesPacket('M', "TMN", new byte[]{});
         write(packet);
+        MosesPacket packet2 = new MosesPacket('M', "GTM", new byte[]{});
+        write(packet2);
     }//GEN-LAST:event_buttonMTMNActionPerformed
 
     private void buttonMXITActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMXITActionPerformed
