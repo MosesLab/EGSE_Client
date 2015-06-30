@@ -1176,6 +1176,11 @@ public class MosesClientForm extends javax.swing.JFrame {
         });
 
         fieldkKP_FC_TEMP_1.setEditable(false);
+        fieldkKP_FC_TEMP_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fieldkKP_FC_TEMP_1ActionPerformed(evt);
+            }
+        });
 
         buttonHP_FC_TEMP_2.setText("Get Temp 2 FC");
         buttonHP_FC_TEMP_2.setToolTipText("Get Temp 2 FC");
@@ -1671,9 +1676,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addComponent(buttonHP_CCDA_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(buttonHP_CCDB_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(fieldkKP_CCDB_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldkKP_CCDA_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(fieldkKP_CCDA_VOD_I, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -2832,17 +2835,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         write(packet);
     }//GEN-LAST:event_buttonHP_ROE_N5VAA_VActionPerformed
 
-    private void buttonHP_FC_P3_3V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P3_3V_VActionPerformed
-        MosesPacket packet = new MosesPacket('H', "3.3", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonHP_FC_P3_3V_VActionPerformed
-
-    private void buttonHP_FC_P2V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P2V_VActionPerformed
-        //Shouldnt it be MosesPacket(4)?
-        MosesPacket packet = new MosesPacket('H', "2.0", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonHP_FC_P2V_VActionPerformed
-
     private void buttonHP_ROE_P36VB_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_P36VB_IActionPerformed
         MosesPacket packet = new MosesPacket('H', "36V", "IB".getBytes());
         write(packet);
@@ -2872,31 +2864,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         MosesPacket packet = new MosesPacket('H', "+5V", "IA".getBytes());
         write(packet);
     }//GEN-LAST:event_buttonHP_ROE_P5VAA_IActionPerformed
-
-    private void buttonHP_FC_TEMP_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_TEMP_3ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "TMP", "3".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP_FC_TEMP_3ActionPerformed
-
-    private void buttonHP_FC_TEMP_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_TEMP_2ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "TMP", "2".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP_FC_TEMP_2ActionPerformed
-
-    private void buttonHP_FC_TEMP_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_TEMP_1ActionPerformed
-        MosesPacket packet = new MosesPacket('H', "TMP", "1".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP_FC_TEMP_1ActionPerformed
-
-    private void buttonHP_FC_P12V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P12V_VActionPerformed
-        MosesPacket packet = new MosesPacket('H', "12V", "VC".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP_FC_P12V_VActionPerformed
-
-    private void buttonHP_FC_P5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P5V_VActionPerformed
-        MosesPacket packet = new MosesPacket('H', "+5V", "VC".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP_FC_P5V_VActionPerformed
 
     private void buttonHP_ROE_TEMP_LActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_ROE_TEMP_LActionPerformed
         MosesPacket packet = new MosesPacket('H', "TMP", "L".getBytes());
@@ -2956,15 +2923,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         MosesPacket packet = new MosesPacket('H', "2.5", "VD".getBytes());
         write(packet);
     }//GEN-LAST:event_buttonHP_ROE_P2_5V_VActionPerformed
-
-    private void fieldkKP_FC_P2_5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldkKP_FC_P2_5V_VActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_fieldkKP_FC_P2_5V_VActionPerformed
-
-    private void buttonHP_FC_P2_5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P2_5V_VActionPerformed
-        MosesPacket packet = new MosesPacket('H', "2.5", "VC".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonHP_FC_P2_5V_VActionPerformed
 
     private void buttonCustomSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCustomSendActionPerformed
 
@@ -3207,9 +3165,58 @@ public class MosesClientForm extends javax.swing.JFrame {
         write(packet);
     }//GEN-LAST:event_buttonUDK1ActionPerformed
 
+    private void buttonHP_FC_TEMP_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_TEMP_3ActionPerformed
+        MosesPacket packet = new MosesPacket('H', "TMP", "3".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP_FC_TEMP_3ActionPerformed
+
     private void fieldkKP_FC_TEMP_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldkKP_FC_TEMP_3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_fieldkKP_FC_TEMP_3ActionPerformed
+
+    private void buttonHP_FC_TEMP_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_TEMP_2ActionPerformed
+        MosesPacket packet = new MosesPacket('H', "TMP", "2".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP_FC_TEMP_2ActionPerformed
+
+    private void buttonHP_FC_TEMP_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_TEMP_1ActionPerformed
+        MosesPacket packet = new MosesPacket('H', "TMP", "1".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP_FC_TEMP_1ActionPerformed
+
+    private void buttonHP_FC_P12V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P12V_VActionPerformed
+        MosesPacket packet = new MosesPacket('H', "12V", "VC".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP_FC_P12V_VActionPerformed
+
+    private void buttonHP_FC_P5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P5V_VActionPerformed
+        MosesPacket packet = new MosesPacket('H', "+5V", "VC".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP_FC_P5V_VActionPerformed
+
+    private void buttonHP_FC_P3_3V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P3_3V_VActionPerformed
+        MosesPacket packet = new MosesPacket('H', "3.3", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonHP_FC_P3_3V_VActionPerformed
+
+    private void fieldkKP_FC_P2_5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldkKP_FC_P2_5V_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fieldkKP_FC_P2_5V_VActionPerformed
+
+    private void buttonHP_FC_P2_5V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P2_5V_VActionPerformed
+        MosesPacket packet = new MosesPacket('H', "2.5", "VC".getBytes());
+        write(packet);
+    }//GEN-LAST:event_buttonHP_FC_P2_5V_VActionPerformed
+
+    private void buttonHP_FC_P2V_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHP_FC_P2V_VActionPerformed
+        //Shouldnt it be MosesPacket(4)?
+        MosesPacket packet = new MosesPacket('H', "2.0", new byte[]{});
+        write(packet);
+    }//GEN-LAST:event_buttonHP_FC_P2V_VActionPerformed
+
+    private void fieldkKP_FC_TEMP_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldkKP_FC_TEMP_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fieldkKP_FC_TEMP_1ActionPerformed
 
     private Thread startListenerThread() {
         Thread thread = new Thread(new Runnable() {

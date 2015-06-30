@@ -1374,10 +1374,7 @@
                                   <Component id="buttonHP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="fieldkKP_CCDB_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_CCDA_VOD_I" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="fieldkKP_CCDA_VOD_I" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -1761,6 +1758,9 @@
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fieldkKP_FC_TEMP_1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="buttonHP_FC_TEMP_2">
                   <Properties>

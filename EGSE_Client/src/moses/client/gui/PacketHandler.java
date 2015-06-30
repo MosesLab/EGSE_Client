@@ -712,11 +712,11 @@ public class PacketHandler {
                 return true;
             } else if (dataStr.contains("U")) {
 //                parent.getFieldkKTMP_U().setText(dataStr.substring(1));
-                parent.getFieldkKP_ROE_TEMP_U().setText(dataStr.substring(1));
+                parent.getFieldkKP_ROE_TEMP_U().setText(dataStr.substring(2));
                 return true;
             } else if (dataStr.contains("L")) {
 //                parent.getFieldkKTMP_L().setText(dataStr.substring(1));
-                parent.getFieldkKP_ROE_TEMP_L().setText(dataStr.substring(1));
+                parent.getFieldkKP_ROE_TEMP_L().setText(dataStr.substring(2));
                 return true;
             } else {
                 return false;
