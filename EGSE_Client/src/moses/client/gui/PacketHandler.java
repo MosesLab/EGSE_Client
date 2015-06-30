@@ -732,32 +732,32 @@ public class PacketHandler {
         } else if (subType.equals("AVO")) {
             int dataInt = Integer.parseInt(dataStr, 16);
 //            parent.getFieldkKAVO().setText(String.format("%d", dataInt));
-            parent.getFieldkKP_CCDA_VOD_I().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDA_VOD_I().setText(String.format("%d V", dataInt));
             return true;
         } else if (subType.equals("AVR")) {
             int dataInt = Integer.parseInt(dataStr, 16);
 //            parent.getFieldkKAVR().setText(String.format("%d", dataInt));
-            parent.getFieldkKP_CCDA_VRD_I().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDA_VRD_I().setText(String.format("%d V", dataInt));
             return true;
         } else if (subType.equals("AVS")) {
             int dataInt = Integer.parseInt(dataStr, 16);
 //            parent.getFieldkKAVS().setText(String.format("%d", dataInt));
-            parent.getFieldkKP_CCDA_VSS_I().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDA_VSS_I().setText(String.format("%d V", dataInt));
             return true;
         } else if (subType.equals("BVO")) {
             int dataInt = Integer.parseInt(dataStr, 16);
 //            parent.getFieldkKBVO().setText(String.format("%d", dataInt));
-            parent.getFieldkKP_CCDB_VOD_I().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDB_VOD_I().setText(String.format("%d V", dataInt));
             return true;
         } else if (subType.equals("BVR")) {
             int dataInt = Integer.parseInt(dataStr, 16);
 //            parent.getFieldkKBVR().setText(String.format("%d", dataInt));
-            parent.getFieldkKP_CCDB_VRD_I().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDB_VRD_I().setText(String.format("%d V", dataInt));
             return true;
         } else if (subType.equals("BVS")) {
             int dataInt = Integer.parseInt(dataStr, 16);
 //            parent.getFieldkKBVS().setText(String.format("%d", dataInt));
-            parent.getFieldkKP_CCDB_VSS_I().setText(String.format("%d", dataInt));
+            parent.getFieldkKP_CCDB_VSS_I().setText(String.format("%d V", dataInt));
             return true;
         } else {
             return false;
