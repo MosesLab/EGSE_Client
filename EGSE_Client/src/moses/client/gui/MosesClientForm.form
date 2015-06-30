@@ -1147,7 +1147,7 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="fieldkKP_CCDA_VOD_I" alignment="0" max="32767" attributes="0"/>
                                       <Component id="fieldkKP_CCDA_VRD_I" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_CCDA_VSS_I" alignment="0" pref="73" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_CCDA_VSS_I" alignment="0" pref="75" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -1158,7 +1158,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="fieldkKP_CCDB_VOD_I" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_CCDB_VRD_I" alignment="0" pref="72" max="32767" attributes="0"/>
+                                      <Component id="fieldkKP_CCDB_VRD_I" alignment="0" pref="75" max="32767" attributes="0"/>
                                       <Component id="fieldkKP_CCDB_VSS_I" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
@@ -1222,14 +1222,6 @@
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="buttonHP_FC_P2V_V" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_FC_P2_5V_V" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_FC_P3_3V_V" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_FC_P5V_V" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_FC_P12V_V" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_FC_TEMP_1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_FC_TEMP_2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_FC_TEMP_3" alignment="1" min="-2" max="-2" attributes="0"/>
                                       <Component id="buttonHP_ROE_TEMP_U" alignment="1" min="-2" max="-2" attributes="0"/>
                                       <Component id="buttonHP_ROE_TEMP_L" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
@@ -1237,14 +1229,6 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="fieldkKP_ROE_TEMP_L" alignment="1" max="32767" attributes="0"/>
                                       <Component id="fieldkKP_ROE_TEMP_U" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_FC_TEMP_3" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_FC_TEMP_2" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_FC_TEMP_1" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_FC_P12V_V" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_FC_P5V_V" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_FC_P3_3V_V" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_FC_P2_5V_V" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="fieldkKP_FC_P2V_V" alignment="1" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -1260,35 +1244,21 @@
                               <Component id="buttonHP_ROE_P2_5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_P2_5VD_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_P2_5V_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonHP_FC_P2V_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_P2_5V_I" alignment="3" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_FC_P2V_V" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="buttonHP_FC_P2_5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_FC_P2_5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="buttonHP_ROE_P5VAA_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_ROE_P5VAA_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="buttonHP_ROE_P5VAA_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_ROE_P5VAA_I" alignment="3" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="buttonHP_ROE_P5VAA_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P5VAA_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonHP_ROE_P5VAA_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P5VAA_I" alignment="3" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="fieldkKP_ROE_P5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="buttonHP_ROE_P5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="buttonHP_ROE_P5VAB_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_ROE_P5VAB_I" alignment="3" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="buttonHP_FC_P3_3V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_FC_P3_3V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="fieldkKP_ROE_P5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonHP_ROE_P5VAB_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonHP_ROE_P5VAB_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P5VAB_I" alignment="3" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -1296,38 +1266,20 @@
                               <Component id="fieldkKP_ROE_P5VD_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_P5VD_I" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_P5VD_I" alignment="3" max="-2" attributes="0"/>
-                              <Component id="buttonHP_FC_P5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_FC_P5V_V" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="buttonHP_ROE_P12VA_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_ROE_P12VA_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_ROE_P12VA_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_ROE_P12VA_I" alignment="3" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="buttonHP_ROE_P12VB_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_ROE_P12VB_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_ROE_P12VB_I" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_ROE_P12VB_I" alignment="3" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="buttonHP_FC_P12V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fieldkKP_FC_P12V_V" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="fieldkKP_FC_TEMP_1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonHP_FC_TEMP_1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="buttonHP_ROE_P12VA_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P12VA_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonHP_ROE_P12VA_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P12VA_I" alignment="3" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="buttonHP_ROE_P12VB_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P12VB_V" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonHP_ROE_P12VB_I" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldkKP_ROE_P12VB_I" alignment="3" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -1335,8 +1287,6 @@
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="buttonHP_ROE_P36VA_I" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="fieldkKP_ROE_P36VA_I" alignment="3" max="-2" attributes="0"/>
-                                  <Component id="buttonHP_FC_TEMP_2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fieldkKP_FC_TEMP_2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="fieldkKP_ROE_P36VA_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1346,8 +1296,6 @@
                               <Component id="fieldkKP_ROE_P36VB_V" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="buttonHP_ROE_P36VB_I" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_P36VB_I" alignment="3" max="-2" attributes="0"/>
-                              <Component id="fieldkKP_FC_TEMP_3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonHP_FC_TEMP_3" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -1367,7 +1315,7 @@
                               <Component id="buttonHP_ROE_TEMP_L" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldkKP_ROE_TEMP_L" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="90" max="32767" attributes="0"/>
+                          <EmptySpace pref="110" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                   <Component id="buttonHP_CCDA_VOD_I" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1404,33 +1352,6 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JButton" name="buttonHP_FC_P2_5V_V">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Get +2.5V_V FC"/>
-                    <Property name="toolTipText" type="java.lang.String" value="Get +2.5V_V FC"/>
-                    <Property name="horizontalTextPosition" type="int" value="2"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonHP_FC_P2_5V_VActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JTextField" name="fieldkKP_FC_P2_5V_V">
-                  <Properties>
-                    <Property name="editable" type="boolean" value="false"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fieldkKP_FC_P2_5V_VActionPerformed"/>
-                  </Events>
-                </Component>
                 <Component class="javax.swing.JTextField" name="fieldkKP_ROE_P2_5VD_V">
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
@@ -1687,132 +1608,6 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonHP_ROE_TEMP_LActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="buttonHP_FC_P5V_V">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Get +5V_V FC"/>
-                    <Property name="toolTipText" type="java.lang.String" value="Get +5V_V FC"/>
-                    <Property name="horizontalTextPosition" type="int" value="2"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonHP_FC_P5V_VActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JTextField" name="fieldkKP_FC_P5V_V">
-                  <Properties>
-                    <Property name="editable" type="boolean" value="false"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="buttonHP_FC_P12V_V">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Get +12V_V FC"/>
-                    <Property name="toolTipText" type="java.lang.String" value="Get +12V_V FC"/>
-                    <Property name="horizontalTextPosition" type="int" value="2"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonHP_FC_P12V_VActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JTextField" name="fieldkKP_FC_P12V_V">
-                  <Properties>
-                    <Property name="editable" type="boolean" value="false"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="buttonHP_FC_TEMP_1">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Get Temp 1 FC"/>
-                    <Property name="toolTipText" type="java.lang.String" value="Get Temp 1 FC"/>
-                    <Property name="horizontalTextPosition" type="int" value="2"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonHP_FC_TEMP_1ActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JTextField" name="fieldkKP_FC_TEMP_1">
-                  <Properties>
-                    <Property name="editable" type="boolean" value="false"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fieldkKP_FC_TEMP_1ActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JButton" name="buttonHP_FC_TEMP_2">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Get Temp 2 FC"/>
-                    <Property name="toolTipText" type="java.lang.String" value="Get Temp 2 FC"/>
-                    <Property name="horizontalTextPosition" type="int" value="2"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonHP_FC_TEMP_2ActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JTextField" name="fieldkKP_FC_TEMP_2">
-                  <Properties>
-                    <Property name="editable" type="boolean" value="false"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="buttonHP_FC_TEMP_3">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Get Temp 3 FC"/>
-                    <Property name="toolTipText" type="java.lang.String" value="Get Temp 3 FC"/>
-                    <Property name="horizontalTextPosition" type="int" value="2"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonHP_FC_TEMP_3ActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JTextField" name="fieldkKP_FC_TEMP_3">
-                  <Properties>
-                    <Property name="editable" type="boolean" value="false"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fieldkKP_FC_TEMP_3ActionPerformed"/>
-                  </Events>
-                </Component>
                 <Component class="javax.swing.JButton" name="buttonHP_ROE_P5VAA_I">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Get +5VAA_I ROE"/>
@@ -1962,54 +1757,6 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="40" green="40" id="darkGray" palette="1" red="40" type="palette"/>
                     </Property>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="buttonHP_FC_P2V_V">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Get +2.0V_V FC"/>
-                    <Property name="toolTipText" type="java.lang.String" value="Get +2.0V_V FC"/>
-                    <Property name="horizontalTextPosition" type="int" value="2"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonHP_FC_P2V_VActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JTextField" name="fieldkKP_FC_P2V_V">
-                  <Properties>
-                    <Property name="editable" type="boolean" value="false"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="buttonHP_FC_P3_3V_V">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Get +3.3V_V FC"/>
-                    <Property name="toolTipText" type="java.lang.String" value="Get +3.3V_V FC"/>
-                    <Property name="horizontalTextPosition" type="int" value="2"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 38]"/>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonHP_FC_P3_3V_VActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JTextField" name="fieldkKP_FC_P3_3V_V">
-                  <Properties>
-                    <Property name="editable" type="boolean" value="false"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="buttonHP_ROE_N5VAA_V">
