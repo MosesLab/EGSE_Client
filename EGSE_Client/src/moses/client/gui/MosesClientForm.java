@@ -3011,12 +3011,12 @@ public class MosesClientForm extends javax.swing.JFrame {
                 newChar = (char) in.read();
 
                 /* if not in a packet, but the new char is the start delimiter */
-                if (!inPacket & ((char) (0x7F & newChar) == MosesPacket.StartDelimiter)) {
+                if (!inPacket & ((char) (0x7F & newChar) == MosesPacket.charstart[0])) {
                     inPacket = true;
                     buffer = Character.toString(newChar);
-                }/* if in packet and new char is not stop delimiter */ else if (inPacket & ((char) (0x7F & newChar) != MosesPacket.StopDelimiter)) {
+                }/* if in packet and new char is not stop delimiter */ else if (inPacket & ((char) (0x7F & newChar) != MosesPacket.charstop[MosesPacket.charstop.length - 1])) {
                     buffer += newChar;
-                } /* if in packet and new char is the stop delimiter */ else if (inPacket & ((char) (0x7F & newChar) == MosesPacket.StopDelimiter)) {
+                } /* if in packet and new char is the stop delimiter */ else if (inPacket & ((char) (0x7F & newChar) == MosesPacket.charstop[MosesPacket.charstop.length - 1])) {
                     inPacket = false;
                     buffer += newChar;
 
