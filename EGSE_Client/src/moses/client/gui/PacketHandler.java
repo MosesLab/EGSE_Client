@@ -329,9 +329,6 @@ public class PacketHandler {
             } else if (dataStr.equals("05")) {
                 parent.getFieldPS_5().setText("On");
                 return true;
-            } else if (dataStr.equals("06")) {
-                parent.getFieldPS_6().setText("On");
-                return true;
             } else if (dataStr.equals("07")) {
                 parent.getFieldPS_7().setText("On");
                 return true;
@@ -340,9 +337,6 @@ public class PacketHandler {
                 return true;
             } else if (dataStr.equals("09")) {
                 parent.getFieldPS_9().setText("On");
-                return true;
-            } else if (dataStr.equals("0A")) {
-                parent.getFieldPS_10().setText("On");
                 return true;
             } else {
                 return false;
@@ -364,9 +358,6 @@ public class PacketHandler {
             } else if (dataStr.equals("05")) {
                 parent.getFieldPS_5().setText("Off");
                 return true;
-            } else if (dataStr.equals("06")) {
-                parent.getFieldPS_6().setText("Off");
-                return true;
             } else if (dataStr.equals("07")) {
                 parent.getFieldPS_7().setText("Off");
                 return true;
@@ -376,10 +367,7 @@ public class PacketHandler {
             } else if (dataStr.equals("09")) {
                 parent.getFieldPS_9().setText("Off");
                 return true;
-            } else if (dataStr.equals("0A")) {
-                parent.getFieldPS_10().setText("Off");
-                return true;
-            } else {
+            }  else {
                 return false;
             }
         } else {

@@ -63,7 +63,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         buttonUDK3 = new javax.swing.JButton();
         buttonUSLP = new javax.swing.JButton();
         buttonUDK4 = new javax.swing.JButton();
-        buttonUWAK = new javax.swing.JButton();
         buttonUDST = new javax.swing.JButton();
         buttonUDSP = new javax.swing.JButton();
         buttonUTST = new javax.swing.JButton();
@@ -94,14 +93,10 @@ public class MosesClientForm extends javax.swing.JFrame {
         buttonPTON_3 = new javax.swing.JButton();
         buttonPTOF_3 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         buttonPQRY_5 = new javax.swing.JButton();
         buttonPTON_5 = new javax.swing.JButton();
         buttonPTOF_5 = new javax.swing.JButton();
-        buttonPQRY_6 = new javax.swing.JButton();
-        buttonPTOF_6 = new javax.swing.JButton();
-        buttonPTON_6 = new javax.swing.JButton();
         buttonPQRY_7 = new javax.swing.JButton();
         buttonPTON_7 = new javax.swing.JButton();
         buttonPTOF_7 = new javax.swing.JButton();
@@ -111,21 +106,15 @@ public class MosesClientForm extends javax.swing.JFrame {
         buttonPQRY_9 = new javax.swing.JButton();
         buttonPTON_9 = new javax.swing.JButton();
         buttonPTOF_9 = new javax.swing.JButton();
-        buttonPQRY_10 = new javax.swing.JButton();
-        buttonPTON_10 = new javax.swing.JButton();
-        buttonPTOF_10 = new javax.swing.JButton();
         fieldPS_5 = new javax.swing.JTextField();
-        fieldPS_6 = new javax.swing.JTextField();
         fieldPS_7 = new javax.swing.JTextField();
         fieldPS_8 = new javax.swing.JTextField();
         fieldPS_9 = new javax.swing.JTextField();
-        fieldPS_10 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
         fieldPowerLastAck = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -351,13 +340,6 @@ public class MosesClientForm extends javax.swing.JFrame {
             }
         });
 
-        buttonUWAK.setText("Wake");
-        buttonUWAK.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonUWAKActionPerformed(evt);
-            }
-        });
-
         buttonUDST.setText("Data Start");
         buttonUDST.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -394,7 +376,7 @@ public class MosesClientForm extends javax.swing.JFrame {
             timerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(timerPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 508, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(timerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -403,7 +385,6 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addComponent(buttonUDK3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonUDK4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonUSLP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonUWAK, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonUDST, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonUDSP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonUTST, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -427,14 +408,12 @@ public class MosesClientForm extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonUSLP)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(buttonUWAK)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonUDST)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonUDSP)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonUTST)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 307, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 300, Short.MAX_VALUE)
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fieldTimerLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -459,7 +438,7 @@ public class MosesClientForm extends javax.swing.JFrame {
             .addGroup(shellPanelLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(jButton1)
-                .addContainerGap(618, Short.MAX_VALUE))
+                .addContainerGap(612, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Shell", shellPanel);
@@ -563,8 +542,6 @@ public class MosesClientForm extends javax.swing.JFrame {
 
         jLabel8.setText("ROE");
 
-        jLabel9.setText("PMF");
-
         jLabel10.setText("TCS");
 
         buttonPQRY_5.setText("Query");
@@ -585,27 +562,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         buttonPTOF_5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonPTOF_5ActionPerformed(evt);
-            }
-        });
-
-        buttonPQRY_6.setText("Query");
-        buttonPQRY_6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonPQRY_6ActionPerformed(evt);
-            }
-        });
-
-        buttonPTOF_6.setText("Off");
-        buttonPTOF_6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonPTOF_6ActionPerformed(evt);
-            }
-        });
-
-        buttonPTON_6.setText("On");
-        buttonPTON_6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonPTON_6ActionPerformed(evt);
             }
         });
 
@@ -673,38 +629,13 @@ public class MosesClientForm extends javax.swing.JFrame {
             }
         });
 
-        buttonPQRY_10.setText("Query");
-        buttonPQRY_10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonPQRY_10ActionPerformed(evt);
-            }
-        });
-
-        buttonPTON_10.setText("On");
-        buttonPTON_10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonPTON_10ActionPerformed(evt);
-            }
-        });
-
-        buttonPTOF_10.setText("Off");
-        buttonPTOF_10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonPTOF_10ActionPerformed(evt);
-            }
-        });
-
         fieldPS_5.setEditable(false);
-
-        fieldPS_6.setEditable(false);
 
         fieldPS_7.setEditable(false);
 
         fieldPS_8.setEditable(false);
 
         fieldPS_9.setEditable(false);
-
-        fieldPS_10.setEditable(false);
 
         jLabel11.setText("TCS3 0y");
 
@@ -715,8 +646,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         jLabel14.setText("5V Reg.");
 
         jLabel15.setText("12V Reg.");
-
-        jLabel16.setText("H-Alpha");
 
         fieldPowerLastAck.setEditable(false);
         fieldPowerLastAck.setBackground(java.awt.Color.darkGray);
@@ -756,21 +685,11 @@ public class MosesClientForm extends javax.swing.JFrame {
                                     .addGroup(powerPanelLayout.createSequentialGroup()
                                         .addComponent(buttonPQRY_2)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPTON_2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(powerPanelLayout.createSequentialGroup()
-                                        .addComponent(buttonPQRY_5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPTON_5, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(powerPanelLayout.createSequentialGroup()
-                                        .addComponent(buttonPQRY_7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPTON_7, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(buttonPTON_2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(buttonPTOF_2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(buttonPTOF_1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(buttonPTOF_5, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(buttonPTOF_7, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(buttonPTOF_1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(powerPanelLayout.createSequentialGroup()
                                 .addComponent(buttonPQRY_9)
@@ -779,75 +698,70 @@ public class MosesClientForm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(buttonPTOF_9, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE))))
-                    .addGroup(powerPanelLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, powerPanelLayout.createSequentialGroup()
                         .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel10))
-                        .addGap(12, 12, 12)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(fieldPS_3, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fieldPS_8, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(fieldPS_5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fieldPS_7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(powerPanelLayout.createSequentialGroup()
-                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, powerPanelLayout.createSequentialGroup()
-                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fieldPS_4, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(buttonPQRY_4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(buttonPTON_4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(buttonPTOF_4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, powerPanelLayout.createSequentialGroup()
-                                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fieldPS_3, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(powerPanelLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
                                 .addComponent(buttonPQRY_3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(buttonPTON_3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(buttonPTON_3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(powerPanelLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(buttonPTOF_3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(buttonPQRY_8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(buttonPTON_8, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(6, 6, 6)
+                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buttonPTOF_8, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonPTOF_3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(226, 226, 226))
+                    .addGroup(powerPanelLayout.createSequentialGroup()
+                        .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, powerPanelLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6)
+                                    .addComponent(fieldPowerLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(powerPanelLayout.createSequentialGroup()
                                 .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel16)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel10))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(powerPanelLayout.createSequentialGroup()
-                                        .addComponent(fieldPS_8, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(fieldPS_5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPQRY_8)
+                                        .addComponent(buttonPQRY_5)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPTON_8, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(buttonPTON_5, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPTOF_8, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(buttonPTOF_5, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(powerPanelLayout.createSequentialGroup()
-                                        .addComponent(fieldPS_6, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(fieldPS_4, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPQRY_6)
+                                        .addComponent(buttonPQRY_4)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPTON_6, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(buttonPTON_4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPTOF_6, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(buttonPTOF_4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(powerPanelLayout.createSequentialGroup()
-                                        .addComponent(fieldPS_10, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(fieldPS_7, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPQRY_10)
+                                        .addComponent(buttonPQRY_7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPTON_10, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(buttonPTON_7, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(buttonPTOF_10, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addContainerGap(334, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, powerPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(fieldPowerLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                                        .addComponent(buttonPTOF_7, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())))
         );
         powerPanelLayout.setVerticalGroup(
             powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -876,60 +790,40 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addComponent(fieldPS_9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(fieldPS_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonPQRY_10)
-                    .addComponent(buttonPTON_10)
-                    .addComponent(buttonPTOF_10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(buttonPQRY_6)
-                        .addComponent(buttonPTON_6)
-                        .addComponent(buttonPTOF_6))
-                    .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel9)
-                        .addComponent(fieldPS_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(7, 7, 7)
-                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
                     .addComponent(fieldPS_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonPQRY_8)
                     .addComponent(buttonPTON_8)
-                    .addComponent(buttonPTOF_8))
-                .addGap(18, 18, 18)
-                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13)
-                    .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(buttonPQRY_3)
-                        .addComponent(buttonPTON_3)
-                        .addComponent(buttonPTOF_3)
-                        .addComponent(fieldPS_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(buttonPQRY_4)
-                        .addComponent(buttonPTON_4)
-                        .addComponent(buttonPTOF_4))
-                    .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel12)
-                        .addComponent(fieldPS_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(7, 7, 7)
+                    .addComponent(buttonPTOF_8)
+                    .addComponent(jLabel4))
+                .addGap(5, 5, 5)
                 .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
+                    .addComponent(jLabel13)
+                    .addComponent(fieldPS_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonPQRY_3)
+                    .addComponent(buttonPTON_3)
+                    .addComponent(buttonPTOF_3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(fieldPS_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonPQRY_4)
+                    .addComponent(buttonPTON_4)
+                    .addComponent(buttonPTOF_4)
+                    .addComponent(jLabel12))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(fieldPS_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11)
                     .addComponent(buttonPQRY_5)
                     .addComponent(buttonPTON_5)
                     .addComponent(buttonPTOF_5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(fieldPS_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10)
-                    .addGroup(powerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(fieldPS_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(buttonPQRY_7)
-                        .addComponent(buttonPTON_7)
-                        .addComponent(buttonPTOF_7)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 249, Short.MAX_VALUE)
+                    .addComponent(buttonPQRY_7)
+                    .addComponent(buttonPTON_7)
+                    .addComponent(buttonPTOF_7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 290, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(fieldPowerLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -940,7 +834,10 @@ public class MosesClientForm extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(powerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(powerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 578, Short.MAX_VALUE)
+                .addGap(93, 93, 93))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1484,7 +1381,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addComponent(buttonHP_ROE_N5VAB_V, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonHP_ROE_TEMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(fieldkKP_ROE_TEMP_L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(buttonHP_CCDA_VOD_I, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1564,7 +1461,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                     .addComponent(jLabel20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(buttonCustomSend)
-                .addContainerGap(536, Short.MAX_VALUE))
+                .addContainerGap(518, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Custom Uplink", jPanel3);
@@ -1632,7 +1529,7 @@ public class MosesClientForm extends javax.swing.JFrame {
             }
         });
 
-        buttonMGFI.setText("Get Fram Index");
+        buttonMGFI.setText("Get Frame Index");
         buttonMGFI.setToolTipText("Get Fram Index");
         buttonMGFI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2024,7 +1921,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                                 .addComponent(buttonMSOF)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(buttonMSCL)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 241, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fieldMDAQLastAck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -2199,7 +2096,7 @@ public class MosesClientForm extends javax.swing.JFrame {
     private void menu_File_DisconnectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_File_DisconnectActionPerformed
 
         try {
-            /* Send close meaasge over TCP/IP if still activve */
+            /* Send close message over TCP/IP if still active */
             if (mainSocket != null && mainSocket.isConnected()) {
                 mainSocket.getOutputStream().write("%^".getBytes());
 
@@ -2232,6 +2129,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         xterm_p.destroy();
 
         this.dispose();
+        System.exit(0);
     }//GEN-LAST:event_menu_File_ExitActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
@@ -2784,21 +2682,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_buttonCustomSendActionPerformed
 
-    private void buttonPTOF_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPTOF_10ActionPerformed
-        MosesPacket packet = new MosesPacket('P', "TOF", "0A".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonPTOF_10ActionPerformed
-
-    private void buttonPTON_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPTON_10ActionPerformed
-        MosesPacket packet = new MosesPacket('P', "TON", "0A".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonPTON_10ActionPerformed
-
-    private void buttonPQRY_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPQRY_10ActionPerformed
-        MosesPacket packet = new MosesPacket('P', "QRY", "0A".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonPQRY_10ActionPerformed
-
     private void buttonPTOF_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPTOF_9ActionPerformed
         MosesPacket packet = new MosesPacket('P', "TOF", "09".getBytes());
         write(packet);
@@ -2843,21 +2726,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         MosesPacket packet = new MosesPacket('P', "QRY", "07".getBytes());
         write(packet);
     }//GEN-LAST:event_buttonPQRY_7ActionPerformed
-
-    private void buttonPTON_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPTON_6ActionPerformed
-        MosesPacket packet = new MosesPacket('P', "TON", "06".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonPTON_6ActionPerformed
-
-    private void buttonPTOF_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPTOF_6ActionPerformed
-        MosesPacket packet = new MosesPacket('P', "TOF", "06".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonPTOF_6ActionPerformed
-
-    private void buttonPQRY_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPQRY_6ActionPerformed
-        MosesPacket packet = new MosesPacket('P', "QRY", "06".getBytes());
-        write(packet);
-    }//GEN-LAST:event_buttonPQRY_6ActionPerformed
 
     private void buttonPTOF_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPTOF_5ActionPerformed
         MosesPacket packet = new MosesPacket('P', "TOF", "05".getBytes());
@@ -2948,11 +2816,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         MosesPacket packet = new MosesPacket('U', "DST", new byte[]{});
         write(packet);
     }//GEN-LAST:event_buttonUDSTActionPerformed
-
-    private void buttonUWAKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUWAKActionPerformed
-        MosesPacket packet = new MosesPacket('U', "WAK", new byte[]{});
-        write(packet);
-    }//GEN-LAST:event_buttonUWAKActionPerformed
 
     private void buttonUDK4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUDK4ActionPerformed
         MosesPacket packet = new MosesPacket('U', "DK4", new byte[]{});
@@ -3214,7 +3077,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         System.out.println("*****************************\n\n");
 
         try {
-            String xterm_cmd = "/home/moses/NetBeansProjects/EGSE_Client/EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
+            String xterm_cmd = "../EGSE_launch_xterm/dist/Debug/GNU-Linux-x86/egse_launch_xterm";
 //            Runtime xterm_rt = Runtime.getRuntime();
 //            xterm_p = xterm_rt.exec(xterm_cmd);
             ProcessBuilder xterm_pb = new ProcessBuilder(xterm_cmd);
@@ -3268,14 +3131,6 @@ public class MosesClientForm extends javax.swing.JFrame {
         this.fieldPS_1 = feildPS_1;
     }
 
-    public JTextField getFieldPS_10() {
-        return fieldPS_10;
-    }
-
-    public void setFieldPS_10(JTextField fieldPS_10) {
-        this.fieldPS_10 = fieldPS_10;
-    }
-
     public JTextField getFieldPS_2() {
         return fieldPS_2;
     }
@@ -3306,14 +3161,6 @@ public class MosesClientForm extends javax.swing.JFrame {
 
     public void setFieldPS_5(JTextField fieldPS_5) {
         this.fieldPS_5 = fieldPS_5;
-    }
-
-    public JTextField getFieldPS_6() {
-        return fieldPS_6;
-    }
-
-    public void setFieldPS_6(JTextField fieldPS_6) {
-        this.fieldPS_6 = fieldPS_6;
     }
 
     public JTextField getFieldPS_7() {
@@ -3690,32 +3537,26 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JButton buttonMXDF;
     private javax.swing.JButton buttonMXIT;
     private javax.swing.JButton buttonPQRY_1;
-    private javax.swing.JButton buttonPQRY_10;
     private javax.swing.JButton buttonPQRY_2;
     private javax.swing.JButton buttonPQRY_3;
     private javax.swing.JButton buttonPQRY_4;
     private javax.swing.JButton buttonPQRY_5;
-    private javax.swing.JButton buttonPQRY_6;
     private javax.swing.JButton buttonPQRY_7;
     private javax.swing.JButton buttonPQRY_8;
     private javax.swing.JButton buttonPQRY_9;
     private javax.swing.JButton buttonPTOF_1;
-    private javax.swing.JButton buttonPTOF_10;
     private javax.swing.JButton buttonPTOF_2;
     private javax.swing.JButton buttonPTOF_3;
     private javax.swing.JButton buttonPTOF_4;
     private javax.swing.JButton buttonPTOF_5;
-    private javax.swing.JButton buttonPTOF_6;
     private javax.swing.JButton buttonPTOF_7;
     private javax.swing.JButton buttonPTOF_8;
     private javax.swing.JButton buttonPTOF_9;
     private javax.swing.JButton buttonPTON_1;
-    private javax.swing.JButton buttonPTON_10;
     private javax.swing.JButton buttonPTON_2;
     private javax.swing.JButton buttonPTON_3;
     private javax.swing.JButton buttonPTON_4;
     private javax.swing.JButton buttonPTON_5;
-    private javax.swing.JButton buttonPTON_6;
     private javax.swing.JButton buttonPTON_7;
     private javax.swing.JButton buttonPTON_8;
     private javax.swing.JButton buttonPTON_9;
@@ -3727,19 +3568,16 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JButton buttonUDST;
     private javax.swing.JButton buttonUSLP;
     private javax.swing.JButton buttonUTST;
-    private javax.swing.JButton buttonUWAK;
     private javax.swing.JTextField fieldCustomData;
     private javax.swing.JTextField fieldCustomSubType;
     private javax.swing.JTextField fieldCustomType;
     private javax.swing.JTextField fieldHK2LastAck;
     private javax.swing.JTextField fieldMDAQLastAck;
     private javax.swing.JTextField fieldPS_1;
-    private javax.swing.JTextField fieldPS_10;
     private javax.swing.JTextField fieldPS_2;
     private javax.swing.JTextField fieldPS_3;
     private javax.swing.JTextField fieldPS_4;
     private javax.swing.JTextField fieldPS_5;
-    private javax.swing.JTextField fieldPS_6;
     private javax.swing.JTextField fieldPS_7;
     private javax.swing.JTextField fieldPS_8;
     private javax.swing.JTextField fieldPS_9;
@@ -3785,7 +3623,6 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -3801,7 +3638,6 @@ public class MosesClientForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;

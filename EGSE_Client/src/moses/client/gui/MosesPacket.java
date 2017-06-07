@@ -17,7 +17,7 @@ class MosesPacket {
 
     /* Define delimiters and main packet types. */
     public static final String StartDelimiter = "%%%%%%%%%%",
-            StopDelimiter = "^^^^^^^^^~";
+            StopDelimiter = "^";
 
     public static final char TYPE_MAIN_TIMER = 'T',
             TYPE_MAIN_UPLINK = 'U',
