@@ -105,27 +105,27 @@ class MosesPacket {
 //        if(packetBytes[packetBytes.length -1] == StopDelimiter)
 //            hasStopDelimiter = true;  
         /* Parse Time Stamp */
-        packetTimeStamp[0] = (packetBytes[1] - 48) * 10 + (packetBytes[2] - 48); // hours
-        packetTimeStamp[1] = (packetBytes[3] - 48) * 10 + (packetBytes[4] - 48); // minutes
-        packetTimeStamp[2] = (packetBytes[5] - 48) * 10 + (packetBytes[6] - 48); // seconds
+        packetTimeStamp[0] = (packetBytes[charstart.length + 1] - 48) * 10 + (packetBytes[charstart.length + 2] - 48); // hours
+        packetTimeStamp[1] = (packetBytes[charstart.length + 3] - 48) * 10 + (packetBytes[charstart.length + 4] - 48); // minutes
+        packetTimeStamp[2] = (packetBytes[charstart.length + 5] - 48) * 10 + (packetBytes[charstart.length + 6] - 48); // seconds
 
         /* Parse Type */
-        packetType = (char) in_packet[7];
+        packetType = (char) in_packet[charstart.length + 7];
 
         /* Parse Sub Type */
-        packetSubType = (new StringBuilder().append((char) packetBytes[8])).toString();
-        packetSubType += (new StringBuilder().append((char) packetBytes[9])).toString();
-        packetSubType += (new StringBuilder().append((char) packetBytes[10])).toString();
+        packetSubType = (new StringBuilder().append((char) packetBytes[charstart.length + 8])).toString();
+        packetSubType += (new StringBuilder().append((char) packetBytes[charstart.length + 9])).toString();
+        packetSubType += (new StringBuilder().append((char) packetBytes[charstart.length + 10])).toString();
 
         /* Parse Length */
-        String packetLengthStr = (new StringBuilder().append((char) packetBytes[11])).toString();
-        packetLengthStr += (new StringBuilder().append((char) packetBytes[12])).toString();
+        String packetLengthStr = (new StringBuilder().append((char) packetBytes[charstart.length + 11])).toString();
+        packetLengthStr += (new StringBuilder().append((char) packetBytes[charstart.length + 12])).toString();
         packetDataLength = Integer.parseInt(packetLengthStr, 16);
 
         /* Parse Data */
         packetData = new byte[packetDataLength];
         for (int i = 0; i < packetDataLength; i++) {
-            packetData[i] = packetBytes[13 + i];
+            packetData[i] = packetBytes[charstart.length + 13 + i];
         }
 
 //        /* encode packet bytes */
@@ -338,7 +338,7 @@ class MosesPacket {
         for (i = 0; i < packetBytes.length - 2; i++) {
             calculatedChecksum ^= encode(decode((char) packetBytes[i]));
         }
-
+ 
         System.out.println("\nPacket: " + packetString);
 
         if (decode((char) packetBytes[packetBytes.length - 2]) == decode(calculatedChecksum)) {
