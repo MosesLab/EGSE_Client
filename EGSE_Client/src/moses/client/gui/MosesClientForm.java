@@ -2098,7 +2098,7 @@ public class MosesClientForm extends javax.swing.JFrame {
         try {
             /* Send close message over TCP/IP if still active */
             if (mainSocket != null && mainSocket.isConnected()) {
-                mainSocket.getOutputStream().write("%^".getBytes());
+                mainSocket.getOutputStream().write("%%%%%%%%%%^".getBytes());
 
                 /* Close the socket */
                 listen = false;
@@ -2884,7 +2884,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                     buffer += newChar;
 
                     /* if packet was sent to F/C by another client */
-                    if (buffer.substring(0, 2).equals("%%")) {
+                    if (buffer.substring(0, 20).equals("%%%%%%%%%%%%%%%%%%%%")) {
                         /* create the packet, removing the extra '%' from the front */
                         MosesPacket packet = new MosesPacket(buffer.substring(1).getBytes());
 
@@ -2897,7 +2897,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                         /* clear buffer */
                         buffer = "";
 
-                    } else if (buffer.equals("%^")) {
+                    } else if (buffer.equals("%%%%%%%%%%^")) {
                         JOptionPane.showMessageDialog(this,
                                 "Server terminated TCP socket.");
                         menu_File_DisconnectActionPerformed(null);
@@ -2967,7 +2967,7 @@ public class MosesClientForm extends javax.swing.JFrame {
                 /* Check for delimiters in data field */
                 if (data.indexOf(MosesPacket.StartDelimiter) != -1) {
                     JOptionPane.showMessageDialog(null,
-                            "Reserved character '%' can't be used in data field!",
+                            "Reserved string '%%%%%%%%%' can't be used in data field!",
                             "Error!",
                             JOptionPane.ERROR_MESSAGE);
                     return;

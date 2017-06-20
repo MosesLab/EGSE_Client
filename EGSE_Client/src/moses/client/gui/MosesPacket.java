@@ -28,7 +28,7 @@ class MosesPacket {
             TYPE_MAIN_MDAQ_U = 'M', // MDAQ Up
             TYPE_MAIN_MDAQ_D = 'Q', // MDAQ Down
             TYPE_MAIN_HK_U = 'H', // HK Up
-            TYPE_MAIN_HK_D = 'K';  // HK Down
+            TYPE_MAIN_HK_D = 'K';   // HK Down
 
     /* Store packet main types in array, so we can iterate through them. */
     public static final char[] MainTypes = {
@@ -49,15 +49,15 @@ class MosesPacket {
 
     /* All the fields of the packet broken out into individual variables */
     private int[] packetTimeStamp = new int[3];   // the packet's time stamp {HH, MM, SS}
-    private char packetType;                     // the packet's main type field
-    private String packetSubType;                  // the packet's sub type field    
-    private int packetDataLength;               // the length (in bytes) of the data
-    private byte[] packetData;                     // the packet's data
-    private byte[] packetBytes;                    // the whole packet in byte array form
-    private String packetString;                   // the whole packet in human readable string
+    private char packetType;                      // the packet's main type field
+    private String packetSubType;                 // the packet's sub type field    
+    private int packetDataLength;                 // the length (in bytes) of the data
+    private byte[] packetData;                    // the packet's data
+    private byte[] packetBytes;                   // the whole packet in byte array form
+    private String packetString;                  // the whole packet in human readable string
     private boolean validCheckSum = false, // only true if this packet has a good check sum
             hasStartDelimiter = false, // only true if packet's first byte is the proper delimiter
-            hasStopDelimiter = false;       // only true if packet's last byte is the proper delimiter
+            hasStopDelimiter = false;      // only true if packet's last byte is the proper delimiter
     /**
      * Constructor for the Packet Class. Takes an array of bytes (must be in the
      * form of a Moses Packet) and parses it into individual fields.
@@ -105,27 +105,27 @@ class MosesPacket {
 //        if(packetBytes[packetBytes.length -1] == StopDelimiter)
 //            hasStopDelimiter = true;  
         /* Parse Time Stamp */
-        packetTimeStamp[0] = (packetBytes[charstart.length + 1] - 48) * 10 + (packetBytes[charstart.length + 2] - 48); // hours
-        packetTimeStamp[1] = (packetBytes[charstart.length + 3] - 48) * 10 + (packetBytes[charstart.length + 4] - 48); // minutes
-        packetTimeStamp[2] = (packetBytes[charstart.length + 5] - 48) * 10 + (packetBytes[charstart.length + 6] - 48); // seconds
+        packetTimeStamp[0] = (packetBytes[charstart.length + 0] - 48) * 10 + (packetBytes[charstart.length + 1] - 48); // hours
+        packetTimeStamp[1] = (packetBytes[charstart.length + 2] - 48) * 10 + (packetBytes[charstart.length + 3] - 48); // minutes
+        packetTimeStamp[2] = (packetBytes[charstart.length + 4] - 48) * 10 + (packetBytes[charstart.length + 5] - 48); // seconds
 
         /* Parse Type */
-        packetType = (char) in_packet[charstart.length + 7];
+        packetType = (char) packetBytes[charstart.length + 6];
 
         /* Parse Sub Type */
-        packetSubType = (new StringBuilder().append((char) packetBytes[charstart.length + 8])).toString();
+        packetSubType = (new StringBuilder().append((char) packetBytes[charstart.length + 7])).toString();
+        packetSubType += (new StringBuilder().append((char) packetBytes[charstart.length + 8])).toString();
         packetSubType += (new StringBuilder().append((char) packetBytes[charstart.length + 9])).toString();
-        packetSubType += (new StringBuilder().append((char) packetBytes[charstart.length + 10])).toString();
 
         /* Parse Length */
-        String packetLengthStr = (new StringBuilder().append((char) packetBytes[charstart.length + 11])).toString();
-        packetLengthStr += (new StringBuilder().append((char) packetBytes[charstart.length + 12])).toString();
+        String packetLengthStr = (new StringBuilder().append((char) packetBytes[charstart.length + 10])).toString();
+        packetLengthStr += (new StringBuilder().append((char) packetBytes[charstart.length + 11])).toString();
         packetDataLength = Integer.parseInt(packetLengthStr, 16);
 
         /* Parse Data */
         packetData = new byte[packetDataLength];
         for (int i = 0; i < packetDataLength; i++) {
-            packetData[i] = packetBytes[charstart.length + 13 + i];
+            packetData[i] = packetBytes[charstart.length + 12 + i];
         }
 
 //        /* encode packet bytes */
@@ -236,7 +236,7 @@ class MosesPacket {
     }
 
     /**
-     * Returns weather or not the packet has a start delimiter.
+     * Returns whether or not the packet has a start delimiter.
      *
      * @return <tt>true</tt> only if the packet has the proper start delimiter.
      */
@@ -245,7 +245,7 @@ class MosesPacket {
     }
 
     /**
-     * Returns weather or not the packet has a stop delimiter.
+     * Returns whether or not the packet has a stop delimiter.
      *
      * @return <tt>true</tt> only if the packet has the proper stop delimiter.
      */
@@ -254,7 +254,7 @@ class MosesPacket {
     }
 
     /**
-     * Returns weather or not the packet has a valid check sum.
+     * Returns whether or not the packet has a valid check sum.
      *
      * @return <tt>true</tt> only if the packet has a valid check sum.
      */
@@ -338,9 +338,7 @@ class MosesPacket {
         for (i = 0; i < packetBytes.length - 2; i++) {
             calculatedChecksum ^= encode(decode((char) packetBytes[i]));
         }
- 
-        System.out.println("\nPacket: " + packetString);
-
+        
         if (decode((char) packetBytes[packetBytes.length - 2]) == decode(calculatedChecksum)) {
             validCheckSum = true;
             System.out.println("The checksum checked out");
@@ -357,7 +355,7 @@ class MosesPacket {
         int i;
         char calculatedChecksum = encode(decode((char) packetBytes[0]));
 
-        for (i = 0; i < packetBytes.length - 2; i++) {
+        for (i = 1; i < packetBytes.length - 2; i++) {
             calculatedChecksum ^= packetBytes[i];
         }
 
@@ -370,11 +368,11 @@ class MosesPacket {
         return (byte) calculatedChecksum;
     }
 
-    char encode(char dataByte) {
+    static char encode(char dataByte) {
         return (char) lookupTable[dataByte];
     }
 
-    char decode(char dataByte) {
+    static char decode(char dataByte) {
         return (char) (dataByte & 0x7F);
     }
 
